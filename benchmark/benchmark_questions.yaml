@@ -1,0 +1,435 @@
+meta:
+  as_of_date: '2025-10-01'
+  as_of_semester: WS 2025/26
+  count: 72
+  response_types:
+  - ANSWER
+  - DECLINE
+  - CONFLICT
+  note: Jede Frage ist ohne die angegebenen Annahmen nicht eindeutig beantwortbar, soweit das Feld 'assumptions'
+    gefüllt ist.
+questions:
+- id: Q001
+  klass: lookup
+  programme: ET
+  question_de: Wie viele ECTS-Punkte umfasst der Bachelorstudiengang Elektrotechnik insgesamt?
+  assumptions: []
+- id: Q002
+  klass: lookup
+  programme: SE
+  question_de: Welchen akademischen Grad verleiht die Hochschule Rheinmark im Studiengang Systems Engineering?
+  assumptions: []
+- id: Q003
+  klass: lookup
+  programme: IAI
+  question_en: How long is the processing period for the master's thesis in Industrial Artificial Intelligence?
+  assumptions: []
+- id: Q004
+  klass: lookup
+  programme: IB
+  question_en: How long does the colloquium last in the International Business programme?
+  assumptions: []
+- id: Q005
+  klass: lookup
+  programme: ET
+  question_de: Welche beiden Vertiefungsrichtungen stehen im Bachelorstudiengang Elektrotechnik zur Wahl?
+  assumptions: []
+- id: Q006
+  klass: abbreviation_resolution
+  programme: ET
+  question_de: Was bedeutet die Abkürzung K120 im Studien- und Prüfungsplan Elektrotechnik?
+  assumptions: []
+- id: Q007
+  klass: abbreviation_resolution
+  programme: SE
+  question_de: Was bedeutet mP-30 im Studien- und Prüfungsplan Systems Engineering?
+  assumptions: []
+- id: Q008
+  klass: abbreviation_resolution
+  programme: IB
+  question_en: The Study and Examination Plan for International Business shows 'Kl-90' for module IB-1-003.
+    What does this mean, and where is it defined?
+  assumptions: []
+- id: Q009
+  klass: abbreviation_resolution
+  programme: IAI
+  question_de: Ist die Abkürzung HA im Studiengang Industrial Artificial Intelligence eine zulässige Prüfungsform?
+  assumptions:
+  - as_of: '2025-10-01'
+- id: Q010
+  klass: workload_calculation
+  programme: IAI
+  question_de: Wie viele Zeitstunden Arbeitsaufwand entfallen auf das Modul IAI-M-01?
+  assumptions: []
+- id: Q011
+  klass: workload_calculation
+  programme: IB
+  question_en: How many hours of workload correspond to module IB-1-002?
+  assumptions: []
+- id: Q012
+  klass: workload_calculation
+  programme: SE
+  question_de: Wie viele Zeitstunden umfasst die Masterarbeit im Studiengang Systems Engineering?
+  assumptions: []
+- id: Q013
+  klass: workload_calculation
+  programme: IAI
+  question_de: Wie viele Stunden Selbststudium entfallen rechnerisch auf das Modul IAI-M-06, wenn eine
+    Vorlesungszeit von 15 Wochen zugrunde gelegt wird?
+  assumptions: []
+- id: Q014
+  klass: workload_calculation
+  programme: IB
+  question_en: How many hours of self-study are implied for module IB-2-010, assuming a 15-week lecture
+    period?
+  assumptions: []
+- id: Q015
+  klass: aggregation
+  programme: ET
+  question_de: Wie viele Semesterwochenstunden umfasst das erste Fachsemester im Bachelorstudiengang Elektrotechnik
+    insgesamt?
+  assumptions: []
+- id: Q016
+  klass: aggregation
+  programme: IAI
+  question_en: What is the total contact time in SWS for the first semester of the Industrial Artificial
+    Intelligence programme?
+  assumptions: []
+- id: Q017
+  klass: aggregation
+  programme: SE
+  question_de: Wie viele Leistungspunkte entfallen im Studiengang Systems Engineering auf den Pflichtbereich
+    ohne Masterarbeit und Kolloquium?
+  assumptions: []
+- id: Q018
+  klass: aggregation
+  programme: IB
+  question_en: How many credit points in the International Business programme are ungraded?
+  assumptions: []
+- id: Q019
+  klass: aggregation
+  programme: ET
+  question_de: Wie viele ECTS-Punkte des Bachelorstudiengangs Elektrotechnik gehen nicht in die Gesamtnote
+    ein?
+  assumptions:
+  - assumption: Es wird ET-M-37 als Wahlpflichtmodul belegt.
+- id: Q020
+  klass: counting
+  programme: IAI
+  question_en: How many modules does the elective catalogue of the Industrial Artificial Intelligence
+    programme contain?
+  assumptions: []
+- id: Q021
+  klass: counting
+  programme: ET
+  question_de: Wie viele Pflichtmodule enthält der Studien- und Prüfungsplan Elektrotechnik im vierten
+    Fachsemester?
+  assumptions: []
+- id: Q022
+  klass: counting
+  programme: SE
+  question_de: Wie viele Module des Wahlpflichtkatalogs Systems Engineering sind im dritten Fachsemester
+    wählbar?
+  assumptions: []
+- id: Q023
+  klass: counting
+  programme: null
+  question_de: Wie viele Paragraphen enthält die Allgemeine Studien- und Prüfungsordnung der Hochschule
+    Velmora in der für einen Studierenden der Kohorte WS 2022/23 maßgeblichen Fassung?
+  assumptions:
+  - persona: S2
+  - as_of: '2025-10-01'
+- id: Q024
+  klass: counting
+  programme: null
+  question_de: Wie viele Paragraphen enthält die Allgemeine Studien- und Prüfungsordnung für einen Studierenden
+    der Kohorte WS 2020/21 ohne offene Abschlussarbeit?
+  assumptions:
+  - persona: S1_analog
+  - as_of: '2025-10-01'
+- id: Q025
+  klass: version
+  programme: ET
+  question_de: In welcher Prüfungsform wird das Modul ET-M-24 (Automatisierungstechnik) geprüft?
+  assumptions:
+  - required: Kohorte des Studierenden
+- id: Q026
+  klass: version
+  programme: ET
+  question_de: In welcher Prüfungsform wird ET-M-24 für eine Studierende geprüft, die ihr Studium im Wintersemester
+    2019/20 aufgenommen hat und deren Abschlussarbeit bereits abgeschlossen ist?
+  assumptions:
+  - persona: S1
+- id: Q027
+  klass: version
+  programme: ET
+  question_de: In welcher Prüfungsform wird ET-M-24 für einen Studierenden geprüft, der sein Studium im
+    Wintersemester 2022/23 aufgenommen hat?
+  assumptions:
+  - persona: S2
+- id: Q028
+  klass: amendment
+  programme: null
+  question_de: Welche Regelungsgegenstände hat die Zweite Änderungssatzung zur ASPO geändert?
+  assumptions: []
+- id: Q029
+  klass: amendment
+  programme: null
+  question_de: Welche Prüfungsform wurde durch die Zweite Änderungssatzung neu in Anlage 1 ASPO aufgenommen
+    und welche entfiel?
+  assumptions: []
+- id: Q030
+  klass: amendment
+  programme: null
+  question_de: Ab wann gilt die durch die Erste Änderungsordnung angehobene Zulassungsschwelle zur Abschlussarbeit
+    an der Hochschule Rheinmark?
+  assumptions: []
+- id: Q031
+  klass: version
+  programme: null
+  question_de: Bildet die Lesefassung der ASPO die für alle Studierenden geltende Rechtslage ab?
+  assumptions: []
+- id: Q032
+  klass: version
+  programme: null
+  question_de: Was regelt § 27 Abs. 3 ASPO?
+  assumptions:
+  - required: maßgebliche Fassung
+- id: Q033
+  klass: version
+  programme: null
+  question_de: Was regelt § 18 Abs. 3 ASPO für einen Studierenden der Kohorte WS 2022/23 im Wintersemester
+    2025/26?
+  assumptions:
+  - persona: S2
+- id: Q034
+  klass: cohort
+  programme: SE
+  question_de: Wie viele Leistungspunkte muss eine Studierende des Studiengangs Systems Engineering für
+    die Zulassung zur Masterarbeit nachweisen, wenn sie ihr Studium im Wintersemester 2022/23 aufgenommen
+    und keine Unterstellungserklärung abgegeben hat?
+  assumptions:
+  - persona: S7
+- id: Q035
+  klass: cohort
+  programme: SE
+  question_de: Wie viele Leistungspunkte muss ein Studierender derselben Kohorte nachweisen, der am 10.
+    Februar 2024 eine Unterstellungserklärung abgegeben hat?
+  assumptions:
+  - persona: S8
+- id: Q036
+  klass: cohort
+  programme: SE
+  question_de: Zwei Studierende des Studiengangs Systems Engineering haben ihr Studium im selben Semester
+    aufgenommen. Können für sie unterschiedliche Wiederholungsregelungen gelten?
+  assumptions: []
+- id: Q037
+  klass: cohort
+  programme: ET
+  question_de: Wie lang ist die Bearbeitungszeit der Bachelorarbeit für einen Studierenden der Kohorte
+    WS 2020/21, der seine Bachelorarbeit am 2. November 2023 angemeldet hat und dessen Prüfungsverfahren
+    noch nicht abgeschlossen ist?
+  assumptions:
+  - persona: S3
+- id: Q038
+  klass: cohort
+  programme: IAI
+  question_de: Findet für einen Studierenden des Studiengangs Industrial Artificial Intelligence der Kohorte
+    WS 2024/25 ein Kolloquium statt?
+  assumptions:
+  - persona: S6
+  - as_of: '2025-10-01'
+- id: Q039
+  klass: conflict
+  programme: IB
+  question_en: How many credit points must an International Business student have obtained before registering
+    the bachelor's thesis?
+  assumptions: []
+- id: Q040
+  klass: conflict
+  programme: ET
+  question_de: Wie lang ist die Bearbeitungszeit der Bachelorarbeit für einen Studierenden der Kohorte
+    WS 2022/23?
+  assumptions:
+  - persona: S2
+- id: Q041
+  klass: conflict
+  programme: SE
+  question_de: In welcher Prüfungsform wird das Modul SE-3-018 geprüft?
+  assumptions: []
+- id: Q042
+  klass: conflict
+  programme: SE
+  question_de: Ist der Widerspruch zur Prüfungsform des Moduls SE-3-018 dadurch aufzulösen, dass der Studien-
+    und Prüfungsplan als Anlage der Fachspezifischen Bestimmungen höherrangig wäre?
+  assumptions: []
+- id: Q043
+  klass: conflict
+  programme: IAI
+  question_de: Findet für einen Studierenden des Studiengangs Industrial Artificial Intelligence ein Kolloquium
+    statt, dessen Masterarbeit am 15. Januar 2024 angemeldet wurde und dessen Prüfungsverfahren noch läuft?
+  assumptions:
+  - cohort_start: 2022-WS
+  - thesis_registered: '2024-01-15'
+  - thesis_open: true
+- id: Q044
+  klass: override
+  programme: IAI
+  question_en: How many times may the assessment of module IAI-M-10 be repeated?
+  assumptions: []
+- id: Q045
+  klass: override
+  programme: SE
+  question_de: Wie lang ist die Bearbeitungszeit der Masterarbeit im Studiengang Systems Engineering?
+  assumptions: []
+- id: Q046
+  klass: override
+  programme: SE
+  question_de: Die Abweichungsübersicht in Anlage 3 der Fachspezifischen Bestimmungen Systems Engineering
+    führt die abweichende Bearbeitungszeit der Masterarbeit nicht auf. Ist die Abweichung deshalb unwirksam?
+  assumptions: []
+- id: Q047
+  klass: override
+  programme: ET
+  question_de: Wie lang ist die Regelstudienzeit im Bachelorstudiengang Elektrotechnik?
+  assumptions: []
+- id: Q048
+  klass: override
+  programme: IB
+  question_en: Does the study abroad semester enter the overall grade?
+  assumptions: []
+- id: Q049
+  klass: prerequisite_chain
+  programme: SE
+  question_de: Welche Module muss eine Studierende abgeschlossen haben, bevor sie sich zur Prüfungsleistung
+    des Moduls SE-3-011 anmelden kann, einschließlich der mittelbaren Voraussetzungen?
+  assumptions: []
+- id: Q050
+  klass: prerequisite_chain
+  programme: ET
+  question_de: Welche Voraussetzungen bestehen für die Anmeldung zum Kolloquium im Bachelorstudiengang
+    Elektrotechnik, einschließlich der mittelbaren Voraussetzungen?
+  assumptions: []
+- id: Q051
+  klass: prerequisite_chain
+  programme: IAI
+  question_en: Which modules must be completed before registering for module IAI-M-18?
+  assumptions: []
+- id: Q052
+  klass: prerequisite_chain
+  programme: IB
+  question_en: What must a student complete before being admitted to the study abroad semester?
+  assumptions: []
+- id: Q053
+  klass: cross_document
+  programme: IAI
+  question_de: Erfüllt ein Absolvent des Bachelorstudiengangs Elektrotechnik der Hochschule Velmora die
+    Zugangsvoraussetzung nach dem ECTS-Umfang für den Masterstudiengang Industrial Artificial Intelligence?
+  assumptions: []
+- id: Q054
+  klass: cross_document
+  programme: IB
+  question_en: Which rules govern the recognition of achievements completed during the study abroad semester?
+  assumptions: []
+- id: Q055
+  klass: cross_document
+  programme: IAI
+  question_de: Welche Prüfungsformen sind im Studiengang Industrial Artificial Intelligence zulässig und
+    woraus ergibt sich das?
+  assumptions:
+  - as_of: '2025-10-01'
+- id: Q056
+  klass: cross_document
+  programme: SE
+  question_de: Wer beschließt und wer genehmigt die Fachspezifischen Bestimmungen für den Studiengang
+    Systems Engineering?
+  assumptions: []
+- id: Q057
+  klass: cross_document
+  programme: IAI
+  question_de: Wer beschließt und wer stimmt der Besonderen Studien- und Prüfungsordnung Industrial Artificial
+    Intelligence zu?
+  assumptions: []
+- id: Q058
+  klass: table_interpretation
+  programme: SE
+  question_de: Wie viele Leistungspunkte des Moduls SE-2-009 entfallen auf das dritte Fachsemester?
+  assumptions: []
+- id: Q059
+  klass: table_interpretation
+  programme: SE
+  question_de: Wann werden die Leistungspunkte des Moduls SE-2-009 vergeben?
+  assumptions: []
+- id: Q060
+  klass: table_interpretation
+  programme: ET
+  question_de: Für welche Module des Bachelorstudiengangs Elektrotechnik ist die erfolgreiche Teilnahme
+    am Laborpraktikum Zulassungsvoraussetzung zur Prüfungsleistung?
+  assumptions: []
+- id: Q061
+  klass: table_interpretation
+  programme: IAI
+  question_en: Which module in the Industrial Artificial Intelligence programme is ungraded?
+  assumptions: []
+- id: Q062
+  klass: absence
+  programme: IB
+  question_en: Can module IB-5-029 (International Taxation) be counted towards the elective area?
+  assumptions: []
+- id: Q063
+  klass: absence
+  programme: null
+  question_de: Ist die Prüfungsform Hausarbeit an der Hochschule Rheinmark zulässig?
+  assumptions: []
+- id: Q064
+  klass: absence
+  programme: IAI
+  question_en: Is there an oral overall master's examination in the Industrial Artificial Intelligence
+    programme?
+  assumptions: []
+- id: Q065
+  klass: absence
+  programme: SE
+  question_de: Kann ein Studierender des Studiengangs Systems Engineering der Kohorte WS 2022/23 im Oktober
+    2025 noch eine Unterstellungserklärung unter die geänderte Allgemeine Prüfungsordnung abgeben?
+  assumptions:
+  - as_of: '2025-10-01'
+- id: Q066
+  klass: not_covered
+  programme: SE
+  question_de: Wie viele Auslandssemester können im Masterstudiengang Systems Engineering höchstens angerechnet
+    werden?
+  assumptions: []
+- id: Q067
+  klass: not_covered
+  programme: IAI
+  question_en: What grade is required to graduate 'with distinction' from the Industrial Artificial Intelligence
+    programme?
+  assumptions: []
+- id: Q068
+  klass: not_covered
+  programme: IB
+  question_en: What are the tuition fees for the International Business programme?
+  assumptions: []
+- id: Q069
+  klass: near_duplicate
+  programme: null
+  question_de: Wie vielen Zeitstunden entspricht ein Kreditpunkt im Studiengang International Business?
+  assumptions: []
+- id: Q070
+  klass: semantic_decoy
+  programme: ET
+  question_de: Wie oft kann die Bachelorarbeit im Studiengang Elektrotechnik wiederholt werden?
+  assumptions: []
+- id: Q071
+  klass: en_to_de
+  programme: IAI
+  question_en: According to the English text of the Special Regulations, is a second repeat examination
+    available on request in the Industrial Artificial Intelligence programme?
+  assumptions: []
+- id: Q072
+  klass: de_to_en
+  programme: IB
+  question_de: Ist für den Studiengang International Business die deutsche oder die englische Fassung
+    der Fachspezifischen Bestimmungen maßgeblich?
+  assumptions: []

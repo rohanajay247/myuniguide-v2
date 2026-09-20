@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+qdrant_storage/
+.cache/
+.pytest_cache/
+.ruff_cache/
+qdrant_local/
+eval/results/
+
+chunks.txt
+six.txt
+eval/parse_sample.md

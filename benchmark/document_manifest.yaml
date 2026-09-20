@@ -1,0 +1,475 @@
+as_of: '2025-10-01'
+universities:
+  HVM:
+    name_de: Hochschule Velmora
+    land: Baden-Württemberg
+    statute_short: LHG
+    adopting_organ_general: Senat
+    adopting_organ_programme: Senat auf Vorschlag des Fakultätsrats
+    approval_organ: Rektorat
+    publication_organ: Amtliche Bekanntmachungen der Hochschule Velmora
+    credit_unit_short: ECTS
+    ungraded_term_de: Studienleistung
+    amendment_structure: artikel
+    consolidated_label_de: Lesefassung
+    module_handbook_authority: descriptive
+  HRM:
+    name_de: Hochschule Rheinmark
+    land: Rheinland-Pfalz
+    statute_short: HochSchG
+    adopting_organ_general: Senat
+    adopting_organ_programme: Fachbereichsrat
+    approval_organ: Präsident
+    publication_organ: Verkündungsblatt der Hochschule Rheinmark
+    credit_unit_short: LP
+    ungraded_term_de: Leistungsnachweis
+    amendment_structure: paragraph
+    consolidated_label_de: Konsolidierte Fassung (nichtamtlich)
+    module_handbook_authority: partially_binding
+programmes:
+  IAI:
+    university: HVM
+    name_de: Industrial Artificial Intelligence
+    name_en: Industrial Artificial Intelligence
+    degree_de: Master of Science (M.Sc.)
+    degree_short: M.Sc.
+    level: master
+    language: Englisch
+    language_en: English
+    credits: 90
+    semesters: 3
+    first_intake: WS 2022/23
+    faculty_de: Fakultät Technik und Informatik
+    module_prefix: IAI-M
+    thesis_module: IAI-M-21
+    thesis_credits: 30
+    thesis_months: 6
+    has_colloquium: contested
+    admission_credits_required: 210
+  ET:
+    university: HVM
+    name_de: Elektrotechnik
+    name_en: Electrical Engineering
+    degree_de: Bachelor of Engineering (B.Eng.)
+    degree_short: B.Eng.
+    level: bachelor
+    language: Deutsch
+    language_en: German
+    credits: 210
+    semesters: 7
+    first_intake: WS 2019/20
+    faculty_de: Fakultät Technik und Informatik
+    module_prefix: ET-M
+    thesis_module: ET-M-30
+    thesis_credits: 12
+    thesis_months: 3
+    colloquium_module: ET-M-31
+    colloquium_credits: 3
+    practical_semester: 5
+    specialisations:
+    - Automatisierungstechnik
+    - Energietechnik
+  SE:
+    university: HRM
+    name_de: Systems Engineering
+    name_en: Systems Engineering
+    degree_de: Master of Science (M.Sc.)
+    degree_short: M.Sc.
+    level: master
+    language: Deutsch
+    language_en: German
+    credits: 120
+    semesters: 4
+    first_intake: WS 2021/22
+    faculty_de: Fachbereich Ingenieurwissenschaften
+    module_prefix: SE
+    thesis_module: SE-4-015
+    thesis_credits: 27
+    thesis_months: 6
+    colloquium_module: SE-4-016
+    colloquium_credits: 3
+    workload_per_credit: 30
+  IB:
+    university: HRM
+    name_de: International Business
+    name_en: International Business
+    degree_de: Bachelor of Arts (B.A.)
+    degree_short: B.A.
+    level: bachelor
+    language: Englisch
+    language_en: English
+    credits: 180
+    semesters: 6
+    first_intake: WS 2022/23
+    faculty_de: Fachbereich Wirtschaft
+    module_prefix: IB
+    thesis_module: IB-6-023
+    thesis_credits: 12
+    thesis_months: 3
+    colloquium_module: IB-6-024
+    colloquium_credits: 3
+    abroad_semester: 5
+    workload_per_credit: 25
+documents:
+  V1:
+    family: ASPO
+    university: HVM
+    kind: general_regulation
+    title_de: Allgemeine Studien- und Prüfungsordnung der Hochschule Velmora für die Bachelor- und Masterstudiengänge
+    short_de: Allgemeine Studien- und Prüfungsordnung (ASPO)
+    language: de
+    authority: BINDING_GENERAL
+    version: '1.0'
+    adopted: '2019-05-15'
+    executed: '2019-06-20'
+    in_force: '2019-09-01'
+    gazette: Amtliche Bekanntmachungen der Hochschule Velmora Nr. 12/2019 vom 25. Juni 2019
+    applies_to:
+    - IAI
+    - ET
+    target_pages: 22
+    pages: 21
+    file: velmora/V1_ASPO.pdf
+  V2:
+    family: ASPO
+    university: HVM
+    kind: amendment
+    title_de: Erste Satzung zur Änderung der Allgemeinen Studien- und Prüfungsordnung der Hochschule Velmora
+    short_de: Erste Änderungssatzung zur ASPO
+    language: de
+    authority: BINDING_AMENDMENT
+    version: Ä1
+    amends: V1
+    adopted: '2021-05-19'
+    executed: '2021-06-28'
+    in_force: '2021-09-01'
+    gazette: Amtliche Bekanntmachungen der Hochschule Velmora Nr. 8/2021 vom 2. Juli 2021
+    applies_to:
+    - IAI
+    - ET
+    target_pages: 5
+    pages: 3
+    file: velmora/V2_ASPO.pdf
+  V3:
+    family: ASPO
+    university: HVM
+    kind: amendment
+    title_de: Zweite Satzung zur Änderung der Allgemeinen Studien- und Prüfungsordnung der Hochschule
+      Velmora
+    short_de: Zweite Änderungssatzung zur ASPO
+    language: de
+    authority: BINDING_AMENDMENT
+    version: Ä2
+    amends: V1
+    adopted: '2024-01-24'
+    executed: '2024-02-14'
+    in_force: '2024-03-01'
+    gazette: Amtliche Bekanntmachungen der Hochschule Velmora Nr. 2/2024 vom 19. Februar 2024
+    applies_to:
+    - IAI
+    - ET
+    target_pages: 6
+    pages: 3
+    file: velmora/V3_ASPO.pdf
+  V4:
+    family: ASPO
+    university: HVM
+    kind: consolidated
+    title_de: Allgemeine Studien- und Prüfungsordnung der Hochschule Velmora – Lesefassung
+    short_de: ASPO – Lesefassung
+    language: de
+    authority: NON_BINDING_CONSOLIDATED
+    version: 1.0+Ä1+Ä2
+    consolidates:
+    - V1
+    - V2
+    - V3
+    stand: '2024-03-01'
+    applies_to:
+    - IAI
+    - ET
+    target_pages: 26
+    pages: 21
+    file: velmora/V4_ASPO.pdf
+  V5:
+    family: BSPO-IAI
+    university: HVM
+    kind: programme_regulation
+    title_de: Besondere Studien- und Prüfungsordnung für den Masterstudiengang Industrial Artificial Intelligence
+      an der Hochschule Velmora
+    title_en: Special Study and Examination Regulations for the Master's Programme Industrial Artificial
+      Intelligence at Velmora University of Applied Sciences
+    short_de: BSPO Industrial Artificial Intelligence
+    language: bilingual
+    authoritative_language: de
+    authority: BINDING_PROGRAMME
+    version: '1.0'
+    adopted: '2022-06-22'
+    executed: '2022-07-11'
+    in_force: '2022-09-01'
+    gazette: Amtliche Bekanntmachungen der Hochschule Velmora Nr. 9/2022 vom 15. Juli 2022
+    applies_to:
+    - IAI
+    target_pages: 18
+    pages: 15
+    file: velmora/V5_BSPO-IAI.pdf
+  V6:
+    family: BSPO-IAI
+    university: HVM
+    kind: study_plan
+    title_de: Studien- und Prüfungsplan für den Masterstudiengang Industrial Artificial Intelligence (Anlage
+      1 zur BSPO IAI)
+    title_en: Study and Examination Plan for the Master's Programme Industrial Artificial Intelligence
+      (Annex 1 to the Special Regulations)
+    short_de: Studien- und Prüfungsplan IAI
+    language: bilingual
+    authoritative_language: de
+    authority: BINDING_ANNEX
+    parent: V5
+    version: '1.0'
+    in_force: '2022-09-01'
+    applies_to:
+    - IAI
+    target_pages: 10
+    pages: 4
+    file: velmora/V6_BSPO-IAI.pdf
+  V7:
+    family: MHB-IAI
+    university: HVM
+    kind: module_handbook
+    title_en: Module Handbook – M.Sc. Industrial Artificial Intelligence
+    title_de: Modulhandbuch – M.Sc. Industrial Artificial Intelligence
+    short_de: Modulhandbuch IAI
+    language: en
+    authority: DESCRIPTIVE
+    version: Stand WS 2025/26
+    stand: '2025-09-15'
+    applies_to:
+    - IAI
+    target_pages: 32
+    pages: 29
+    file: velmora/V7_MHB-IAI.pdf
+  V8:
+    family: BSPO-ET
+    university: HVM
+    kind: programme_regulation
+    title_de: Besondere Studien- und Prüfungsordnung für den Bachelorstudiengang Elektrotechnik an der
+      Hochschule Velmora
+    short_de: BSPO Elektrotechnik
+    language: de
+    authority: BINDING_PROGRAMME
+    version: '1.0'
+    adopted: '2019-06-19'
+    executed: '2019-07-15'
+    in_force: '2019-09-01'
+    gazette: Amtliche Bekanntmachungen der Hochschule Velmora Nr. 14/2019 vom 22. Juli 2019
+    applies_to:
+    - ET
+    target_pages: 16
+    pages: 9
+    file: velmora/V8_BSPO-ET.pdf
+  V9:
+    family: BSPO-ET
+    university: HVM
+    kind: study_plan
+    title_de: Studien- und Prüfungsplan für den Bachelorstudiengang Elektrotechnik (Anlage 1 zur BSPO
+      Elektrotechnik)
+    short_de: Studien- und Prüfungsplan Elektrotechnik
+    language: de
+    authority: BINDING_ANNEX
+    parent: V8
+    version: '1.0'
+    in_force: '2019-09-01'
+    applies_to:
+    - ET
+    target_pages: 11
+    pages: 8
+    file: velmora/V9_BSPO-ET.pdf
+  V10:
+    family: MHB-ET
+    university: HVM
+    kind: module_handbook
+    title_de: Modulhandbuch – B.Eng. Elektrotechnik
+    short_de: Modulhandbuch Elektrotechnik
+    language: de
+    authority: DESCRIPTIVE
+    version: Stand WS 2025/26
+    stand: '2025-09-15'
+    applies_to:
+    - ET
+    target_pages: 38
+    pages: 51
+    file: velmora/V10_MHB-ET.pdf
+  R1:
+    family: APO
+    university: HRM
+    kind: general_regulation
+    title_de: Allgemeine Prüfungsordnung für die Bachelor- und Masterstudiengänge der Hochschule Rheinmark
+    short_de: Allgemeine Prüfungsordnung (APO)
+    language: de
+    authority: BINDING_GENERAL
+    version: '1.0'
+    adopted: '2020-11-11'
+    executed: '2020-12-15'
+    in_force: '2021-03-01'
+    gazette: Verkündungsblatt der Hochschule Rheinmark Nr. 3/2021 vom 12. Januar 2021
+    applies_to:
+    - SE
+    - IB
+    target_pages: 23
+    pages: 14
+    file: rheinmark/R1_APO.pdf
+  R2:
+    family: APO
+    university: HRM
+    kind: amendment
+    title_de: Erste Ordnung zur Änderung der Allgemeinen Prüfungsordnung für die Bachelor- und Masterstudiengänge
+      der Hochschule Rheinmark
+    short_de: Erste Änderungsordnung zur APO
+    language: de
+    authority: BINDING_AMENDMENT
+    version: Ä1
+    amends: R1
+    adopted: '2023-07-12'
+    executed: '2023-08-30'
+    in_force: '2023-10-01'
+    gazette: Verkündungsblatt der Hochschule Rheinmark Nr. 14/2023 vom 6. September 2023
+    applies_to:
+    - SE
+    - IB
+    target_pages: 6
+    pages: 3
+    file: rheinmark/R2_APO.pdf
+  R3:
+    family: APO
+    university: HRM
+    kind: consolidated
+    title_de: Allgemeine Prüfungsordnung für die Bachelor- und Masterstudiengänge der Hochschule Rheinmark
+      – Konsolidierte Fassung (nichtamtlich)
+    short_de: APO – Konsolidierte Fassung
+    language: de
+    authority: NON_BINDING_CONSOLIDATED
+    version: 1.0+Ä1
+    consolidates:
+    - R1
+    - R2
+    stand: '2023-10-01'
+    applies_to:
+    - SE
+    - IB
+    target_pages: 27
+    pages: 14
+    file: rheinmark/R3_APO.pdf
+  R4:
+    family: FSB-SE
+    university: HRM
+    kind: programme_regulation
+    title_de: Fachspezifische Bestimmungen für den Masterstudiengang Systems Engineering der Hochschule
+      Rheinmark
+    short_de: Fachspezifische Bestimmungen Systems Engineering
+    language: de
+    authority: BINDING_PROGRAMME
+    version: '1.0'
+    adopted: '2021-05-05'
+    executed: '2021-06-22'
+    in_force: '2021-09-01'
+    gazette: Verkündungsblatt der Hochschule Rheinmark Nr. 11/2021 vom 30. Juni 2021
+    applies_to:
+    - SE
+    target_pages: 16
+    pages: 10
+    file: rheinmark/R4_FSB-SE.pdf
+  R5:
+    family: FSB-SE
+    university: HRM
+    kind: study_plan
+    title_de: Studien- und Prüfungsplan für den Masterstudiengang Systems Engineering (Anlage 1 zu den
+      Fachspezifischen Bestimmungen)
+    short_de: Studien- und Prüfungsplan Systems Engineering
+    language: de
+    authority: BINDING_ANNEX
+    parent: R4
+    version: '1.0'
+    in_force: '2021-09-01'
+    applies_to:
+    - SE
+    target_pages: 10
+    pages: 5
+    file: rheinmark/R5_FSB-SE.pdf
+  R6:
+    family: MHB-SE
+    university: HRM
+    kind: module_handbook
+    title_de: Modulhandbuch – M.Sc. Systems Engineering
+    short_de: Modulhandbuch Systems Engineering
+    language: de
+    authority: PARTIALLY_BINDING
+    binding_fields:
+    - Modulinhalte
+    - Prüfungsform
+    - Voraussetzungen für die Vergabe von Leistungspunkten
+    version: Stand WS 2025/26
+    stand: '2025-09-01'
+    applies_to:
+    - SE
+    target_pages: 32
+    pages: 29
+    file: rheinmark/R6_MHB-SE.pdf
+  R7:
+    family: FSB-IB
+    university: HRM
+    kind: programme_regulation
+    title_en: Programme-Specific Provisions for the Bachelor's Programme International Business at Rheinmark
+      University of Applied Sciences
+    title_de: Fachspezifische Bestimmungen für den Bachelorstudiengang International Business der Hochschule
+      Rheinmark
+    short_de: Programme-Specific Provisions International Business
+    language: en
+    authoritative_language: en
+    authority: BINDING_PROGRAMME
+    version: '1.0'
+    adopted: '2022-04-27'
+    executed: '2022-06-01'
+    in_force: '2022-09-01'
+    gazette: Verkündungsblatt der Hochschule Rheinmark Nr. 9/2022 vom 14. Juni 2022
+    applies_to:
+    - IB
+    target_pages: 16
+    pages: 10
+    file: rheinmark/R7_FSB-IB.pdf
+  R8:
+    family: FSB-IB
+    university: HRM
+    kind: study_plan
+    title_en: Study and Examination Plan for the Bachelor's Programme International Business (Annex 1
+      to the Programme-Specific Provisions)
+    short_de: Study and Examination Plan International Business
+    language: en
+    authority: BINDING_ANNEX
+    parent: R7
+    version: '1.0'
+    in_force: '2022-09-01'
+    applies_to:
+    - IB
+    target_pages: 10
+    pages: 7
+    file: rheinmark/R8_FSB-IB.pdf
+  R9:
+    family: MHB-IB
+    university: HRM
+    kind: module_handbook
+    title_en: Module Handbook – B.A. International Business
+    short_de: Module Handbook International Business
+    language: en
+    authority: PARTIALLY_BINDING
+    binding_fields:
+    - Module content
+    - Form of assessment
+    - Requirements for the award of credit points
+    version: Stand WS 2025/26
+    stand: '2025-09-01'
+    applies_to:
+    - IB
+    target_pages: 32
+    pages: 40
+    file: rheinmark/R9_MHB-IB.pdf

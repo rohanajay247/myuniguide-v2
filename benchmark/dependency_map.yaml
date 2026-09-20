@@ -1,0 +1,168 @@
+chains:
+- id: D-01
+  hops: 3
+  path:
+  - V1 § 6 Abs. 2 (1 ECTS = 30 h)
+  - V6 Studien- und Prüfungsplan (ECTS je Modul)
+  - V7 Modulhandbuch (Workload-Aufteilung)
+  question_type: aggregation_calculation
+- id: D-02
+  hops: 3
+  path:
+  - V1 § 12 Abs. 2 Nr. 3 (versionsabhängig)
+  - V8 § 8 Abs. 1 (Verweis)
+  - V9 Studien- und Prüfungsplan (Spalte Prüfungsform)
+  question_type: version_dependent_reference
+  linked_case: VD-01
+- id: D-03
+  hops: 2
+  path:
+  - V1 Anlage 1 ab Ä2 (abschließend)
+  - V6/V9 Verwendung der Abkürzungen
+  question_type: closed_enumeration
+  linked_case: A-01
+- id: D-04
+  hops: 2
+  path:
+  - R1 Anlage 2 (deutsch)
+  - R8 Study and Examination Plan (englisch, nutzt deutsche Abkürzungen)
+  question_type: cross_language
+- id: D-05
+  hops: 4
+  path:
+  - R4 § 7 Abs. 1 (Voraussetzungsregel)
+  - R5 Anlage 1 (Spalte Voraussetzung)
+  - R6 Modulhandbuch SE-3-011 (Voraussetzung SE-2-006)
+  - R6 Modulhandbuch SE-2-006 (Voraussetzung SE-1-002)
+  question_type: prerequisite_chain
+- id: D-06
+  hops: 4
+  path:
+  - R2 § 1 Nr. 6 (Schwelle 135 LP Bachelor)
+  - R1 § 19 Abs. 1
+  - R7 § 14 Abs. 2 (120 LP)
+  - R8 Anlage 1 Fußnote 4 (150 LP)
+  question_type: amendment_plus_conflict
+  linked_case: K-01
+- id: D-07
+  hops: 2
+  path:
+  - V8 § 4 Abs. 2 (210 ECTS)
+  - V5 § 3 Abs. 1 (Zugang ab 210 ECTS)
+  question_type: cross_programme
+- id: D-08
+  hops: 3
+  path:
+  - R1 § 18 Abs. 2 (Verweis auf gesonderte Ordnung)
+  - R7 § 8 Abs. 3 (englisch)
+  - R8 Anlage 1 Semester 5
+  question_type: cross_language_special_rule
+- id: D-09
+  hops: 3
+  path:
+  - R1 § 5 Abs. 2 (Spanne 25–30 h)
+  - R7 § 4 Abs. 1 (25 h fest)
+  - R9 Module Handbook (Workload)
+  question_type: override_plus_calculation
+  linked_case: O-06
+- id: D-10
+  hops: 3
+  path:
+  - V3 Artikel I Nr. 3 (§ 33 Abs. 3 ASPO)
+  - V5 § 13 Abs. 4
+  - V6 Studien- und Prüfungsplan Semester 3
+  question_type: version_gated_conflict
+  linked_case: K-04
+near_duplicates:
+- id: N-01
+  pair:
+  - doc: V1
+    locus: § 20
+  - doc: V1
+    locus: § 32 Abs. 5
+  difference: Modulwiederholung (zweimal, bzw. einmal nach Ä1 mit Antrag) gegenüber Wiederholung der Abschlussarbeit
+    (nur einmal, kein Antragserfordernis).
+- id: N-02
+  pair:
+  - doc: V1
+    locus: § 31 Abs. 1
+  - doc: V8
+    locus: § 12 Abs. 2
+  - doc: R1
+    locus: § 19 Abs. 2
+  - doc: R4
+    locus: § 12 Abs. 1
+  difference: Vier Bearbeitungszeitregelungen mit vier verschiedenen Werten über zwei Hochschulen hinweg.
+- id: N-03
+  pair:
+  - doc: V1
+    locus: § 33 Abs. 3
+  - doc: V8
+    locus: § 13
+  - doc: V5
+    locus: § 13 Abs. 4
+  - doc: R1
+    locus: § 22
+  - doc: R4
+    locus: § 13
+  - doc: R7
+    locus: § 15
+  difference: Sechs Kolloquiumsregelungen mit unterschiedlicher Dauer, Kreditierung und Anwendbarkeit;
+    eine davon ist konfliktbehaftet (K-04).
+- id: N-04
+  pair:
+  - doc: V1
+    locus: § 6 Abs. 2
+  - doc: R1
+    locus: § 5 Abs. 2
+  - doc: R4
+    locus: § 5 Abs. 1
+  - doc: R7
+    locus: § 4 Abs. 1
+  difference: 'Arbeitsaufwand je Kreditpunkt: 30 h fest (HVM), 25–30 h Spanne (HRM allgemein), 30 h fest
+    (SE), 25 h fest (IB). Dieselbe Frage hat je nach Hochschule und Studiengang drei verschiedene richtige
+    Antworten.'
+- id: N-05
+  pair:
+  - doc: V1
+    locus: § 15
+  - doc: V1
+    locus: § 15a
+  - doc: R1
+    locus: § 18
+  difference: Anerkennung inländischer Leistungen, Anerkennung ausländischer Leistungen (erst ab Ä1),
+    Anerkennung nach APO mit Verweis auf eine gesonderte Ordnung.
+- id: N-06
+  pair:
+  - doc: V1
+    locus: § 12 Abs. 2 Nr. 3 (Fassung 1.0)
+  - doc: V1
+    locus: § 12 Abs. 2 Nr. 3 (Fassung ab Ä1)
+  difference: Identische Zitierung, unterschiedlicher Inhalt.
+- id: N-07
+  pair:
+  - doc: V1
+    locus: § 22
+  - doc: R1
+    locus: § 11a
+  difference: Nachteilsausgleich an der HVM von Anfang an geregelt; an der HRM erst durch die Erste Änderungsordnung
+    eingefügt. Für APO-Zustand P existiert keine ausdrückliche Regelung.
+- id: N-08
+  pair:
+  - doc: V1
+    locus: § 24
+  - doc: R1
+    locus: —
+  difference: Freiversuch existiert nur an der Hochschule Velmora und ist dort ab Ä2 für Masterstudiengänge
+    abgeschafft. Die Hochschule Rheinmark kennt das Institut nicht.
+- id: N-09
+  pair:
+  - doc: R1
+    locus: Anlage 2 (Fassung 1.0)
+  - doc: R1
+    locus: Anlage 2 (Fassung ab Ä1)
+  - doc: V1
+    locus: Anlage 1 (Fassung ab Ä2)
+  difference: Die HRM-Liste ist in beiden Fassungen nicht abschließend; die HVM-Liste ist ab Ä2 abschließend.
+    Die Zulässigkeit einer nicht aufgeführten Prüfungsform ist deshalb je nach Hochschule unterschiedlich
+    zu beurteilen.

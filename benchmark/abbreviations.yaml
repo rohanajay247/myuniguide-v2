@@ -1,0 +1,255 @@
+HVM:
+  annex: Anlage 1
+  annex_title_de: Katalog der Prüfungsformen und Abkürzungen
+  v1:
+    exhaustive: false
+    closing_de: Die Besonderen Studien- und Prüfungsordnungen können weitere Prüfungsformen vorsehen.
+    entries:
+    - abbr: K60
+      name_de: Klausurarbeit von 60 Minuten Dauer
+      name_en: Written examination, 60 minutes
+      kind: PL
+    - abbr: K90
+      name_de: Klausurarbeit von 90 Minuten Dauer
+      name_en: Written examination, 90 minutes
+      kind: PL
+    - abbr: K120
+      name_de: Klausurarbeit von 120 Minuten Dauer
+      name_en: Written examination, 120 minutes
+      kind: PL
+    - abbr: M20
+      name_de: Mündliche Prüfung von etwa 20 Minuten Dauer
+      name_en: Oral examination, approx. 20 minutes
+      kind: PL
+    - abbr: M30
+      name_de: Mündliche Prüfung von etwa 30 Minuten Dauer
+      name_en: Oral examination, approx. 30 minutes
+      kind: PL
+    - abbr: RE
+      name_de: Referat mit schriftlicher Ausarbeitung
+      name_en: Presentation with written elaboration
+      kind: PL
+    - abbr: HA
+      name_de: Hausarbeit
+      name_en: Term paper
+      kind: PL
+    - abbr: PJ
+      name_de: Projektarbeit
+      name_en: Project work
+      kind: PL
+    - abbr: LB
+      name_de: Laborarbeit mit Testat
+      name_en: Laboratory work with certificate
+      kind: SL
+    - abbr: TN
+      name_de: Teilnahmenachweis
+      name_en: Certificate of attendance
+      kind: SL
+    - abbr: BA
+      name_de: Bachelorarbeit
+      name_en: Bachelor's thesis
+      kind: PL
+    - abbr: MA
+      name_de: Masterarbeit
+      name_en: Master's thesis
+      kind: PL
+    - abbr: KO
+      name_de: Kolloquium
+      name_en: Colloquium
+      kind: PL
+  v2:
+    exhaustive: true
+    closing_de: Der vorstehende Katalog ist abschließend. Andere als die in diesem Katalog aufgeführten
+      Prüfungsformen dürfen in den Besonderen Studien- und Prüfungsordnungen und in den Studien- und Prüfungsplänen
+      nicht vorgesehen werden.
+    changes_from_v1:
+      removed:
+      - HA
+      added:
+      - PF
+    entries:
+    - abbr: K60
+      name_de: Klausurarbeit von 60 Minuten Dauer
+      name_en: Written examination, 60 minutes
+      kind: PL
+    - abbr: K90
+      name_de: Klausurarbeit von 90 Minuten Dauer
+      name_en: Written examination, 90 minutes
+      kind: PL
+    - abbr: K120
+      name_de: Klausurarbeit von 120 Minuten Dauer
+      name_en: Written examination, 120 minutes
+      kind: PL
+    - abbr: M20
+      name_de: Mündliche Prüfung von etwa 20 Minuten Dauer
+      name_en: Oral examination, approx. 20 minutes
+      kind: PL
+    - abbr: M30
+      name_de: Mündliche Prüfung von etwa 30 Minuten Dauer
+      name_en: Oral examination, approx. 30 minutes
+      kind: PL
+    - abbr: RE
+      name_de: Referat mit schriftlicher Ausarbeitung
+      name_en: Presentation with written elaboration
+      kind: PL
+    - abbr: PJ
+      name_de: Projektarbeit
+      name_en: Project work
+      kind: PL
+    - abbr: PF
+      name_de: Portfolio aus mindestens drei Teilleistungen
+      name_en: Portfolio comprising at least three components
+      kind: PL
+    - abbr: LB
+      name_de: Laborarbeit mit Testat
+      name_en: Laboratory work with certificate
+      kind: SL
+    - abbr: TN
+      name_de: Teilnahmenachweis
+      name_en: Certificate of attendance
+      kind: SL
+    - abbr: BA
+      name_de: Bachelorarbeit
+      name_en: Bachelor's thesis
+      kind: PL
+    - abbr: MA
+      name_de: Masterarbeit
+      name_en: Master's thesis
+      kind: PL
+    - abbr: KO
+      name_de: Kolloquium
+      name_en: Colloquium
+      kind: PL
+HRM:
+  annex: Anlage 2
+  annex_title_de: Abkürzungsverzeichnis der Prüfungsformen
+  v1:
+    exhaustive: false
+    closing_de: Die vorstehende Aufzählung nennt insbesondere die gebräuchlichen Prüfungsformen; die Fachspezifischen
+      Bestimmungen können weitere Prüfungsformen vorsehen.
+    entries:
+    - abbr: Kl-60
+      name_de: Klausur, 60 Minuten
+      name_en: Written examination, 60 minutes
+      kind: PL
+    - abbr: Kl-90
+      name_de: Klausur, 90 Minuten
+      name_en: Written examination, 90 minutes
+      kind: PL
+    - abbr: Kl-120
+      name_de: Klausur, 120 Minuten
+      name_en: Written examination, 120 minutes
+      kind: PL
+    - abbr: mP-20
+      name_de: Mündliche Prüfung, 20 Minuten
+      name_en: Oral examination, 20 minutes
+      kind: PL
+    - abbr: mP-30
+      name_de: Mündliche Prüfung, 30 Minuten
+      name_en: Oral examination, 30 minutes
+      kind: PL
+    - abbr: Pr
+      name_de: Präsentation
+      name_en: Presentation
+      kind: PL
+    - abbr: PA
+      name_de: Projektarbeit
+      name_en: Project work
+      kind: PL
+    - abbr: HA
+      name_de: Hausarbeit
+      name_en: Term paper
+      kind: PL
+    - abbr: LA
+      name_de: Laborarbeit
+      name_en: Laboratory work
+      kind: LN
+    - abbr: Ü
+      name_de: Übungstestat
+      name_en: Exercise certificate
+      kind: LN
+    - abbr: LN
+      name_de: Leistungsnachweis (unbenotet)
+      name_en: Certificate of achievement (ungraded)
+      kind: LN
+    - abbr: BA
+      name_de: Bachelorarbeit
+      name_en: Bachelor's thesis
+      kind: PL
+    - abbr: MA
+      name_de: Masterarbeit
+      name_en: Master's thesis
+      kind: PL
+    - abbr: Ko
+      name_de: Kolloquium
+      name_en: Colloquium
+      kind: PL
+  v2:
+    exhaustive: false
+    closing_de: Die vorstehende Aufzählung nennt insbesondere die gebräuchlichen Prüfungsformen; die Fachspezifischen
+      Bestimmungen können weitere Prüfungsformen vorsehen.
+    changes_from_v1:
+      removed: []
+      added:
+      - PO
+    entries:
+    - abbr: Kl-60
+      name_de: Klausur, 60 Minuten
+      name_en: Written examination, 60 minutes
+      kind: PL
+    - abbr: Kl-90
+      name_de: Klausur, 90 Minuten
+      name_en: Written examination, 90 minutes
+      kind: PL
+    - abbr: Kl-120
+      name_de: Klausur, 120 Minuten
+      name_en: Written examination, 120 minutes
+      kind: PL
+    - abbr: mP-20
+      name_de: Mündliche Prüfung, 20 Minuten
+      name_en: Oral examination, 20 minutes
+      kind: PL
+    - abbr: mP-30
+      name_de: Mündliche Prüfung, 30 Minuten
+      name_en: Oral examination, 30 minutes
+      kind: PL
+    - abbr: Pr
+      name_de: Präsentation
+      name_en: Presentation
+      kind: PL
+    - abbr: PA
+      name_de: Projektarbeit
+      name_en: Project work
+      kind: PL
+    - abbr: PO
+      name_de: Portfolio
+      name_en: Portfolio
+      kind: PL
+    - abbr: HA
+      name_de: Hausarbeit
+      name_en: Term paper
+      kind: PL
+    - abbr: LA
+      name_de: Laborarbeit
+      name_en: Laboratory work
+      kind: LN
+    - abbr: Ü
+      name_de: Übungstestat
+      name_en: Exercise certificate
+      kind: LN
+    - abbr: LN
+      name_de: Leistungsnachweis (unbenotet)
+      name_en: Certificate of achievement (ungraded)
+      kind: LN
+    - abbr: BA
+      name_de: Bachelorarbeit
+      name_en: Bachelor's thesis
+      kind: PL
+    - abbr: MA
+      name_de: Masterarbeit
+      name_en: Master's thesis
+      kind: PL
+    - abbr: Ko
+      name_de: Kolloquium
+      name_en: Colloquium
+      kind: PL

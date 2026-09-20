@@ -1,0 +1,28 @@
+# Serving image. No Docling, no torch: ingestion runs locally and the resulting
+# Qdrant index is baked in, so this container only embeds queries and answers.
+# ~600MB instead of ~4GB, which keeps Cloud Run cold starts tolerable.
+FROM python:3.12-slim
+
+RUN pip install --no-cache-dir \
+    fastapi==0.115.* uvicorn==0.34.* \
+    google-genai \
+    qdrant-client fastembed \
+    llama-index-core \
+    llama-index-vector-stores-qdrant \
+    llama-index-embeddings-google-genai \
+    langgraph pydantic-settings langfuse
+
+WORKDIR /app
+COPY src/ ./src/
+COPY qdrant_local/ ./qdrant_local/
+
+ENV PYTHONPATH=/app/src \
+    PYTHONUNBUFFERED=1 \
+    QDRANT_PATH=/app/qdrant_local \
+    LLM_MODEL=gemini-3.1-flash-lite \
+    EMBEDDING_MODEL=gemini-embedding-2 \
+    TOP_K=8 \
+    RETRIEVAL_MODE=hybrid \
+    RERANK=false
+
+CMD exec uvicorn myuniguide.api:app --host 0.0.0.0 --port ${PORT:-8080}

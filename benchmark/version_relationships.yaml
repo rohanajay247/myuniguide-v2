@@ -1,0 +1,361 @@
+families:
+  ASPO:
+    university: HVM
+    base: V1
+    amendments:
+    - V2
+    - V3
+  APO:
+    university: HRM
+    base: R1
+    amendments:
+    - R2
+  BSPO-IAI:
+    university: HVM
+    base: V5
+    amendments: []
+  BSPO-ET:
+    university: HVM
+    base: V8
+    amendments: []
+  FSB-SE:
+    university: HRM
+    base: R4
+    amendments: []
+  FSB-IB:
+    university: HRM
+    base: R7
+    amendments: []
+amendment_operations:
+  V2:
+    article_label: Artikel I
+    intro_de: 'Die Allgemeine Studien- und Prüfungsordnung der Hochschule Velmora vom 20. Juni 2019 (Amtliche
+      Bekanntmachungen Nr. 12/2019) wird wie folgt geändert:'
+    ops:
+    - id: VA1-01
+      nr: 1
+      type: REPLACE_LIST
+      target:
+        section: '12'
+        absatz: 2
+      instruction_de: '§ 12 Absatz 2 wird wie folgt gefasst:'
+      note: Reihenfolge der Nummern geändert; Nr. 3 erhält eine andere Bedeutung. Nr. 6 neu eingefügt.
+      semantic_effect: Nr. 3 bedeutete vor der Änderung 'mündliche Prüfung', danach 'Projektarbeit'.
+    - id: VA1-02
+      nr: 2
+      type: INSERT_SECTION
+      target:
+        after_section: '15'
+        new_section: 15a
+      instruction_de: 'Nach § 15 wird folgender § 15a eingefügt:'
+    - id: VA1-03
+      nr: 3
+      type: INSERT_PARAGRAPH
+      target:
+        section: '20'
+        new_absatz: 5
+      instruction_de: 'In § 20 wird folgender Absatz 5 angefügt:'
+    - id: VA1-04
+      nr: 4
+      type: DELETE_PARAGRAPH
+      target:
+        section: '27'
+        absatz: 3
+      instruction_de: § 27 Absatz 3 wird aufgehoben.
+    - id: VA1-05
+      nr: 5
+      type: RENUMBER_PARAGRAPH
+      target:
+        section: '27'
+        from_absatz: 4
+        to_absatz: 3
+      instruction_de: Der bisherige § 27 Absatz 4 wird Absatz 3.
+      semantic_effect: Die Zitierung '§ 27 Abs. 3 ASPO' bezeichnet vor und nach der Änderung unterschiedliche
+        Regelungsgegenstände.
+    - id: VA1-06
+      nr: 6
+      type: REPLACE_PARAGRAPH
+      target:
+        section: '31'
+        absatz: 1
+      instruction_de: '§ 31 Absatz 1 wird wie folgt gefasst:'
+      semantic_effect: Bearbeitungszeit der Bachelorarbeit von drei auf vier Monate verlängert; zugleich
+        wird eine Abweichungssperre eingeführt.
+    transitional:
+      label: Artikel II
+      heading_de: Übergangsbestimmungen
+      text_de: '(1) Diese Satzung gilt für Studierende, die ihr Studium ab dem Wintersemester 2021/2022
+        aufnehmen.
+
+        (2) Für Studierende, die ihr Studium vor dem Wintersemester 2021/2022 aufgenommen haben, gilt
+        die Allgemeine Studien- und Prüfungsordnung in der bis zum Inkrafttreten dieser Satzung geltenden
+        Fassung fort.
+
+        '
+      predicate: cohort_start >= 2021-WS
+      predicate_kind: cohort
+    entry_into_force:
+      label: Artikel III
+      heading_de: Inkrafttreten
+      text_de: Diese Satzung tritt am 1. September 2021 in Kraft.
+  V3:
+    article_label: Artikel I
+    intro_de: 'Die Allgemeine Studien- und Prüfungsordnung der Hochschule Velmora vom 20. Juni 2019 (Amtliche
+      Bekanntmachungen Nr. 12/2019), zuletzt geändert durch Satzung vom 28. Juni 2021 (Amtliche Bekanntmachungen
+      Nr. 8/2021), wird wie folgt geändert:'
+    ops:
+    - id: VA2-01
+      nr: 1
+      type: REPLACE_ANNEX
+      target:
+        annex: '1'
+      instruction_de: 'Anlage 1 wird wie folgt gefasst:'
+      semantic_effect: Die Prüfungsform 'Hausarbeit (HA)' entfällt; die Prüfungsform 'Portfolio (PF)'
+        wird aufgenommen; der Katalog wird als abschließend bestimmt.
+    - id: VA2-02
+      nr: 2
+      type: REPLACE_PARAGRAPH
+      target:
+        section: '24'
+        absatz: 2
+      instruction_de: '§ 24 Absatz 2 wird wie folgt gefasst:'
+      semantic_effect: Der Freiversuch wird für Masterstudiengänge abgeschafft und für Bachelorstudiengänge
+        zeitlich eingeschränkt.
+    - id: VA2-03
+      nr: 3
+      type: INSERT_PARAGRAPH
+      target:
+        section: '33'
+        new_absatz: 3
+      instruction_de: 'In § 33 wird folgender Absatz 3 angefügt:'
+      semantic_effect: Begründet ein Kolloquiumsverbot für Masterstudiengänge mit weniger als 120 ECTS-Punkten.
+        Erzeugt Konflikt K-04 mit § 13 Abs. 4 BSPO IAI.
+    - id: VA2-04
+      nr: 4
+      type: REPLACE_CROSSREF
+      target:
+        section: '5'
+        absatz: 2
+      instruction_de: In § 5 Absatz 2 werden die Wörter „Anlage 2 dieser Ordnung“ durch die Wörter „Anlage
+        1 der jeweiligen Besonderen Studien- und Prüfungsordnung“ ersetzt.
+    - id: VA2-05
+      nr: 5
+      type: DELETE_ANNEX
+      target:
+        annex: '2'
+      instruction_de: Anlage 2 wird aufgehoben.
+    - id: VA2-06
+      nr: 6
+      type: DELETE_PARAGRAPH
+      target:
+        section: '18'
+        absatz: 3
+      instruction_de: § 18 Absatz 3 wird aufgehoben.
+    - id: VA2-07
+      nr: 7
+      type: RENUMBER_PARAGRAPH
+      target:
+        section: '18'
+        from_absatz: 4
+        to_absatz: 3
+      instruction_de: Der bisherige § 18 Absatz 4 wird Absatz 3.
+    transitional:
+      label: Artikel II
+      heading_de: Übergangsbestimmungen
+      text_de: '(1) Diese Satzung gilt ab ihrem Inkrafttreten für alle Studierenden der Hochschule Velmora,
+        unabhängig vom Zeitpunkt der Aufnahme des Studiums.
+
+        (2) Abweichend von Absatz 1 gilt für Studierende, die ihre Abschlussarbeit vor dem 1. März 2024
+        angemeldet haben, bis zum Abschluss des betreffenden Prüfungsverfahrens die bis zum Inkrafttreten
+        dieser Satzung geltende Fassung fort.
+
+        '
+      predicate: query_date >= 2024-03-01 AND NOT (thesis_registered < 2024-03-01 AND thesis_open)
+      predicate_kind: date_with_grandfathering
+    entry_into_force:
+      label: Artikel III
+      heading_de: Inkrafttreten
+      text_de: Diese Satzung tritt am 1. März 2024 in Kraft.
+  R2:
+    article_label: § 1
+    intro_de: 'Die Allgemeine Prüfungsordnung für die Bachelor- und Masterstudiengänge der Hochschule
+      Rheinmark vom 15. Dezember 2020 (Verkündungsblatt Nr. 3/2021) wird wie folgt geändert:'
+    ops:
+    - id: RA1-01
+      nr: 1
+      type: INSERT_SECTION
+      target:
+        after_section: '11'
+        new_section: 11a
+      instruction_de: 'Nach § 11 wird folgender § 11a eingefügt:'
+    - id: RA1-02
+      nr: 2
+      type: REPLACE_PARAGRAPH
+      target:
+        section: '16'
+        absatz: 3
+      instruction_de: '§ 16 Absatz 3 wird wie folgt gefasst:'
+      semantic_effect: Zweitwiederholung nur noch auf Antrag; bisher bestand ein Anspruch auf zwei Wiederholungen.
+    - id: RA1-03
+      nr: 3
+      type: DELETE_PARAGRAPH
+      target:
+        section: '22'
+        absatz: 4
+      instruction_de: § 22 Absatz 4 wird aufgehoben.
+    - id: RA1-04
+      nr: 4
+      type: RENUMBER_PARAGRAPH
+      target:
+        section: '22'
+        from_absatz: 5
+        to_absatz: 4
+      instruction_de: Der bisherige § 22 Absatz 5 wird Absatz 4.
+    - id: RA1-05
+      nr: 5
+      type: REPLACE_ANNEX
+      target:
+        annex: '2'
+      instruction_de: 'Anlage 2 wird wie folgt gefasst:'
+      semantic_effect: Die Prüfungsform 'Portfolio (PO)' wird aufgenommen. Der Katalog bleibt ausdrücklich
+        nicht abschließend.
+    - id: RA1-06
+      nr: 6
+      type: REPLACE_PARAGRAPH
+      target:
+        section: '19'
+        absatz: 1
+      instruction_de: '§ 19 Absatz 1 wird wie folgt gefasst:'
+      semantic_effect: Zulassungsschwelle zur Abschlussarbeit von 60 auf 75 LP (Master) bzw. von 120 auf
+        135 LP (Bachelor) angehoben.
+    transitional:
+      label: § 2
+      heading_de: Inkrafttreten und Übergangsregelung
+      text_de: '(1) Diese Ordnung tritt am 1. Oktober 2023 in Kraft.
+
+        (2) Sie gilt für Studierende, die ihr Studium ab dem Wintersemester 2023/2024 aufnehmen.
+
+        (3) Studierende, die ihr Studium vor dem Wintersemester 2023/2024 aufgenommen haben, unterliegen
+        weiterhin der Allgemeinen Prüfungsordnung in der bis zum Inkrafttreten dieser Ordnung geltenden
+        Fassung. Sie können gegenüber dem Prüfungsamt bis zum 30. September 2024 schriftlich und unwiderruflich
+        erklären, dass sie der Allgemeinen Prüfungsordnung in der Fassung dieser Änderungsordnung unterstellt
+        werden wollen. Eine nach dem 30. September 2024 abgegebene Erklärung ist unwirksam.
+
+        '
+      predicate: cohort_start >= 2023-WS OR (election_declared AND election_date <= 2024-09-30)
+      predicate_kind: election
+    entry_into_force:
+      label: § 2 Abs. 1
+      heading_de: Inkrafttreten
+      text_de: Diese Ordnung tritt am 1. Oktober 2023 in Kraft.
+resolved_states:
+  ASPO:
+    A:
+      applied:
+      - V3
+      description: Kohorten bis einschließlich SS 2021, keine vor dem 01.03.2024 angemeldete offene Abschlussarbeit
+      matches_consolidated: false
+      note: Ä1 nicht anwendbar (Kohortenregel), Ä2 anwendbar (Stichtagsregel). Die Lesefassung V4 bildet
+        diesen Zustand NICHT ab.
+    B:
+      applied:
+      - V2
+      - V3
+      description: Kohorten ab WS 2021/22, keine vor dem 01.03.2024 angemeldete offene Abschlussarbeit
+      matches_consolidated: true
+    A0:
+      applied: []
+      description: Kohorten bis einschließlich SS 2021 mit vor dem 01.03.2024 angemeldeter, noch offener
+        Abschlussarbeit
+      matches_consolidated: false
+    B0:
+      applied:
+      - V2
+      description: Kohorten ab WS 2021/22 mit vor dem 01.03.2024 angemeldeter, noch offener Abschlussarbeit
+      matches_consolidated: false
+  APO:
+    P:
+      applied: []
+      description: Kohorten bis einschließlich SS 2023 ohne fristgerechte Unterstellungserklärung
+      matches_consolidated: false
+    Q:
+      applied:
+      - R2
+      description: Kohorten ab WS 2023/24 sowie frühere Kohorten mit fristgerechter Erklärung bis 30.09.2024
+      matches_consolidated: true
+personas:
+  S1:
+    programme: ET
+    cohort_start: 2019-WS
+    facts:
+      thesis_registered: '2024-05-14'
+      thesis_open: false
+    state: A
+  S2:
+    programme: ET
+    cohort_start: 2022-WS
+    facts: {}
+    state: B
+  S3:
+    programme: ET
+    cohort_start: 2020-WS
+    facts:
+      thesis_registered: '2023-11-02'
+      thesis_open: true
+    state: A0
+  S4:
+    programme: ET
+    cohort_start: 2021-WS
+    facts:
+      thesis_registered: '2023-12-20'
+      thesis_open: true
+    state: B0
+  S5:
+    programme: IAI
+    cohort_start: 2022-WS
+    facts: {}
+    state: B
+  S6:
+    programme: IAI
+    cohort_start: 2024-WS
+    facts: {}
+    state: B
+  S7:
+    programme: SE
+    cohort_start: 2022-WS
+    facts:
+      election_declared: false
+    state: P
+  S8:
+    programme: SE
+    cohort_start: 2022-WS
+    facts:
+      election_declared: true
+      election_date: '2024-02-10'
+    state: Q
+  S9:
+    programme: SE
+    cohort_start: 2023-WS
+    facts: {}
+    state: Q
+  S10:
+    programme: IB
+    cohort_start: 2022-WS
+    facts:
+      election_declared: false
+    state: P
+  S11:
+    programme: IB
+    cohort_start: 2024-WS
+    facts: {}
+    state: Q
+  S12:
+    programme: IAI
+    cohort_start: 2022-WS
+    facts:
+      thesis_registered: '2024-01-15'
+      thesis_open: true
+    state: B0
+resolution_procedure: 'resolve(family, cohort_start, query_date, facts): collect amendments whose in_force
+  <= query_date; evaluate each amendment''s transitional predicate INDEPENDENTLY (not as a chain); the
+  applicable version is the base plus the subset of amendments whose predicate holds.'

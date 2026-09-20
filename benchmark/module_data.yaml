@@ -1,0 +1,3745 @@
+IAI:
+  programme: IAI
+  workload_per_credit: 30
+  semester_plan:
+    1:
+      compulsory:
+      - IAI-M-01
+      - IAI-M-02
+      - IAI-M-03
+      - IAI-M-04
+      - IAI-M-05
+      - IAI-M-06
+      elective_credits: 0
+      total: 30
+    2:
+      compulsory:
+      - IAI-M-07
+      - IAI-M-08
+      - IAI-M-09
+      - IAI-M-10
+      - IAI-M-11
+      elective_credits: 3
+      total: 30
+    3:
+      compulsory:
+      - IAI-M-21
+      elective_credits: 0
+      total: 30
+  elective_catalogue:
+    required_credits: 3
+    note: Students select one module from the elective catalogue in the second semester.
+    members:
+    - IAI-M-12
+    - IAI-M-13
+    - IAI-M-14
+    - IAI-M-15
+    - IAI-M-16
+    - IAI-M-17
+    - IAI-M-18
+    - IAI-M-19
+    - IAI-M-20
+  variant_groups: null
+  modules:
+  - code: IAI-M-01
+    name: Mathematical Foundations of Machine Learning
+    semester: 1
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, winter semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr. Helene Trautwein
+    department: Faculty of Engineering and Computer Science
+    exam: K120
+    exam_note: Written examination, 120 minutes
+    prerequisites_formal: None
+    prerequisites_recommended: Undergraduate linear algebra and calculus
+    outcomes:
+    - reformulate applied problems in the language of linear algebra and multivariate calculus
+    - derive gradients of composite functions and apply them to parameter estimation
+    - assess the numerical stability of matrix decompositions used in learning algorithms
+    - evaluate probabilistic models using the language of measure-theoretic probability at an applied
+      level
+    content:
+    - Vector spaces, norms, inner products; orthogonal projection
+    - Eigenvalue and singular value decomposition; low-rank approximation
+    - Multivariate differentiation, Jacobians, Hessians; chain rule for computational graphs
+    - Convexity, first- and second-order optimality conditions
+    - Gradient descent, stochastic gradient descent, momentum methods; convergence behaviour
+    - Probability spaces, random vectors, conditional expectation, maximum likelihood estimation
+    - Matrix calculus for backpropagation
+    methods: Lecture (2 SWS) with integrated exercise sessions (2 SWS); weekly problem sets discussed
+      in class
+    credit_requirements: Passing the written examination (K120). Credit points are awarded once the module
+      examination has been passed.
+    literature:
+    - 'Deisenroth, Faisal, Ong: Mathematics for Machine Learning, Cambridge University Press'
+    - 'Boyd, Vandenberghe: Convex Optimization, Cambridge University Press'
+    - 'Strang: Linear Algebra and Learning from Data, Wellesley-Cambridge Press'
+    usability: Compulsory module of the M.Sc. Industrial Artificial Intelligence. Provides the mathematical
+      basis for IAI-M-03 and IAI-M-07.
+  - code: IAI-M-02
+    name: Industrial Data Engineering
+    semester: 1
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, winter semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr.-Ing. Kaspar Rehnitz
+    department: Faculty of Engineering and Computer Science
+    exam: PJ
+    exam_note: Project work; documented data pipeline with written report
+    exam_components:
+    - name: Implemented pipeline and documentation
+      weight: 70
+    - name: Oral defence of design decisions (approx. 15 min)
+      weight: 30
+    prerequisites_formal: None
+    prerequisites_recommended: Programming experience in Python; basic relational database knowledge
+    outcomes:
+    - design ingestion pipelines for high-frequency machine and process data
+    - select appropriate storage models for time-series, event and relational industrial data
+    - implement data quality checks and quantify their effect on downstream model performance
+    - document data lineage in a form suitable for audit
+    content:
+    - 'Industrial data sources: PLC, SCADA, MES, ERP; OPC UA information models'
+    - Time-series storage, downsampling, retention policies
+    - Batch and streaming ingestion; message brokers
+    - Schema evolution and data contracts
+    - Data quality dimensions; drift detection at the ingestion layer
+    - Data lineage, provenance and reproducibility
+    - Practical work with a simulated production line data set
+    methods: Lecture (2 SWS), laboratory exercise (2 SWS) in small groups on the faculty's data engineering
+      testbed
+    credit_requirements: Submission and acceptance of the project work including the oral defence. Both
+      components must be passed independently.
+    literature:
+    - 'Kleppmann: Designing Data-Intensive Applications, O''Reilly'
+    - 'Reis, Housley: Fundamentals of Data Engineering, O''Reilly'
+    - 'OPC Foundation: OPC Unified Architecture specification parts 1–5'
+    usability: Compulsory module of the M.Sc. Industrial Artificial Intelligence. Prerequisite for IAI-M-09.
+  - code: IAI-M-03
+    name: 'Machine Learning I: Supervised and Unsupervised Methods'
+    semester: 1
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, winter semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr. Helene Trautwein
+    department: Faculty of Engineering and Computer Science
+    exam: K120
+    exam_note: Written examination, 120 minutes
+    prerequisites_formal: None
+    prerequisites_recommended: Parallel attendance of IAI-M-01
+    outcomes:
+    - select learning algorithms appropriate to a given industrial problem and data regime
+    - design validation strategies that avoid optimistic bias under temporal correlation
+    - interpret model behaviour using feature attribution methods
+    - quantify and communicate model uncertainty to non-specialist stakeholders
+    content:
+    - Empirical risk minimisation; bias-variance decomposition
+    - Linear and logistic regression; regularisation
+    - Support vector machines and kernel methods
+    - Decision trees, random forests, gradient boosting
+    - Clustering, density estimation, dimensionality reduction
+    - Cross-validation under temporal and group structure
+    - 'Model interpretability: permutation importance, SHAP, partial dependence'
+    methods: Lecture (3 SWS) with computer-based exercises (1 SWS)
+    credit_requirements: Passing the written examination (K120).
+    literature:
+    - 'Hastie, Tibshirani, Friedman: The Elements of Statistical Learning, Springer'
+    - 'Murphy: Probabilistic Machine Learning – An Introduction, MIT Press'
+    - 'Molnar: Interpretable Machine Learning'
+    usability: Compulsory module of the M.Sc. Industrial Artificial Intelligence. Prerequisite for IAI-M-07
+      and IAI-M-08.
+  - code: IAI-M-04
+    name: Sensor Systems and Signal Processing
+    semester: 1
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, winter semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr.-Ing. Anselm Bierbaum
+    department: Faculty of Engineering and Computer Science
+    exam: K90
+    exam_note: Written examination, 90 minutes
+    prerequisites_formal: None
+    prerequisites_recommended: Fundamentals of electrical engineering; Fourier analysis
+    outcomes:
+    - characterise industrial sensors by their transfer behaviour, noise and failure modes
+    - design digital filters for the suppression of process-typical disturbances
+    - apply time-frequency methods to non-stationary machine signals
+    - justify sampling and quantisation decisions against a measurement requirement
+    content:
+    - 'Sensor principles: piezoelectric, inductive, optical, thermal'
+    - 'Metrological characteristics: sensitivity, hysteresis, drift, calibration'
+    - Sampling, aliasing, quantisation noise
+    - FIR and IIR filter design
+    - Spectral estimation; windowing; short-time Fourier transform
+    - Wavelet analysis for transient detection
+    - Condition indicators for rotating machinery
+    methods: Lecture (3 SWS) and laboratory exercise (1 SWS) on the vibration analysis test rig
+    credit_requirements: Passing the written examination (K90). Successful completion of the laboratory
+      exercise is a prerequisite for admission to the examination.
+    literature:
+    - 'Oppenheim, Schafer: Discrete-Time Signal Processing, Pearson'
+    - 'Randall: Vibration-based Condition Monitoring, Wiley'
+    - 'Tränkler, Reindl: Sensortechnik, Springer Vieweg'
+    usability: Compulsory module of the M.Sc. Industrial Artificial Intelligence. Prerequisite for IAI-M-13.
+  - code: IAI-M-05
+    name: Research Methods and Scientific Writing
+    semester: 1
+    ects: 3
+    sws: 2
+    language: English
+    frequency: Annually, winter semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr. Marit Sonnleitner
+    department: Faculty of Engineering and Computer Science
+    exam: RE
+    exam_note: Presentation with written elaboration
+    prerequisites_formal: None
+    prerequisites_recommended: None
+    outcomes:
+    - formulate a research question that is answerable within the constraints of a master's thesis
+    - conduct a structured literature search and appraise source quality
+    - design an experimental protocol including controls and statistical power considerations
+    - write in the register and structure expected of an engineering research report
+    content:
+    - Research designs in applied engineering; internal and external validity
+    - Systematic literature search; bibliographic management
+    - Statistical hypothesis testing, effect sizes, multiple comparison
+    - Reproducibility, pre-registration, data availability
+    - Academic integrity, citation practice, plagiarism
+    - Structure and register of technical reports
+    methods: Seminar (2 SWS) with peer review of drafts
+    credit_requirements: Presentation of approximately 20 minutes and written elaboration of 8 to 12 pages.
+      Both parts form a single examination performance and are assessed together.
+    literature:
+    - 'Booth, Colomb, Williams: The Craft of Research, University of Chicago Press'
+    - 'Wohlin et al.: Experimentation in Software Engineering, Springer'
+    usability: Compulsory module of the M.Sc. Industrial Artificial Intelligence. Prepares the master's
+      thesis (IAI-M-21).
+  - code: IAI-M-06
+    name: German as a Foreign Language A1
+    semester: 1
+    ects: 3
+    sws: 4
+    language: German/English
+    frequency: Annually, winter semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Language Centre, Dr. Ilka Wendehorst
+    department: Language Centre
+    exam: PF
+    exam_note: Portfolio comprising at least three components
+    exam_components:
+    - name: Written test
+      weight: 40
+    - name: Oral interaction task
+      weight: 30
+    - name: Learning diary
+      weight: 30
+    prerequisites_formal: None
+    prerequisites_recommended: No prior knowledge of German required
+    special_note: 'Unusual workload structure: 4 SWS contact time against 3 ECTS, reflecting the high
+      contact-hour requirement of beginner language instruction.'
+    outcomes:
+    - understand and use familiar everyday expressions and very basic phrases
+    - introduce themselves and others and ask and answer questions about personal details
+    - interact in a simple way in the university and workplace context
+    - read short workplace safety notices with dictionary support
+    content:
+    - Greetings, introductions, numbers, time
+    - Present tense of regular and common irregular verbs
+    - Nominative and accusative case; definite and indefinite articles
+    - Everyday and university vocabulary; basic workplace vocabulary
+    - Simple written correspondence
+    methods: Language course (4 SWS) in groups of no more than 18 participants
+    credit_requirements: Portfolio comprising the three components listed above; each component must be
+      submitted, and the aggregate must be passed.
+    literature:
+    - Course materials provided by the Language Centre
+    usability: Compulsory module of the M.Sc. Industrial Artificial Intelligence. Students who provide
+      evidence of German language competence at level A2 or above of the Common European Framework may
+      apply to the examination board for recognition under § 15 ASPO.
+  - code: IAI-M-07
+    name: Deep Learning for Industrial Applications
+    semester: 2
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr. Helene Trautwein
+    department: Faculty of Engineering and Computer Science
+    exam: K120
+    exam_note: Written examination, 120 minutes
+    prerequisites_formal: Successful completion of IAI-M-03
+    prerequisites_recommended: IAI-M-01
+    outcomes:
+    - design network architectures matched to the structure of industrial data
+    - diagnose and remedy training pathologies
+    - apply transfer learning where labelled industrial data are scarce
+    - estimate the inference cost of a trained model against deployment constraints
+    content:
+    - Feedforward networks, backpropagation, initialisation
+    - 'Regularisation: dropout, weight decay, early stopping, data augmentation'
+    - Convolutional architectures; residual connections
+    - 'Sequence models: recurrent networks, temporal convolutions, attention'
+    - Transfer learning and fine-tuning under limited labelled data
+    - 'Model compression: pruning, quantisation, distillation'
+    - Training diagnostics and reproducibility
+    methods: Lecture (2 SWS) and computer laboratory (2 SWS) on the faculty GPU cluster
+    credit_requirements: Passing the written examination (K120).
+    literature:
+    - 'Goodfellow, Bengio, Courville: Deep Learning, MIT Press'
+    - 'Zhang et al.: Dive into Deep Learning, Cambridge University Press'
+    usability: Compulsory module of the M.Sc. Industrial Artificial Intelligence. Prerequisite for IAI-M-15
+      and IAI-M-18.
+  - code: IAI-M-08
+    name: Industrial Computer Vision
+    semester: 2
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr.-Ing. Anselm Bierbaum
+    department: Faculty of Engineering and Computer Science
+    exam: PJ
+    exam_note: Project work
+    prerequisites_formal: Successful completion of IAI-M-03
+    prerequisites_recommended: None
+    outcomes:
+    - specify an industrial vision system including illumination and optics
+    - implement classical and learning-based inspection pipelines
+    - evaluate inspection performance against defect rates and cost of error
+    - assess the limits of vision-based inspection in a given production context
+    content:
+    - Image formation, optics, illumination geometries
+    - Camera calibration and photometric correction
+    - Classical feature detection, segmentation, morphology
+    - Learning-based detection and segmentation
+    - Anomaly detection with few defect samples
+    - Performance evaluation under class imbalance; cost-sensitive thresholds
+    - Integration with production line control
+    methods: Lecture (2 SWS) and project laboratory (2 SWS) at the vision inspection cell
+    credit_requirements: Submission and acceptance of a working inspection pipeline with written report
+      of 15 to 20 pages.
+    literature:
+    - 'Szeliski: Computer Vision – Algorithms and Applications, Springer'
+    - 'Steger, Ulrich, Wiedemann: Machine Vision Algorithms and Applications, Wiley-VCH'
+    usability: Compulsory module of the M.Sc. Industrial Artificial Intelligence.
+  - code: IAI-M-09
+    name: Cyber-Physical Production Systems
+    semester: 2
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr.-Ing. Kaspar Rehnitz
+    department: Faculty of Engineering and Computer Science
+    exam: K90
+    exam_note: Written examination, 90 minutes
+    prerequisites_formal: Successful completion of IAI-M-02
+    prerequisites_recommended: None
+    outcomes:
+    - describe the automation hierarchy and its dissolution in modern architectures
+    - specify communication requirements for latency-critical control loops
+    - assess the safety and security implications of networked production equipment
+    - design the interface between an analytics component and a control system
+    content:
+    - Automation pyramid; edge, fog and cloud allocation
+    - Fieldbus and industrial Ethernet; time-sensitive networking
+    - Real-time constraints; determinism and jitter
+    - Asset administration shells and digital representation
+    - Functional safety in networked systems; IEC 61508 overview
+    - 'Industrial security: segmentation, IEC 62443 overview'
+    - 'Interfacing analytics with control: advisory versus closed-loop operation'
+    methods: Lecture (3 SWS) and laboratory (1 SWS) on the model production line
+    credit_requirements: Passing the written examination (K90).
+    literature:
+    - 'Vogel-Heuser, Bauernhansl, ten Hompel (eds.): Handbuch Industrie 4.0, Springer Vieweg'
+    - 'Sauter et al.: Industrial Communication Technology Handbook, CRC Press'
+    usability: Compulsory module of the M.Sc. Industrial Artificial Intelligence.
+  - code: IAI-M-10
+    name: Master Project Industrial AI
+    semester: 2
+    ects: 6
+    sws: 2
+    language: English
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Programme director, Prof. Dr. Helene Trautwein
+    department: Faculty of Engineering and Computer Science
+    exam: PJ
+    exam_note: Project work, carried out in teams of three to five students
+    special_note: Deviating from § 20 Abs. 1 ASPO, this module may be repeated only once (§ 9 Abs. 1 BSPO
+      IAI).
+    prerequisites_formal: Successful completion of at least 24 ECTS credits from the first semester of
+      the programme
+    prerequisites_recommended: IAI-M-02, IAI-M-03
+    outcomes:
+    - plan and execute an applied AI project against an externally supplied requirement
+    - allocate work within a team and manage technical dependencies
+    - produce a solution that is deployable in the client's technical environment
+    - present results to a mixed technical and managerial audience
+    content:
+    - Project definition in cooperation with an industrial partner or research group
+    - Requirements elicitation and scoping
+    - Iterative development with milestone reviews
+    - Technical documentation and handover
+    - Final presentation to the client
+    methods: Project work (2 SWS supervision) with three scheduled milestone reviews
+    credit_requirements: Acceptance of the team project report and the final presentation. Individual
+      contributions must be separately identifiable and are assessed individually.
+    literature:
+    - Project-specific; determined at project definition
+    usability: Compulsory module of the M.Sc. Industrial Artificial Intelligence.
+  - code: IAI-M-11
+    name: Ethics, Law and Safety of AI Systems
+    semester: 2
+    ects: 3
+    sws: 2
+    language: English
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr. Marit Sonnleitner
+    department: Faculty of Engineering and Computer Science
+    exam: RE
+    exam_note: Presentation with written elaboration
+    prerequisites_formal: None
+    prerequisites_recommended: None
+    outcomes:
+    - identify the regulatory regime applicable to an AI system in an industrial setting
+    - conduct a structured risk assessment for a deployed model
+    - articulate the ethical trade-offs in automation decisions affecting workers
+    - document conformity considerations for a high-risk application
+    content:
+    - European regulatory framework for artificial intelligence; risk classes
+    - Product safety and machinery regulation; interaction with AI components
+    - Data protection in industrial contexts; works council participation
+    - Fairness, accountability and transparency in employment-adjacent systems
+    - Liability allocation for autonomous decisions
+    - Case studies from manufacturing and logistics
+    methods: Seminar (2 SWS) with case discussion
+    credit_requirements: Presentation of approximately 20 minutes and written elaboration of 8 to 12 pages.
+    literature:
+    - 'Wachter, Mittelstadt, Floridi: Transparent, Explainable and Accountable AI'
+    - Current consolidated texts of the applicable European regulations
+    usability: Compulsory module of the M.Sc. Industrial Artificial Intelligence.
+  - code: IAI-M-12
+    name: Reinforcement Learning for Process Control
+    semester: 2
+    ects: 3
+    sws: 2
+    language: English
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Elective
+    responsible: Prof. Dr. Helene Trautwein
+    department: Faculty of Engineering and Computer Science
+    exam: M20
+    exam_note: Oral examination, approx. 20 minutes
+    prerequisites_formal: None
+    prerequisites_recommended: IAI-M-03
+    outcomes:
+    - formulate a control problem as a Markov decision process
+    - select between value-based and policy-based methods for a given problem
+    - assess the sample efficiency and safety implications of learning in a physical plant
+    content:
+    - Markov decision processes; dynamic programming
+    - Temporal difference learning; Q-learning
+    - Policy gradient methods; actor-critic
+    - Offline reinforcement learning from logged process data
+    - Safe exploration and constrained policies
+    methods: Lecture with integrated exercises (2 SWS)
+    credit_requirements: Passing the oral examination (M20).
+    literature:
+    - 'Sutton, Barto: Reinforcement Learning – An Introduction, MIT Press'
+    usability: Elective module of the M.Sc. Industrial Artificial Intelligence, elective catalogue under
+      Annex 2 of the Special Regulations.
+  - code: IAI-M-13
+    name: Time Series Analysis and Predictive Maintenance
+    semester: 2
+    ects: 3
+    sws: 2
+    language: English
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Elective
+    responsible: Prof. Dr.-Ing. Anselm Bierbaum
+    department: Faculty of Engineering and Computer Science
+    exam: PJ
+    exam_note: Project work
+    prerequisites_formal: Successful completion of IAI-M-04
+    prerequisites_recommended: IAI-M-03
+    outcomes:
+    - model degradation processes from condition monitoring data
+    - estimate remaining useful life with calibrated uncertainty
+    - design a maintenance policy that balances intervention and failure cost
+    content:
+    - Stationarity, autocorrelation, spectral representation
+    - ARIMA and state space models
+    - Survival analysis and degradation modelling
+    - Remaining useful life estimation; prognostic metrics
+    - Maintenance policy optimisation
+    methods: Lecture (1 SWS) and computer laboratory (1 SWS)
+    credit_requirements: Submission and acceptance of the project work.
+    literature:
+    - 'Hyndman, Athanasopoulos: Forecasting – Principles and Practice'
+    - 'Si et al.: Remaining Useful Life Estimation – A Review'
+    usability: Elective module of the M.Sc. Industrial Artificial Intelligence.
+  - code: IAI-M-14
+    name: Natural Language Processing in Engineering Contexts
+    semester: 2
+    ects: 3
+    sws: 2
+    language: English
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Elective
+    responsible: Prof. Dr. Marit Sonnleitner
+    department: Faculty of Engineering and Computer Science
+    exam: PJ
+    exam_note: Project work
+    prerequisites_formal: None
+    prerequisites_recommended: IAI-M-03
+    outcomes:
+    - process unstructured maintenance and quality records
+    - build retrieval systems over technical documentation
+    - assess the reliability of language models in safety-relevant documentation tasks
+    content:
+    - Text preprocessing for technical German and English
+    - 'Representation: embeddings, contextual models'
+    - Information extraction from maintenance logs
+    - Retrieval over technical documentation
+    - Evaluation and failure modes in specialist domains
+    methods: Lecture (1 SWS) and computer laboratory (1 SWS)
+    credit_requirements: Submission and acceptance of the project work.
+    literature:
+    - 'Jurafsky, Martin: Speech and Language Processing'
+    usability: Elective module of the M.Sc. Industrial Artificial Intelligence.
+  - code: IAI-M-15
+    name: Edge AI and Embedded Inference
+    semester: 2
+    ects: 3
+    sws: 2
+    language: English
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Elective
+    responsible: Prof. Dr.-Ing. Kaspar Rehnitz
+    department: Faculty of Engineering and Computer Science
+    exam: LB
+    exam_note: Laboratory work with certificate; ungraded
+    ungraded: true
+    prerequisites_formal: Successful completion of IAI-M-07
+    prerequisites_recommended: None
+    special_note: This module is assessed as an ungraded Studienleistung and does not contribute to the
+      overall grade (§ 11 Abs. 3 BSPO IAI).
+    outcomes:
+    - deploy a trained model to a resource-constrained embedded target
+    - measure and optimise inference latency and energy consumption
+    - select quantisation strategies appropriate to an accuracy budget
+    content:
+    - Embedded accelerator architectures
+    - Quantisation-aware training and post-training quantisation
+    - Runtime environments for embedded inference
+    - Latency and energy measurement methodology
+    - Over-the-air model update strategies
+    methods: Laboratory course (2 SWS) on embedded evaluation boards
+    credit_requirements: Successful completion of all five laboratory assignments. The module is assessed
+      as passed or not passed.
+    literature:
+    - 'Warden, Situnayake: TinyML, O''Reilly'
+    usability: Elective module of the M.Sc. Industrial Artificial Intelligence.
+  - code: IAI-M-16
+    name: Digital Twins and Simulation
+    semester: 2
+    ects: 3
+    sws: 2
+    language: English
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Elective
+    responsible: Prof. Dr.-Ing. Kaspar Rehnitz
+    department: Faculty of Engineering and Computer Science
+    exam: RE
+    exam_note: Presentation with written elaboration
+    prerequisites_formal: None
+    prerequisites_recommended: IAI-M-09
+    outcomes:
+    - distinguish digital model, digital shadow and digital twin
+    - couple a simulation model to live process data
+    - validate a simulation against measured plant behaviour
+    content:
+    - 'Simulation paradigms: discrete event, continuous, hybrid'
+    - Model calibration and validation
+    - Co-simulation and interface standards
+    - Synchronisation of twin and physical asset
+    - Use of twins for what-if analysis and training data generation
+    methods: Lecture (1 SWS) with simulation exercises (1 SWS)
+    credit_requirements: Presentation of approximately 20 minutes and written elaboration of 8 to 12 pages.
+    literature:
+    - 'Law: Simulation Modeling and Analysis, McGraw-Hill'
+    usability: Elective module of the M.Sc. Industrial Artificial Intelligence.
+  - code: IAI-M-17
+    name: MLOps and Model Lifecycle Management
+    semester: 2
+    ects: 3
+    sws: 2
+    language: English
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Elective
+    responsible: Prof. Dr.-Ing. Kaspar Rehnitz
+    department: Faculty of Engineering and Computer Science
+    exam: PJ
+    exam_note: Project work
+    prerequisites_formal: Successful completion of IAI-M-02
+    prerequisites_recommended: None
+    outcomes:
+    - construct a reproducible training and deployment pipeline
+    - monitor deployed models for data and concept drift
+    - define rollback and retraining criteria
+    content:
+    - Experiment tracking and model registries
+    - Continuous integration for model artefacts
+    - 'Deployment patterns: shadow, canary, blue-green'
+    - Drift monitoring and alerting
+    - Governance and model documentation
+    methods: Lecture (1 SWS) and computer laboratory (1 SWS)
+    credit_requirements: Submission and acceptance of the project work.
+    literature:
+    - 'Huyen: Designing Machine Learning Systems, O''Reilly'
+    usability: Elective module of the M.Sc. Industrial Artificial Intelligence.
+  - code: IAI-M-18
+    name: Robotics Perception
+    semester: 2
+    ects: 3
+    sws: 2
+    language: English
+    frequency: Every second year, summer semester
+    duration: 1 semester
+    type: Elective
+    responsible: Prof. Dr.-Ing. Anselm Bierbaum
+    department: Faculty of Engineering and Computer Science
+    exam: M20
+    exam_note: Oral examination, approx. 20 minutes
+    prerequisites_formal: Successful completion of IAI-M-07
+    prerequisites_recommended: IAI-M-08
+    special_note: Offered biennially. Next offering summer semester 2026.
+    outcomes:
+    - fuse data from heterogeneous sensors for robot state estimation
+    - implement pose estimation for grasping tasks
+    - assess perception reliability in collaborative robot settings
+    content:
+    - Coordinate frames and transformations
+    - 'Depth sensing: stereo, structured light, time of flight'
+    - Point cloud registration
+    - 6-DoF pose estimation
+    - Sensor fusion and filtering
+    - Perception requirements for collaborative operation
+    methods: Lecture (1 SWS) and robot laboratory (1 SWS)
+    credit_requirements: Passing the oral examination (M20).
+    literature:
+    - 'Thrun, Burgard, Fox: Probabilistic Robotics, MIT Press'
+    usability: Elective module of the M.Sc. Industrial Artificial Intelligence.
+  - code: IAI-M-19
+    name: German as a Foreign Language A2
+    semester: 2
+    ects: 3
+    sws: 4
+    language: German
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Elective
+    responsible: Language Centre, Dr. Ilka Wendehorst
+    department: Language Centre
+    exam: PF
+    exam_note: Portfolio comprising at least three components
+    prerequisites_formal: Successful completion of IAI-M-06 or evidence of German at level A1
+    prerequisites_recommended: None
+    special_note: 'Taught entirely in German. Unusual workload structure: 4 SWS contact time against 3
+      ECTS.'
+    outcomes:
+    - understand sentences and frequently used expressions related to areas of immediate relevance
+    - communicate in simple and routine tasks in the workplace
+    - describe aspects of their background and immediate environment
+    content:
+    - Perfect and preterite tenses
+    - Dative case; prepositions
+    - Subordinate clauses
+    - Workplace and technical everyday vocabulary
+    - Short reports and applications
+    methods: Language course (4 SWS)
+    credit_requirements: Portfolio comprising a written test, an oral interaction task and a learning
+      diary.
+    literature:
+    - Course materials provided by the Language Centre
+    usability: Elective module of the M.Sc. Industrial Artificial Intelligence.
+  - code: IAI-M-20
+    name: Innovation and Technology Management
+    semester: 2
+    ects: 3
+    sws: 2
+    language: English
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Elective
+    responsible: Prof. Dr. Marit Sonnleitner
+    department: Faculty of Engineering and Computer Science
+    exam: HA
+    exam_note: Term paper
+    prerequisites_formal: None
+    prerequisites_recommended: None
+    data_note: 'INTENTIONAL: examination form HA is not contained in the Velmora examination form catalogue
+      as amended by the Second Amendment Statute. The Module Handbook is descriptive only; see absence
+      case A-01.'
+    outcomes:
+    - assess the maturity of a technology against adoption criteria
+    - structure an innovation process in a manufacturing enterprise
+    - evaluate intellectual property strategies for AI-based products
+    content:
+    - Technology readiness assessment
+    - Innovation processes and stage-gate models
+    - Business models for data-driven products
+    - Intellectual property and trade secrets in AI
+    - Technology roadmapping
+    methods: Seminar (2 SWS)
+    credit_requirements: Term paper of 15 to 20 pages.
+    literature:
+    - 'Tidd, Bessant: Managing Innovation, Wiley'
+    usability: Elective module of the M.Sc. Industrial Artificial Intelligence.
+  - code: IAI-M-21
+    name: Master's Thesis
+    semester: 3
+    ects: 30
+    sws: 0
+    language: English
+    frequency: Every semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Chair of the examination board
+    department: Faculty of Engineering and Computer Science
+    exam: MA
+    exam_note: Master's thesis; processing time six months
+    exam_components:
+    - name: Written thesis
+      weight: 100
+    prerequisites_formal: Successful completion of at least 54 ECTS credits of the programme
+    prerequisites_recommended: IAI-M-05
+    special_note: § 13 Abs. 4 BSPO IAI provides for a colloquium of approximately 30 minutes as part of
+      this module. § 33 Abs. 3 Satz 2 ASPO, inserted by the Second Amendment Statute, provides that no
+      colloquium takes place in master's programmes of fewer than 120 ECTS credits. See documented conflict
+      K-04.
+    outcomes:
+    - work independently on a research or development problem to a professional standard
+    - situate the work within the relevant state of the art
+    - defend methodological choices against alternatives
+    - report results in a form suitable for publication or industrial handover
+    content:
+    - Independent treatment of a topic from the field of industrial artificial intelligence
+    - Topic agreed with a supervising examiner and registered with the examination board
+    methods: Independent work under supervision; supervision meetings at least monthly
+    credit_requirements: Submission of the thesis within the processing period and assessment as at least
+      sufficient (4.0).
+    literature:
+    - Topic-specific
+    usability: Compulsory module of the M.Sc. Industrial Artificial Intelligence. Concludes the programme.
+ET:
+  programme: ET
+  workload_per_credit: 30
+  semester_plan:
+    1:
+      compulsory:
+      - ET-M-01
+      - ET-M-02
+      - ET-M-03
+      - ET-M-04
+      - ET-M-05
+      elective_credits: 0
+      variant_credits: 0
+      total: 30
+    2:
+      compulsory:
+      - ET-M-06
+      - ET-M-07
+      - ET-M-08
+      - ET-M-09
+      - ET-M-10
+      elective_credits: 0
+      variant_credits: 0
+      total: 30
+    3:
+      compulsory:
+      - ET-M-11
+      - ET-M-12
+      - ET-M-13
+      - ET-M-14
+      - ET-M-15
+      elective_credits: 0
+      variant_credits: 0
+      total: 30
+    4:
+      compulsory:
+      - ET-M-16
+      - ET-M-17
+      - ET-M-18
+      - ET-M-19
+      - ET-M-20
+      elective_credits: 0
+      variant_credits: 0
+      total: 30
+    5:
+      compulsory:
+      - ET-M-21
+      - ET-M-22
+      elective_credits: 0
+      variant_credits: 0
+      total: 30
+    6:
+      compulsory:
+      - ET-M-23
+      - ET-M-24
+      - ET-M-25
+      - ET-M-26
+      elective_credits: 0
+      variant_credits: 6
+      total: 30
+    7:
+      compulsory:
+      - ET-M-29
+      - ET-M-30
+      - ET-M-31
+      elective_credits: 9
+      variant_credits: 0
+      total: 30
+  elective_catalogue:
+    required_credits: 9
+    note: Aus dem Wahlpflichtkatalog sind Module im Umfang von insgesamt 9 ECTS-Punkten zu wählen.
+    members:
+    - ET-M-32
+    - ET-M-33
+    - ET-M-34
+    - ET-M-35
+    - ET-M-36
+    - ET-M-37
+    - ET-M-38
+  variant_groups:
+    Vertiefungsrichtung:
+      choose: 1
+      credits: 6
+      members:
+      - ET-M-27
+      - ET-M-28
+  modules:
+  - code: ET-M-01
+    name: Mathematik 1
+    semester: 1
+    ects: 8
+    sws: 6
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr. Reinhild Kammerlander
+    department: Fakultät Technik und Informatik
+    exam: K120
+    exam_note: Klausurarbeit, 120 Minuten
+    prerequisites_formal: Keine
+    prerequisites_recommended: Schulmathematik der Sekundarstufe II
+    outcomes:
+    - sicher mit Funktionen einer Veränderlichen umgehen und deren Eigenschaften analysieren
+    - Differential- und Integralrechnung auf technische Fragestellungen anwenden
+    - lineare Gleichungssysteme systematisch lösen und die Lösungsstruktur beurteilen
+    - komplexe Zahlen zur Beschreibung von Wechselstromgrößen einsetzen
+    content:
+    - Mengen, Zahlbereiche, vollständige Induktion
+    - Funktionen einer Veränderlichen, Grenzwerte, Stetigkeit
+    - Differentialrechnung, Taylorentwicklung, Extremwertaufgaben
+    - Integralrechnung, Integrationsverfahren, uneigentliche Integrale
+    - Komplexe Zahlen, Zeigerdarstellung, Ortskurven
+    - Lineare Gleichungssysteme, Matrizen, Determinanten
+    methods: Vorlesung (4 SWS) mit seminaristischem Anteil, Übung in Kleingruppen (2 SWS)
+    credit_requirements: Bestehen der Klausurarbeit (K120).
+    literature:
+    - 'Papula: Mathematik für Ingenieure und Naturwissenschaftler, Band 1, Springer Vieweg'
+    - 'Meyberg, Vachenauer: Höhere Mathematik 1, Springer'
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik. Grundlage für ET-M-06 und ET-M-11.
+  - code: ET-M-02
+    name: Grundlagen der Elektrotechnik 1
+    semester: 1
+    ects: 7
+    sws: 6
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr.-Ing. Ortwin Behrisch
+    department: Fakultät Technik und Informatik
+    exam: K120
+    exam_note: Klausurarbeit, 120 Minuten
+    prerequisites_formal: Keine
+    prerequisites_recommended: Keine
+    outcomes:
+    - Gleichstromnetzwerke systematisch berechnen
+    - elektrostatische und magnetische Felder qualitativ und quantitativ beschreiben
+    - Netzwerkanalyseverfahren begründet auswählen
+    - Messergebnisse im Labor kritisch bewerten
+    content:
+    - Ladung, Strom, Spannung, Widerstand
+    - Kirchhoffsche Gesetze, Maschenstrom- und Knotenpotentialverfahren
+    - Zweipoltheorie, Ersatzquellen, Leistungsanpassung
+    - Elektrostatisches Feld, Kapazität, Kondensatornetzwerke
+    - Magnetisches Feld, Induktion, Induktivität
+    - Einführung in das Messen elektrischer Größen
+    methods: Vorlesung (4 SWS), Übung (1 SWS), Laborpraktikum (1 SWS)
+    credit_requirements: Bestehen der Klausurarbeit (K120). Die erfolgreiche Teilnahme am Laborpraktikum
+      (Testat) ist Voraussetzung für die Zulassung zur Klausurarbeit.
+    literature:
+    - 'Albach: Grundlagen der Elektrotechnik 1, Pearson'
+    - 'Hagmann: Grundlagen der Elektrotechnik, Aula-Verlag'
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik. Grundlage für ET-M-07.
+  - code: ET-M-03
+    name: Physik für Ingenieure
+    semester: 1
+    ects: 5
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr. Sieglinde Rauhut
+    department: Fakultät Technik und Informatik
+    exam: K90
+    exam_note: Klausurarbeit, 90 Minuten
+    prerequisites_formal: Keine
+    prerequisites_recommended: Keine
+    outcomes:
+    - mechanische und thermodynamische Vorgänge quantitativ beschreiben
+    - Wellenphänomene auf technische Systeme übertragen
+    - physikalische Messungen planen und Messunsicherheiten angeben
+    content:
+    - Kinematik und Dynamik des Massenpunktes
+    - Arbeit, Energie, Impuls, Erhaltungssätze
+    - Schwingungen und Wellen
+    - 'Thermodynamik: Hauptsätze, Wärmetransport'
+    - 'Optik: geometrische Optik, Interferenz, Beugung'
+    - Messunsicherheit und Fehlerfortpflanzung
+    methods: Vorlesung (3 SWS) mit Demonstrationsversuchen, Praktikum (1 SWS)
+    credit_requirements: Bestehen der Klausurarbeit (K90).
+    literature:
+    - 'Hering, Martin, Stohrer: Physik für Ingenieure, Springer Vieweg'
+    - 'Tipler, Mosca: Physik, Springer Spektrum'
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik.
+  - code: ET-M-04
+    name: Informatik 1
+    semester: 1
+    ects: 5
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr. Volkmar Steinhoff
+    department: Fakultät Technik und Informatik
+    exam: K90
+    exam_note: Klausurarbeit, 90 Minuten
+    prerequisites_formal: Keine
+    prerequisites_recommended: Keine
+    outcomes:
+    - algorithmische Lösungen für technische Probleme entwerfen
+    - strukturierte Programme in C entwickeln und testen
+    - Speicherkonzepte maschinennaher Programmierung erklären
+    content:
+    - Zahlendarstellung, Datentypen
+    - Kontrollstrukturen, Funktionen, Rekursion
+    - Felder, Zeiger, dynamische Speicherverwaltung
+    - Strukturen und einfache Datenstrukturen
+    - Modularisierung, Übersetzungsprozess, Debugging
+    methods: Vorlesung (2 SWS), Rechnerübung (2 SWS)
+    credit_requirements: Bestehen der Klausurarbeit (K90). Voraussetzung für die Zulassung ist die erfolgreiche
+      Bearbeitung von mindestens sechs der acht Programmieraufgaben.
+    literature:
+    - 'Kernighan, Ritchie: Programmieren in C, Hanser'
+    - 'Wolf: C von A bis Z, Rheinwerk'
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik. Grundlage für ET-M-09 und ET-M-18.
+  - code: ET-M-05
+    name: Einführung in die Elektrotechnik und wissenschaftliches Arbeiten
+    semester: 1
+    ects: 5
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr.-Ing. Ortwin Behrisch
+    department: Fakultät Technik und Informatik
+    exam: PF
+    exam_note: Portfolio aus mindestens drei Teilleistungen
+    exam_components:
+    - name: Laborbericht
+      weight: 40
+    - name: Kurzvortrag (15 Minuten)
+      weight: 30
+    - name: Schriftliche Ausarbeitung (6–8 Seiten)
+      weight: 30
+    prerequisites_formal: Keine
+    prerequisites_recommended: Keine
+    outcomes:
+    - das Berufsbild und die Tätigkeitsfelder der Elektrotechnik beschreiben
+    - technische Sachverhalte adressatengerecht schriftlich und mündlich darstellen
+    - Quellen recherchieren und normgerecht zitieren
+    - im Team an einer technischen Aufgabe arbeiten
+    content:
+    - Berufsfelder und Tätigkeitsprofile der Elektrotechnik
+    - Normen und Regelwerke, Recherche in Normendatenbanken
+    - Technische Dokumentation, Zitierweise, Literaturverwaltung
+    - Präsentationstechnik
+    - Einführungsprojekt in Teams
+    - Sicherheitsunterweisung für Laborarbeiten
+    methods: Seminaristischer Unterricht (2 SWS), Projektarbeit in Teams (2 SWS)
+    credit_requirements: Portfolio aus den drei genannten Teilleistungen. Alle Teilleistungen müssen erbracht
+      werden; die Gesamtbewertung muss mindestens ausreichend sein.
+    literature:
+    - 'Hering: Technische Berichte, Springer Vieweg'
+    - 'Balzert et al.: Wissenschaftliches Arbeiten, Springer'
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik. Bereitet die Projektarbeit (ET-M-29)
+      vor.
+  - code: ET-M-06
+    name: Mathematik 2
+    semester: 2
+    ects: 8
+    sws: 6
+    language: Deutsch
+    frequency: Jährlich, Sommersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr. Reinhild Kammerlander
+    department: Fakultät Technik und Informatik
+    exam: K120
+    exam_note: Klausurarbeit, 120 Minuten
+    prerequisites_formal: Keine
+    prerequisites_recommended: ET-M-01
+    outcomes:
+    - Funktionen mehrerer Veränderlicher differenzieren und integrieren
+    - gewöhnliche Differentialgleichungen technischer Systeme lösen
+    - Vektorfelder und Feldoperatoren zur Beschreibung elektromagnetischer Felder nutzen
+    content:
+    - Funktionen mehrerer Veränderlicher, partielle Ableitungen, Gradient
+    - Mehrfachintegrale, Koordinatentransformationen
+    - 'Vektoranalysis: Divergenz, Rotation, Integralsätze'
+    - Gewöhnliche Differentialgleichungen erster und zweiter Ordnung
+    - Lineare Differentialgleichungssysteme
+    - Reihen, Potenzreihen, Fourierreihen
+    methods: Vorlesung (4 SWS), Übung (2 SWS)
+    credit_requirements: Bestehen der Klausurarbeit (K120).
+    literature:
+    - 'Papula: Mathematik für Ingenieure und Naturwissenschaftler, Band 2, Springer Vieweg'
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik. Grundlage für ET-M-11 und ET-M-13.
+  - code: ET-M-07
+    name: Grundlagen der Elektrotechnik 2
+    semester: 2
+    ects: 7
+    sws: 6
+    language: Deutsch
+    frequency: Jährlich, Sommersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr.-Ing. Ortwin Behrisch
+    department: Fakultät Technik und Informatik
+    exam: K120
+    exam_note: Klausurarbeit, 120 Minuten
+    prerequisites_formal: Bestandenes Modul ET-M-02
+    prerequisites_recommended: ET-M-01
+    outcomes:
+    - Wechselstromnetzwerke mit komplexer Rechnung analysieren
+    - Übertragungsverhalten passiver Netzwerke bestimmen
+    - Ausgleichsvorgänge in Netzwerken berechnen
+    - Drehstromsysteme berechnen und bewerten
+    content:
+    - Sinusgrößen, komplexe Wechselstromrechnung
+    - Ortskurven, Frequenzgang, Bode-Diagramm
+    - Leistung im Wechselstromkreis, Blindleistungskompensation
+    - Schwingkreise und Resonanz
+    - Ausgleichsvorgänge, Zeitkonstanten
+    - Drehstromsysteme, symmetrische und unsymmetrische Belastung
+    methods: Vorlesung (4 SWS), Übung (1 SWS), Laborpraktikum (1 SWS)
+    credit_requirements: Bestehen der Klausurarbeit (K120). Die erfolgreiche Teilnahme am Laborpraktikum
+      (Testat) ist Zulassungsvoraussetzung.
+    literature:
+    - 'Albach: Grundlagen der Elektrotechnik 2, Pearson'
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik. Grundlage für ET-M-13, ET-M-15 und
+      ET-M-20.
+  - code: ET-M-08
+    name: Werkstoffe und Bauelemente der Elektrotechnik
+    semester: 2
+    ects: 5
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Sommersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr. Sieglinde Rauhut
+    department: Fakultät Technik und Informatik
+    exam: K90
+    exam_note: Klausurarbeit, 90 Minuten
+    prerequisites_formal: Keine
+    prerequisites_recommended: ET-M-03
+    outcomes:
+    - Werkstoffeigenschaften auf atomare und mikrostrukturelle Ursachen zurückführen
+    - Bauelemente nach Datenblattangaben auswählen
+    - Alterungs- und Ausfallmechanismen einschätzen
+    content:
+    - Bindungsarten, Kristallstrukturen
+    - Leiter, Halbleiter, Isolatoren; Bändermodell
+    - Dielektrische und magnetische Werkstoffe
+    - 'Passive Bauelemente: Widerstände, Kondensatoren, Induktivitäten'
+    - 'Halbleiterbauelemente: Diode, Bipolartransistor, MOSFET'
+    - Zuverlässigkeit und Alterung
+    methods: Vorlesung (3 SWS), Laborpraktikum (1 SWS)
+    credit_requirements: Bestehen der Klausurarbeit (K90).
+    literature:
+    - 'Fasching: Werkstoffe für die Elektrotechnik, Springer'
+    - 'Reisch: Elektronische Bauelemente, Springer'
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik. Grundlage für ET-M-12.
+  - code: ET-M-09
+    name: Informatik 2
+    semester: 2
+    ects: 5
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Sommersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr. Volkmar Steinhoff
+    department: Fakultät Technik und Informatik
+    exam: PJ
+    exam_note: Projektarbeit
+    prerequisites_formal: Bestandenes Modul ET-M-04
+    prerequisites_recommended: Keine
+    outcomes:
+    - objektorientierte Entwürfe für technische Anwendungen erstellen
+    - geeignete Datenstrukturen und Algorithmen auswählen und deren Aufwand abschätzen
+    - Software systematisch testen und versionieren
+    content:
+    - 'Objektorientierung: Klassen, Vererbung, Polymorphie'
+    - 'Datenstrukturen: Listen, Bäume, Hashtabellen'
+    - Sortier- und Suchverfahren, Komplexitätsbetrachtung
+    - Fehlerbehandlung
+    - Versionsverwaltung und Unit-Tests
+    - Einführung in nebenläufige Programmierung
+    methods: Vorlesung (2 SWS), Rechnerübung und Projektbetreuung (2 SWS)
+    credit_requirements: Abnahme der Projektarbeit einschließlich Quelltext, Testfällen und Dokumentation.
+    literature:
+    - 'Ullenboom: Java ist auch eine Insel, Rheinwerk'
+    - 'Saake, Sattler: Algorithmen und Datenstrukturen, dpunkt'
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik.
+  - code: ET-M-10
+    name: Elektrische Messtechnik
+    semester: 2
+    ects: 5
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Sommersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr.-Ing. Gudrun Meiwald
+    department: Fakultät Technik und Informatik
+    exam: K90
+    exam_note: Klausurarbeit, 90 Minuten
+    prerequisites_formal: Keine
+    prerequisites_recommended: ET-M-02
+    outcomes:
+    - Messverfahren für elektrische Größen begründet auswählen
+    - Messabweichungen analysieren und Messunsicherheiten angeben
+    - Messketten einschließlich Signalaufbereitung entwerfen
+    content:
+    - Messkette, Messprinzipien, Kenngrößen
+    - Messabweichung, Messunsicherheit nach GUM
+    - Analoge und digitale Messgeräte
+    - Oszilloskopie, Zeit- und Frequenzbereich
+    - Messbrücken und Kompensationsverfahren
+    - Analog-Digital-Umsetzung
+    methods: Vorlesung (2 SWS), Laborpraktikum (2 SWS)
+    credit_requirements: Bestehen der Klausurarbeit (K90). Die erfolgreiche Teilnahme an allen sechs Laborversuchen
+      (Testat) ist Zulassungsvoraussetzung.
+    literature:
+    - 'Schrüfer, Reindl, Zagar: Elektrische Messtechnik, Hanser'
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik.
+  - code: ET-M-11
+    name: Mathematik 3
+    semester: 3
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr. Reinhild Kammerlander
+    department: Fakultät Technik und Informatik
+    exam: K90
+    exam_note: Klausurarbeit, 90 Minuten
+    prerequisites_formal: Keine
+    prerequisites_recommended: ET-M-06
+    outcomes:
+    - Integraltransformationen zur Lösung technischer Aufgaben einsetzen
+    - stochastische Modelle auf messtechnische Fragestellungen anwenden
+    - numerische Verfahren hinsichtlich Genauigkeit und Aufwand beurteilen
+    content:
+    - Laplace-Transformation und Anwendung auf Differentialgleichungen
+    - Fourier-Transformation, diskrete Fourier-Transformation
+    - Wahrscheinlichkeitsrechnung, Zufallsvariablen, Verteilungen
+    - Beschreibende und schließende Statistik
+    - 'Numerische Verfahren: Nullstellen, Quadratur, Anfangswertprobleme'
+    methods: Vorlesung (3 SWS), Übung (1 SWS)
+    credit_requirements: Bestehen der Klausurarbeit (K90).
+    literature:
+    - 'Papula: Mathematik für Ingenieure und Naturwissenschaftler, Band 3, Springer Vieweg'
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik. Grundlage für ET-M-13 und ET-M-16.
+  - code: ET-M-12
+    name: Elektronische Schaltungstechnik
+    semester: 3
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr. Sieglinde Rauhut
+    department: Fakultät Technik und Informatik
+    exam: K120
+    exam_note: Klausurarbeit, 120 Minuten
+    prerequisites_formal: Bestandenes Modul ET-M-08
+    prerequisites_recommended: ET-M-07
+    outcomes:
+    - analoge Grundschaltungen dimensionieren
+    - Operationsverstärkerschaltungen entwerfen und deren Grenzen einschätzen
+    - Schaltungen simulieren und Simulationsergebnisse messtechnisch überprüfen
+    content:
+    - Arbeitspunkteinstellung und Kleinsignalanalyse
+    - Verstärkergrundschaltungen
+    - 'Operationsverstärker: ideale und reale Eigenschaften'
+    - Aktive Filter
+    - Oszillatoren und Komparatoren
+    - Schaltungssimulation
+    methods: Vorlesung (3 SWS), Laborpraktikum (1 SWS)
+    credit_requirements: Bestehen der Klausurarbeit (K120).
+    literature:
+    - 'Tietze, Schenk: Halbleiter-Schaltungstechnik, Springer'
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik.
+  - code: ET-M-13
+    name: Signale und Systeme
+    semester: 3
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr.-Ing. Gudrun Meiwald
+    department: Fakultät Technik und Informatik
+    exam: K90
+    exam_note: Klausurarbeit, 90 Minuten
+    prerequisites_formal: Keine
+    prerequisites_recommended: ET-M-07, ET-M-11
+    outcomes:
+    - lineare zeitinvariante Systeme im Zeit- und Frequenzbereich beschreiben
+    - Abtastung und Rekonstruktion korrekt auslegen
+    - digitale Filter entwerfen und implementieren
+    content:
+    - Signalklassen, Faltung, Impulsantwort
+    - Fourier- und Laplace-Beschreibung von LTI-Systemen
+    - Abtasttheorem, Aliasing, Rekonstruktion
+    - z-Transformation, zeitdiskrete Systeme
+    - Entwurf von FIR- und IIR-Filtern
+    methods: Vorlesung (3 SWS), Rechnerübung (1 SWS)
+    credit_requirements: Bestehen der Klausurarbeit (K90).
+    literature:
+    - 'Werner: Signale und Systeme, Springer Vieweg'
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik. Grundlage für ET-M-19.
+  - code: ET-M-14
+    name: Digitaltechnik
+    semester: 3
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr. Volkmar Steinhoff
+    department: Fakultät Technik und Informatik
+    exam: K90
+    exam_note: Klausurarbeit, 90 Minuten
+    prerequisites_formal: Keine
+    prerequisites_recommended: ET-M-04
+    outcomes:
+    - kombinatorische und sequentielle Schaltungen entwerfen und minimieren
+    - Zustandsautomaten spezifizieren und realisieren
+    - digitale Schaltungen in einer Hardwarebeschreibungssprache beschreiben
+    content:
+    - Boolesche Algebra, Normalformen, Minimierung
+    - Kombinatorische Schaltnetze
+    - Flipflops, Register, Zähler
+    - Endliche Automaten, Moore- und Mealy-Modell
+    - Einführung in VHDL
+    - Programmierbare Logikbausteine
+    methods: Vorlesung (3 SWS), Laborpraktikum mit FPGA-Boards (1 SWS)
+    credit_requirements: Bestehen der Klausurarbeit (K90). Die erfolgreiche Teilnahme am Laborpraktikum
+      ist Zulassungsvoraussetzung.
+    literature:
+    - 'Reichardt: Lehrbuch Digitaltechnik, De Gruyter'
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik. Grundlage für ET-M-18.
+  - code: ET-M-15
+    name: Elektrische Maschinen
+    semester: 3
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr.-Ing. Traugott Halbach
+    department: Fakultät Technik und Informatik
+    exam: K120
+    exam_note: Klausurarbeit, 120 Minuten
+    prerequisites_formal: Bestandenes Modul ET-M-07
+    prerequisites_recommended: Keine
+    outcomes:
+    - Aufbau und Wirkungsweise elektrischer Maschinen erklären
+    - Betriebsverhalten anhand von Ersatzschaltbildern berechnen
+    - Maschinen für eine Antriebsaufgabe auswählen
+    content:
+    - 'Transformator: Ersatzschaltbild, Betriebsverhalten'
+    - Gleichstrommaschine
+    - 'Asynchronmaschine: Drehfeld, Schlupf, Kennlinien'
+    - Synchronmaschine
+    - Erwärmung und Betriebsarten
+    - Wirkungsgrad und Verlustanalyse
+    methods: Vorlesung (3 SWS), Laborpraktikum (1 SWS)
+    credit_requirements: Bestehen der Klausurarbeit (K120).
+    literature:
+    - 'Fischer: Elektrische Maschinen, Hanser'
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik. Grundlage für ET-M-25.
+  - code: ET-M-16
+    name: Regelungstechnik 1
+    semester: 4
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Sommersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr.-Ing. Gudrun Meiwald
+    department: Fakultät Technik und Informatik
+    exam: K120
+    exam_note: Klausurarbeit, 120 Minuten
+    prerequisites_formal: Keine
+    prerequisites_recommended: ET-M-11, ET-M-13
+    outcomes:
+    - Regelstrecken modellieren und linearisieren
+    - Stabilität geschlossener Regelkreise beurteilen
+    - Standardregler nach Güteforderungen auslegen
+    content:
+    - Modellbildung technischer Strecken
+    - Übertragungsfunktion, Pol-Nullstellen-Verteilung
+    - 'Stabilitätskriterien: Hurwitz, Nyquist'
+    - P-, PI-, PID-Regler und Einstellregeln
+    - Führungs- und Störverhalten, Güteforderungen
+    - Wurzelortskurvenverfahren
+    methods: Vorlesung (3 SWS), Rechnerübung (1 SWS)
+    credit_requirements: Bestehen der Klausurarbeit (K120).
+    literature:
+    - 'Lunze: Regelungstechnik 1, Springer Vieweg'
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik. Grundlage für ET-M-23.
+  - code: ET-M-17
+    name: Leistungselektronik
+    semester: 4
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Sommersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr.-Ing. Traugott Halbach
+    department: Fakultät Technik und Informatik
+    exam: K90
+    exam_note: Klausurarbeit, 90 Minuten
+    prerequisites_formal: Keine
+    prerequisites_recommended: ET-M-08, ET-M-12
+    outcomes:
+    - leistungselektronische Grundschaltungen analysieren
+    - Halbleiterschalter nach Betriebsanforderungen auswählen
+    - Verluste und Kühlbedarf abschätzen
+    content:
+    - 'Leistungshalbleiter: Diode, Thyristor, IGBT, MOSFET'
+    - Netzgeführte Stromrichter
+    - Gleichstromsteller
+    - Selbstgeführte Wechselrichter, Pulsweitenmodulation
+    - Verlustleistung und Kühlung
+    - Netzrückwirkungen
+    methods: Vorlesung (3 SWS), Laborpraktikum (1 SWS)
+    credit_requirements: Bestehen der Klausurarbeit (K90).
+    literature:
+    - 'Specovius: Grundkurs Leistungselektronik, Springer Vieweg'
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik.
+  - code: ET-M-18
+    name: Mikrocomputertechnik
+    semester: 4
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Sommersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr. Volkmar Steinhoff
+    department: Fakultät Technik und Informatik
+    exam: PJ
+    exam_note: Projektarbeit
+    prerequisites_formal: Bestandene Module ET-M-04 und ET-M-14
+    prerequisites_recommended: Keine
+    outcomes:
+    - Mikrocontrollersysteme hardwarenah programmieren
+    - Peripheriebaugruppen ansteuern und konfigurieren
+    - Echtzeitanforderungen bei der Softwarestruktur berücksichtigen
+    content:
+    - Rechnerarchitektur, Befehlssatz, Adressierung
+    - Speicherorganisation
+    - Interrupts und Ausnahmebehandlung
+    - Timer, PWM, Analog-Digital-Umsetzer
+    - 'Serielle Schnittstellen: UART, SPI, I2C'
+    - Grundlagen echtzeitfähiger Betriebssysteme
+    methods: Vorlesung (2 SWS), Laborprojekt (2 SWS)
+    credit_requirements: Abnahme des Laborprojekts mit lauffähigem System, Quelltext und Dokumentation.
+    literature:
+    - 'Wüst: Mikroprozessortechnik, Springer Vieweg'
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik. Grundlage für ET-M-24.
+  - code: ET-M-19
+    name: Nachrichtentechnik
+    semester: 4
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Sommersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr.-Ing. Gudrun Meiwald
+    department: Fakultät Technik und Informatik
+    exam: K90
+    exam_note: Klausurarbeit, 90 Minuten
+    prerequisites_formal: Bestandenes Modul ET-M-13
+    prerequisites_recommended: ET-M-11
+    outcomes:
+    - analoge und digitale Modulationsverfahren vergleichen
+    - Übertragungsstrecken hinsichtlich Störabstand bewerten
+    - Kanalcodierung hinsichtlich Fehlerschutz beurteilen
+    content:
+    - Signalübertragung über gestörte Kanäle
+    - Amplituden- und Winkelmodulation
+    - Digitale Modulationsverfahren
+    - Quellencodierung, Abtastung, Quantisierung
+    - Kanalcodierung, Blockcodes
+    - Übertragungsmedien
+    methods: Vorlesung (3 SWS), Laborpraktikum (1 SWS)
+    credit_requirements: Bestehen der Klausurarbeit (K90).
+    literature:
+    - 'Ohm, Lüke: Signalübertragung, Springer Vieweg'
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik.
+  - code: ET-M-20
+    name: Elektrische Energieversorgung
+    semester: 4
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Sommersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr.-Ing. Traugott Halbach
+    department: Fakultät Technik und Informatik
+    exam: K90
+    exam_note: Klausurarbeit, 90 Minuten
+    prerequisites_formal: Bestandenes Modul ET-M-07
+    prerequisites_recommended: Keine
+    outcomes:
+    - Aufbau und Betrieb elektrischer Energieversorgungsnetze erklären
+    - Lastflüsse und Kurzschlussströme berechnen
+    - Schutzkonzepte bewerten
+    content:
+    - Netzstrukturen und Spannungsebenen
+    - 'Betriebsmittel: Leitungen, Transformatoren, Schaltanlagen'
+    - Lastflussberechnung
+    - Kurzschlussstromberechnung nach IEC 60909
+    - Netzschutz und Selektivität
+    - Integration dezentraler Erzeugung
+    methods: Vorlesung (3 SWS), Rechnerübung (1 SWS)
+    credit_requirements: Bestehen der Klausurarbeit (K90).
+    literature:
+    - 'Heuck, Dettmann, Schulz: Elektrische Energieversorgung, Springer Vieweg'
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik.
+  - code: ET-M-21
+    name: Praktisches Studiensemester
+    semester: 5
+    ects: 24
+    sws: 0
+    language: Deutsch
+    frequency: Jedes Semester
+    duration: 1 Semester (mindestens 95 Präsenztage)
+    type: Pflichtmodul
+    responsible: Praktikantenamt, Prof. Dr.-Ing. Ortwin Behrisch
+    department: Fakultät Technik und Informatik
+    exam: TN
+    exam_note: Teilnahmenachweis; unbenotet
+    ungraded: true
+    special_note: 'Unbenoteter Teilnahmenachweis. Das Modul geht nicht in die Gesamtnote ein. Ungewöhnliche
+      Workload-Struktur: 720 Zeitstunden bei 0 SWS Präsenzlehre an der Hochschule.'
+    prerequisites_formal: Nachweis von mindestens 90 ECTS-Punkten aus den ersten vier Studiensemestern
+    prerequisites_recommended: Keine
+    outcomes:
+    - ingenieurmäßige Aufgaben unter betrieblichen Bedingungen bearbeiten
+    - die eigene fachliche Qualifikation im betrieblichen Umfeld einschätzen
+    - betriebliche Abläufe und Organisationsformen beschreiben
+    content:
+    - Mitarbeit an ingenieurwissenschaftlichen Aufgabenstellungen in einem Unternehmen oder einer Forschungseinrichtung
+    - Führung eines Tätigkeitsnachweises
+    - Erstellung eines Praxisberichts
+    methods: Betriebliche Tätigkeit mit hochschulseitiger Betreuung
+    credit_requirements: Vorlage des Tätigkeitsnachweises über mindestens 95 Präsenztage, des Zeugnisses
+      der Praxisstelle sowie des anerkannten Praxisberichts.
+    literature:
+    - Keine
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik. Zusammen mit ET-M-22 bildet es das
+      praktische Studiensemester nach § 28 ASPO.
+  - code: ET-M-22
+    name: Praxisbegleitende Lehrveranstaltungen
+    semester: 5
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jedes Semester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr.-Ing. Ortwin Behrisch
+    department: Fakultät Technik und Informatik
+    exam: RE
+    exam_note: Referat mit schriftlicher Ausarbeitung
+    prerequisites_formal: Zeitgleiche oder vorherige Ableistung von ET-M-21
+    prerequisites_recommended: Keine
+    outcomes:
+    - die im Praxissemester bearbeitete Aufgabe fachlich einordnen und präsentieren
+    - Projektmanagementmethoden auf betriebliche Aufgaben anwenden
+    - arbeits- und sicherheitsrechtliche Rahmenbedingungen benennen
+    content:
+    - 'Projektmanagement: Planung, Steuerung, Risikobetrachtung'
+    - Qualitätsmanagement in der Fertigung
+    - Arbeitssicherheit und rechtliche Rahmenbedingungen
+    - Präsentation und Diskussion der Praxisprojekte
+    methods: Blockveranstaltungen (2 SWS) und Präsentationsseminar (2 SWS)
+    credit_requirements: Referat von etwa 25 Minuten sowie schriftliche Ausarbeitung von 10 bis 15 Seiten.
+    literature:
+    - 'Kuster et al.: Handbuch Projektmanagement, Springer Gabler'
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik.
+  - code: ET-M-23
+    name: Regelungstechnik 2
+    semester: 6
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Sommersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr.-Ing. Gudrun Meiwald
+    department: Fakultät Technik und Informatik
+    exam: K90
+    exam_note: Klausurarbeit, 90 Minuten
+    prerequisites_formal: Bestandenes Modul ET-M-16
+    prerequisites_recommended: Keine
+    outcomes:
+    - Systeme im Zustandsraum beschreiben und analysieren
+    - Zustandsregler und Beobachter entwerfen
+    - digitale Regelkreise auslegen
+    content:
+    - Zustandsraumdarstellung, Steuerbarkeit, Beobachtbarkeit
+    - Zustandsrückführung, Polvorgabe
+    - Beobachterentwurf
+    - Abtastregelung, z-Übertragungsfunktion
+    - Einführung in nichtlineare Regelungen
+    methods: Vorlesung (3 SWS), Rechnerübung (1 SWS)
+    credit_requirements: Bestehen der Klausurarbeit (K90).
+    literature:
+    - 'Lunze: Regelungstechnik 2, Springer Vieweg'
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik.
+  - code: ET-M-24
+    name: Automatisierungstechnik
+    semester: 6
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Sommersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr.-Ing. Ortwin Behrisch
+    department: Fakultät Technik und Informatik
+    exam: SIEHE_BSPO
+    plan_exam: gem. § 12 Abs. 2 Nr. 3 ASPO
+    exam_note: Prüfungsform nach § 8 Abs. 1 BSPO Elektrotechnik in Verbindung mit § 12 Abs. 2 Nr. 3 ASPO
+    exam_version_dependent: true
+    data_note: 'INTENTIONAL: die Prüfungsform dieses Moduls ist versionsabhängig. § 12 Abs. 2 Nr. 3 ASPO
+      bezeichnet in der Fassung 1.0 die mündliche Prüfung, ab der Ersten Änderungssatzung die Projektarbeit.
+      Siehe Abhängigkeitskette D-02.'
+    prerequisites_formal: Bestandenes Modul ET-M-18
+    prerequisites_recommended: ET-M-16
+    outcomes:
+    - Automatisierungsaufgaben strukturieren und in Steuerungsprogramme umsetzen
+    - speicherprogrammierbare Steuerungen normgerecht programmieren
+    - Feldbussysteme auswählen und in Betrieb nehmen
+    content:
+    - Steuerungsstrukturen, Automatisierungspyramide
+    - Speicherprogrammierbare Steuerungen, Programmierung nach IEC 61131-3
+    - Ablaufsteuerungen und Zustandsgraphen
+    - Feldbussysteme und industrielle Kommunikation
+    - Bedienen und Beobachten, HMI
+    - Sicherheitsgerichtete Steuerungen
+    methods: Vorlesung (2 SWS), Laborpraktikum an der Modellanlage (2 SWS)
+    credit_requirements: Erbringen der nach § 8 Abs. 1 BSPO Elektrotechnik vorgesehenen Prüfungsleistung.
+    literature:
+    - 'Wellenreuther, Zastrow: Automatisieren mit SPS, Springer Vieweg'
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik. Grundlage für das Vertiefungsmodul
+      ET-M-27.
+  - code: ET-M-25
+    name: Antriebstechnik
+    semester: 6
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Sommersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr.-Ing. Traugott Halbach
+    department: Fakultät Technik und Informatik
+    exam: K90
+    exam_note: Klausurarbeit, 90 Minuten
+    prerequisites_formal: Bestandenes Modul ET-M-15
+    prerequisites_recommended: ET-M-17
+    outcomes:
+    - Antriebssysteme für eine Arbeitsmaschine auslegen
+    - Drehzahl- und Drehmomentregelungen parametrieren
+    - Energieeffizienz von Antrieben bewerten
+    content:
+    - Antriebsauslegung, Lastkennlinien, Betriebsarten
+    - Umrichtergespeiste Drehstromantriebe
+    - Feldorientierte Regelung
+    - Servoantriebe und Positionierung
+    - Energieeffizienz und Rückspeisung
+    methods: Vorlesung (3 SWS), Laborpraktikum (1 SWS)
+    credit_requirements: Bestehen der Klausurarbeit (K90).
+    literature:
+    - 'Schröder: Elektrische Antriebe, Springer Vieweg'
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik.
+  - code: ET-M-26
+    name: Betriebswirtschaftslehre für Ingenieure
+    semester: 6
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Sommersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr. Almut Zeisberger
+    department: Fakultät Technik und Informatik
+    exam: K90
+    exam_note: Klausurarbeit, 90 Minuten
+    prerequisites_formal: Keine
+    prerequisites_recommended: Keine
+    outcomes:
+    - betriebliche Grundfunktionen und ihre Zusammenhänge beschreiben
+    - Investitionsrechnungen für technische Vorhaben durchführen
+    - Kostenstrukturen technischer Produkte analysieren
+    content:
+    - Rechtsformen und Unternehmensorganisation
+    - Kosten- und Leistungsrechnung
+    - Investitionsrechnung, statische und dynamische Verfahren
+    - Kalkulation technischer Produkte
+    - Grundzüge des Marketings für Investitionsgüter
+    - Vertragsrecht für Ingenieure
+    methods: Vorlesung (3 SWS), Übung mit Fallstudien (1 SWS)
+    credit_requirements: Bestehen der Klausurarbeit (K90).
+    literature:
+    - 'Wöhe, Döring: Einführung in die Allgemeine Betriebswirtschaftslehre, Vahlen'
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik.
+  - code: ET-M-27
+    name: Vertiefungsmodul Automatisierungstechnik
+    semester: 6
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Sommersemester
+    duration: 1 Semester
+    type: Pflichtmodul der Vertiefungsrichtung
+    variant_group: Vertiefungsrichtung
+    responsible: Prof. Dr.-Ing. Ortwin Behrisch
+    department: Fakultät Technik und Informatik
+    exam: PJ
+    exam_note: Projektarbeit
+    special_note: Es ist entweder ET-M-27 oder ET-M-28 zu belegen. Die Wahl der Vertiefungsrichtung ist
+      gegenüber dem Prüfungsamt vor Beginn des sechsten Studiensemesters zu erklären.
+    prerequisites_formal: Bestandenes Modul ET-M-24
+    prerequisites_recommended: ET-M-18
+    outcomes:
+    - eine vollständige Automatisierungslösung von der Spezifikation bis zur Inbetriebnahme umsetzen
+    - Anlagensicherheit nach geltenden Normen bewerten
+    - Diagnosefunktionen für den Anlagenbetrieb entwerfen
+    content:
+    - Anlagenprojektierung und Lastenheft
+    - Vernetzte Steuerungsarchitekturen
+    - Robotik in der Fertigungsautomatisierung
+    - Sicherheitstechnik und Risikobeurteilung
+    - Inbetriebnahme und Diagnose
+    methods: Seminaristischer Unterricht (2 SWS) und Projektarbeit an der Modellanlage (2 SWS)
+    credit_requirements: Abnahme der Projektarbeit einschließlich Dokumentation und Abnahmeprotokoll.
+    literature:
+    - 'Früh, Maier, Schaudel: Handbuch der Prozessautomatisierung, Vulkan'
+    usability: Vertiefungsmodul im Bachelorstudiengang Elektrotechnik, Vertiefungsrichtung Automatisierungstechnik.
+      Alternative zu ET-M-28.
+  - code: ET-M-28
+    name: Vertiefungsmodul Energietechnik
+    semester: 6
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Sommersemester
+    duration: 1 Semester
+    type: Pflichtmodul der Vertiefungsrichtung
+    variant_group: Vertiefungsrichtung
+    responsible: Prof. Dr.-Ing. Traugott Halbach
+    department: Fakultät Technik und Informatik
+    exam: PJ
+    exam_note: Projektarbeit
+    special_note: Es ist entweder ET-M-27 oder ET-M-28 zu belegen.
+    prerequisites_formal: Bestandenes Modul ET-M-20
+    prerequisites_recommended: ET-M-17
+    outcomes:
+    - dezentrale Energiesysteme auslegen und bewerten
+    - Netzanschlussbedingungen für Erzeugungsanlagen anwenden
+    - Speichertechnologien hinsichtlich Einsatzprofil auswählen
+    content:
+    - Photovoltaik- und Windenergieanlagen
+    - Netzanschlussrichtlinien und Zertifizierung
+    - Elektrische Energiespeicher
+    - Sektorenkopplung und Lastmanagement
+    - Wirtschaftlichkeitsbetrachtung
+    methods: Seminaristischer Unterricht (2 SWS) und Projektarbeit (2 SWS)
+    credit_requirements: Abnahme der Projektarbeit einschließlich Dokumentation.
+    literature:
+    - 'Quaschning: Regenerative Energiesysteme, Hanser'
+    usability: Vertiefungsmodul im Bachelorstudiengang Elektrotechnik, Vertiefungsrichtung Energietechnik.
+      Alternative zu ET-M-27.
+  - code: ET-M-29
+    name: Projektarbeit
+    semester: 7
+    ects: 6
+    sws: 2
+    language: Deutsch
+    frequency: Jedes Semester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr.-Ing. Ortwin Behrisch
+    department: Fakultät Technik und Informatik
+    exam: PJ
+    exam_note: Projektarbeit
+    prerequisites_formal: Nachweis von mindestens 150 ECTS-Punkten
+    prerequisites_recommended: ET-M-05
+    outcomes:
+    - eine ingenieurwissenschaftliche Aufgabe eigenständig strukturieren und bearbeiten
+    - Arbeitsergebnisse nachvollziehbar dokumentieren
+    - Lösungsalternativen begründet gegeneinander abwägen
+    content:
+    - Bearbeitung einer fachlichen Aufgabenstellung aus dem Bereich der Elektrotechnik
+    - Themenvergabe durch eine Prüferin oder einen Prüfer der Fakultät
+    - Zwischenpräsentation und Abschlussdokumentation
+    methods: Eigenständige Projektarbeit mit Betreuung (2 SWS)
+    credit_requirements: Abnahme der schriftlichen Projektdokumentation von 25 bis 35 Seiten sowie der
+      Abschlusspräsentation.
+    literature:
+    - Themenspezifisch
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik. Bereitet die Bachelorarbeit vor.
+  - code: ET-M-30
+    name: Bachelorarbeit
+    semester: 7
+    ects: 12
+    sws: 0
+    language: Deutsch
+    frequency: Jedes Semester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Vorsitzende oder Vorsitzender des Prüfungsausschusses
+    department: Fakultät Technik und Informatik
+    exam: BA
+    exam_note: Bachelorarbeit
+    special_note: Zur Bearbeitungszeit besteht ein dokumentierter Widerspruch zwischen § 31 Abs. 1 ASPO
+      in der Fassung der Ersten Änderungssatzung und § 12 Abs. 2 BSPO Elektrotechnik. Siehe Konflikt K-02.
+    prerequisites_formal: Nachweis von mindestens 180 ECTS-Punkten sowie erfolgreicher Abschluss des praktischen
+      Studiensemesters (ET-M-21)
+    prerequisites_recommended: ET-M-29
+    outcomes:
+    - eine Aufgabe aus der Elektrotechnik selbständig nach wissenschaftlichen Methoden bearbeiten
+    - den Stand der Technik erschließen und die eigene Arbeit darin einordnen
+    - Ergebnisse in einer fachlich angemessenen Form darstellen
+    content:
+    - Selbständige Bearbeitung einer Aufgabenstellung aus der Elektrotechnik
+    - Themenausgabe und Betreuung durch eine Prüferin oder einen Prüfer nach § 11 ASPO
+    methods: Selbständige Arbeit unter Betreuung
+    credit_requirements: Fristgerechte Abgabe der Bachelorarbeit und Bewertung mit mindestens ausreichend
+      (4,0).
+    literature:
+    - Themenspezifisch
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik.
+  - code: ET-M-31
+    name: Kolloquium
+    semester: 7
+    ects: 3
+    sws: 0
+    language: Deutsch
+    frequency: Jedes Semester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Vorsitzende oder Vorsitzender des Prüfungsausschusses
+    department: Fakultät Technik und Informatik
+    exam: KO
+    exam_note: Kolloquium, 20 bis 30 Minuten
+    prerequisites_formal: Mit mindestens ausreichend bewertete Bachelorarbeit (ET-M-30)
+    prerequisites_recommended: Keine
+    outcomes:
+    - die Ergebnisse der Bachelorarbeit mündlich darstellen und verteidigen
+    - die gewählte Vorgehensweise gegenüber Alternativen begründen
+    - fachliche Rückfragen sachgerecht beantworten
+    content:
+    - Vortrag über die Bachelorarbeit von etwa 15 Minuten
+    - Fachgespräch mit den Prüferinnen und Prüfern
+    methods: Mündliche Prüfung vor zwei Prüfenden
+    credit_requirements: Bestehen des Kolloquiums nach § 33 Abs. 3 ASPO.
+    literature:
+    - Keine
+    usability: Pflichtmodul im Bachelorstudiengang Elektrotechnik. Schließt das Studium ab.
+  - code: ET-M-32
+    name: Hochspannungstechnik
+    semester: 7
+    ects: 3
+    sws: 2
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Wahlpflichtmodul
+    responsible: Prof. Dr.-Ing. Traugott Halbach
+    department: Fakultät Technik und Informatik
+    exam: M20
+    exam_note: Mündliche Prüfung, etwa 20 Minuten
+    prerequisites_formal: Keine
+    prerequisites_recommended: ET-M-20
+    outcomes:
+    - Isolationssysteme hinsichtlich Durchschlagfestigkeit beurteilen
+    - Prüfverfahren der Hochspannungstechnik beschreiben
+    content:
+    - Elektrische Festigkeit von Gasen, Flüssigkeiten und Feststoffen
+    - Teilentladungen und Diagnostik
+    - Erzeugung und Messung hoher Spannungen
+    - Blitzschutz und Überspannungsableiter
+    methods: Seminaristischer Unterricht (2 SWS)
+    credit_requirements: Bestehen der mündlichen Prüfung (M20).
+    literature:
+    - 'Küchler: Hochspannungstechnik, Springer Vieweg'
+    usability: Wahlpflichtmodul im Bachelorstudiengang Elektrotechnik, Wahlpflichtkatalog nach Anlage
+      2 der BSPO.
+  - code: ET-M-33
+    name: Elektromagnetische Verträglichkeit
+    semester: 7
+    ects: 3
+    sws: 2
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Wahlpflichtmodul
+    responsible: Prof. Dr. Sieglinde Rauhut
+    department: Fakultät Technik und Informatik
+    exam: M20
+    exam_note: Mündliche Prüfung, etwa 20 Minuten
+    prerequisites_formal: Keine
+    prerequisites_recommended: ET-M-12
+    outcomes:
+    - Kopplungsmechanismen elektromagnetischer Störungen identifizieren
+    - Entstörmaßnahmen auswählen und bewerten
+    content:
+    - Störquellen, Kopplungspfade, Störsenken
+    - Schirmung, Filterung, Erdungskonzepte
+    - EMV-Messtechnik
+    - Normative Anforderungen und Konformitätsbewertung
+    methods: Seminaristischer Unterricht (2 SWS)
+    credit_requirements: Bestehen der mündlichen Prüfung (M20).
+    literature:
+    - 'Schwab, Kürner: Elektromagnetische Verträglichkeit, Springer Vieweg'
+    usability: Wahlpflichtmodul im Bachelorstudiengang Elektrotechnik.
+  - code: ET-M-34
+    name: Regenerative Energiesysteme
+    semester: 7
+    ects: 3
+    sws: 2
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Wahlpflichtmodul
+    responsible: Prof. Dr.-Ing. Traugott Halbach
+    department: Fakultät Technik und Informatik
+    exam: RE
+    exam_note: Referat mit schriftlicher Ausarbeitung
+    prerequisites_formal: Keine
+    prerequisites_recommended: Keine
+    outcomes:
+    - Potenziale regenerativer Energiequellen abschätzen
+    - Anlagenkonzepte technisch und wirtschaftlich vergleichen
+    content:
+    - Solarthermie und Photovoltaik
+    - Windenergie
+    - Biomasse und Geothermie
+    - Systemintegration und Speicherung
+    methods: Seminar (2 SWS)
+    credit_requirements: Referat von etwa 20 Minuten mit schriftlicher Ausarbeitung von 8 bis 12 Seiten.
+    literature:
+    - 'Quaschning: Regenerative Energiesysteme, Hanser'
+    usability: Wahlpflichtmodul im Bachelorstudiengang Elektrotechnik.
+  - code: ET-M-35
+    name: Eingebettete Systeme
+    semester: 7
+    ects: 3
+    sws: 2
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Wahlpflichtmodul
+    responsible: Prof. Dr. Volkmar Steinhoff
+    department: Fakultät Technik und Informatik
+    exam: PJ
+    exam_note: Projektarbeit
+    prerequisites_formal: Bestandenes Modul ET-M-18
+    prerequisites_recommended: Keine
+    outcomes:
+    - eingebettete Systeme unter Echtzeitbedingungen entwerfen
+    - Ressourcenverbrauch und Reaktionszeiten analysieren
+    content:
+    - Echtzeitbetriebssysteme, Scheduling
+    - Speicher- und Energiemanagement
+    - Bussysteme im Fahrzeug und in der Automatisierung
+    - Test eingebetteter Software
+    methods: Laborprojekt (2 SWS)
+    credit_requirements: Abnahme der Projektarbeit.
+    literature:
+    - 'Wörn, Brinkschulte: Echtzeitsysteme, Springer'
+    usability: Wahlpflichtmodul im Bachelorstudiengang Elektrotechnik.
+  - code: ET-M-36
+    name: Technisches Englisch
+    semester: 7
+    ects: 3
+    sws: 2
+    language: Englisch
+    frequency: Jedes Semester
+    duration: 1 Semester
+    type: Wahlpflichtmodul
+    responsible: Sprachenzentrum, Dr. Ilka Wendehorst
+    department: Sprachenzentrum
+    exam: PF
+    exam_note: Portfolio aus mindestens drei Teilleistungen
+    special_note: Lehr- und Prüfungssprache ist Englisch, abweichend von der Studiengangssprache.
+    prerequisites_formal: Keine
+    prerequisites_recommended: Englischkenntnisse auf Niveau B1
+    outcomes:
+    - technische Sachverhalte auf Englisch schriftlich und mündlich darstellen
+    - englischsprachige Normen und Datenblätter erschließen
+    content:
+    - Fachterminologie der Elektrotechnik
+    - Technische Dokumentation auf Englisch
+    - Präsentationen und Meetings
+    - Bewerbung im internationalen Umfeld
+    methods: Sprachkurs (2 SWS)
+    credit_requirements: Portfolio aus schriftlichem Test, Präsentation und schriftlicher Ausarbeitung.
+    literature:
+    - Materialien des Sprachenzentrums
+    usability: Wahlpflichtmodul im Bachelorstudiengang Elektrotechnik.
+  - code: ET-M-37
+    name: Bussysteme in der Automatisierung
+    semester: 7
+    ects: 3
+    sws: 2
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Wahlpflichtmodul
+    responsible: Prof. Dr.-Ing. Ortwin Behrisch
+    department: Fakultät Technik und Informatik
+    exam: LB
+    exam_note: Laborarbeit mit Testat; unbenotet
+    ungraded: true
+    special_note: Unbenotete Studienleistung. Das Modul geht nicht in die Gesamtnote ein.
+    prerequisites_formal: Bestandenes Modul ET-M-24
+    prerequisites_recommended: Keine
+    outcomes:
+    - industrielle Bussysteme konfigurieren und in Betrieb nehmen
+    - Kommunikationsfehler systematisch eingrenzen
+    content:
+    - PROFIBUS, PROFINET, EtherCAT
+    - Geräteintegration und Gerätebeschreibungsdateien
+    - Diagnose und Netzwerkanalyse
+    methods: Laborpraktikum (2 SWS)
+    credit_requirements: Erfolgreiche Bearbeitung aller vier Laborversuche. Das Modul wird mit bestanden
+      oder nicht bestanden bewertet.
+    literature:
+    - 'Popp: Industrielle Kommunikation mit PROFINET, Vogel'
+    usability: Wahlpflichtmodul im Bachelorstudiengang Elektrotechnik.
+  - code: ET-M-38
+    name: Robotik
+    semester: 7
+    ects: 3
+    sws: 2
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Wahlpflichtmodul
+    responsible: Prof. Dr.-Ing. Ortwin Behrisch
+    department: Fakultät Technik und Informatik
+    exam: M20
+    exam_note: Mündliche Prüfung, etwa 20 Minuten
+    prerequisites_formal: Keine
+    prerequisites_recommended: ET-M-16
+    outcomes:
+    - Kinematik von Industrierobotern berechnen
+    - Roboterprogramme für einfache Handhabungsaufgaben erstellen
+    content:
+    - Koordinatensysteme und Transformationen
+    - Vorwärts- und Rückwärtskinematik
+    - Bahnplanung
+    - Programmierverfahren
+    - Kollaborierende Roboter und Sicherheit
+    methods: Seminaristischer Unterricht mit Laboranteil (2 SWS)
+    credit_requirements: Bestehen der mündlichen Prüfung (M20).
+    literature:
+    - 'Weber: Industrieroboter, Hanser'
+    usability: Wahlpflichtmodul im Bachelorstudiengang Elektrotechnik.
+SE:
+  programme: SE
+  workload_per_credit: 30
+  semester_plan:
+    1:
+      compulsory:
+      - SE-1-001
+      - SE-1-002
+      - SE-1-003
+      - SE-1-004
+      - SE-1-005
+      elective_credits: 0
+      span_credits: 0
+      total: 30
+    2:
+      compulsory:
+      - SE-2-006
+      - SE-2-007
+      - SE-2-008
+      elective_credits: 6
+      span_credits: 6
+      span_modules:
+      - SE-2-009
+      total: 30
+    3:
+      compulsory:
+      - SE-3-011
+      - SE-3-012
+      - SE-3-018
+      elective_credits: 6
+      span_credits: 6
+      span_modules:
+      - SE-2-009
+      total: 30
+    4:
+      compulsory:
+      - SE-4-015
+      - SE-4-016
+      elective_credits: 0
+      span_credits: 0
+      total: 30
+  elective_catalogue:
+    required_credits: 12
+    note: Aus dem Wahlpflichtkatalog sind zwei Module im Umfang von insgesamt 12 Leistungspunkten zu wählen,
+      davon eines im zweiten und eines im dritten Fachsemester.
+    members:
+    - SE-2-010
+    - SE-3-013
+    - SE-3-014
+    - SE-3-017
+    - SE-2-019
+    - SE-3-020
+    semester_2_members:
+    - SE-2-010
+    - SE-2-019
+    semester_3_members:
+    - SE-3-013
+    - SE-3-014
+    - SE-3-017
+    - SE-3-020
+  variant_groups: null
+  modules:
+  - code: SE-1-001
+    name: Höhere Mathematik für Systems Engineering
+    semester: 1
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr. Wiebke Ostermann
+    department: Fachbereich Ingenieurwissenschaften
+    exam: Kl-120
+    exam_note: Klausur, 120 Minuten
+    prerequisites_formal: Keine
+    prerequisites_recommended: Mathematikkenntnisse eines ingenieurwissenschaftlichen Bachelorstudiums
+    outcomes:
+    - dynamische Systeme mit Methoden der linearen Algebra und der Analysis beschreiben
+    - Optimierungsprobleme klassifizieren und geeignete Lösungsverfahren auswählen
+    - numerische Verfahren hinsichtlich Konvergenz und Kondition beurteilen
+    content:
+    - Matrizenanalysis, Eigenwertprobleme, Normalformen
+    - Systeme gewöhnlicher Differentialgleichungen
+    - 'Partielle Differentialgleichungen: Klassifikation und Grundlösungen'
+    - Restringierte Optimierung, Karush-Kuhn-Tucker-Bedingungen
+    - Numerische Lösung von Anfangs- und Randwertproblemen
+    methods: Vorlesung (3 SWS), Übung (1 SWS)
+    credit_requirements: Bestehen der Klausur (Kl-120).
+    literature:
+    - 'Burg, Haf, Wille: Höhere Mathematik für Ingenieure, Springer Vieweg'
+    - 'Nocedal, Wright: Numerical Optimization, Springer'
+    usability: Pflichtmodul im Masterstudiengang Systems Engineering. Grundlage für SE-2-008 und SE-3-013.
+  - code: SE-1-002
+    name: Systemtheorie und Modellbildung
+    semester: 1
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr.-Ing. Falk Brandhuber
+    department: Fachbereich Ingenieurwissenschaften
+    exam: Kl-120
+    exam_note: Klausur, 120 Minuten
+    prerequisites_formal: Keine
+    prerequisites_recommended: Keine
+    outcomes:
+    - technische Systeme domänenübergreifend modellieren
+    - Modellgüte gegen Modellaufwand abwägen
+    - Systemgrenzen begründet festlegen
+    content:
+    - Systembegriff, Systemgrenzen, Emergenz
+    - Zustandsraummodelle technischer Systeme
+    - Energiebasierte Modellbildung, Bondgraphen
+    - Identifikation von Modellparametern
+    - Modellvalidierung und Modellgüte
+    - Mehrdomänenmodellierung
+    methods: Vorlesung (3 SWS), Rechnerübung (1 SWS)
+    credit_requirements: Bestehen der Klausur (Kl-120).
+    literature:
+    - 'Karnopp, Margolis, Rosenberg: System Dynamics, Wiley'
+    - 'Lunze: Regelungstechnik 2, Springer Vieweg'
+    usability: Pflichtmodul im Masterstudiengang Systems Engineering. Grundlage für SE-2-006.
+  - code: SE-1-003
+    name: Requirements Engineering
+    semester: 1
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr. Hedwig Marnach
+    department: Fachbereich Ingenieurwissenschaften
+    exam: PA
+    exam_note: Projektarbeit
+    exam_components:
+    - name: Anforderungsspezifikation
+      weight: 60
+    - name: Review-Bericht zu einer fremden Spezifikation
+      weight: 40
+    prerequisites_formal: Keine
+    prerequisites_recommended: Keine
+    outcomes:
+    - Anforderungen systematisch erheben, dokumentieren und verwalten
+    - Anforderungen auf Widerspruchsfreiheit und Prüfbarkeit untersuchen
+    - Rückverfolgbarkeit über den Entwicklungsprozess sicherstellen
+    content:
+    - 'Erhebungstechniken: Interview, Beobachtung, Workshop'
+    - 'Dokumentationsformen: natürlichsprachlich, modellbasiert'
+    - Qualitätskriterien für Anforderungen
+    - Anforderungsverwaltung und Änderungsmanagement
+    - Rückverfolgbarkeit und Abdeckungsanalyse
+    - Normative Anforderungen und Nachweisführung
+    methods: Seminaristischer Unterricht (2 SWS), Projektarbeit in Gruppen (2 SWS)
+    credit_requirements: Abnahme beider Teilleistungen der Projektarbeit. Beide Teilleistungen müssen
+      für sich bestanden sein.
+    literature:
+    - 'Pohl, Rupp: Basiswissen Requirements Engineering, dpunkt'
+    usability: Pflichtmodul im Masterstudiengang Systems Engineering. Grundlage für SE-3-011 und SE-3-012.
+  - code: SE-1-004
+    name: Eingebettete Systeme und Echtzeitverhalten
+    semester: 1
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr.-Ing. Konrad Vielhaber
+    department: Fachbereich Ingenieurwissenschaften
+    exam: Kl-90
+    exam_note: Klausur, 90 Minuten
+    prerequisites_formal: Keine
+    prerequisites_recommended: Programmierkenntnisse in C
+    outcomes:
+    - Echtzeitanforderungen formulieren und deren Einhaltung nachweisen
+    - Schedulingverfahren hinsichtlich Terminhaltung analysieren
+    - eingebettete Architekturen für sicherheitsrelevante Funktionen entwerfen
+    content:
+    - Echtzeitbegriff, harte und weiche Zeitanforderungen
+    - Schedulingverfahren und Antwortzeitanalyse
+    - Interprozesskommunikation und Synchronisation
+    - Speicher- und Energiemanagement
+    - Redundanzkonzepte in eingebetteten Architekturen
+    methods: Vorlesung (3 SWS), Laborübung (1 SWS)
+    credit_requirements: Bestehen der Klausur (Kl-90). Voraussetzung für die Zulassung ist das Übungstestat
+      (Ü).
+    literature:
+    - 'Wörn, Brinkschulte: Echtzeitsysteme, Springer'
+    - 'Buttazzo: Hard Real-Time Computing Systems, Springer'
+    usability: Pflichtmodul im Masterstudiengang Systems Engineering.
+  - code: SE-1-005
+    name: Wissenschaftliches Arbeiten und Forschungsmethodik
+    semester: 1
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr. Hedwig Marnach
+    department: Fachbereich Ingenieurwissenschaften
+    exam: HA
+    exam_note: Hausarbeit
+    prerequisites_formal: Keine
+    prerequisites_recommended: Keine
+    outcomes:
+    - eine bearbeitbare Forschungsfrage entwickeln
+    - den Stand der Forschung systematisch aufarbeiten
+    - empirische Untersuchungen planen und statistisch auswerten
+    - wissenschaftliche Texte normgerecht verfassen
+    content:
+    - Wissenschaftstheoretische Grundlagen
+    - Systematische Literaturrecherche und Bewertung
+    - Versuchsplanung, Stichprobenumfang, Teststärke
+    - Statistische Auswertung und Ergebnisdarstellung
+    - Gute wissenschaftliche Praxis, Zitation, Plagiatsvermeidung
+    methods: Seminar (2 SWS), begleitete Schreibwerkstatt (2 SWS)
+    credit_requirements: Hausarbeit im Umfang von 20 bis 25 Seiten.
+    literature:
+    - 'Balzert et al.: Wissenschaftliches Arbeiten, Springer'
+    - 'Bortz, Döring: Forschungsmethoden und Evaluation, Springer'
+    usability: Pflichtmodul im Masterstudiengang Systems Engineering. Bereitet die Masterarbeit (SE-4-015)
+      vor.
+  - code: SE-2-006
+    name: Modellbasierte Systementwicklung
+    semester: 2
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Sommersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr.-Ing. Falk Brandhuber
+    department: Fachbereich Ingenieurwissenschaften
+    exam: PA
+    exam_note: Projektarbeit
+    prerequisites_formal: Bestandenes Modul SE-1-002
+    prerequisites_recommended: SE-1-003
+    outcomes:
+    - Systemmodelle in einer standardisierten Modellierungssprache erstellen
+    - Modelle über Entwicklungsphasen hinweg konsistent halten
+    - aus Systemmodellen Analysen und Nachweise ableiten
+    content:
+    - 'SysML: Struktur-, Verhaltens- und Anforderungsdiagramme'
+    - Modellarchitektur und Sichtenkonzepte
+    - Konsistenz- und Vollständigkeitsprüfungen
+    - 'Modellbasierte Analyse: Simulation, Ableitung von Testfällen'
+    - Werkzeugketten und Modellaustausch
+    methods: Vorlesung (2 SWS), Werkzeugübung und Projektarbeit (2 SWS)
+    credit_requirements: Abnahme des Systemmodells einschließlich Dokumentation der Modellierungsentscheidungen.
+    literature:
+    - 'Weilkiens: Systems Engineering mit SysML/UML, dpunkt'
+    - 'Friedenthal, Moore, Steiner: A Practical Guide to SysML, Morgan Kaufmann'
+    usability: Pflichtmodul im Masterstudiengang Systems Engineering. Grundlage für SE-3-011.
+  - code: SE-2-007
+    name: Zuverlässigkeit und funktionale Sicherheit
+    semester: 2
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Sommersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr.-Ing. Konrad Vielhaber
+    department: Fachbereich Ingenieurwissenschaften
+    exam: Kl-120
+    exam_note: Klausur, 120 Minuten
+    prerequisites_formal: Keine
+    prerequisites_recommended: SE-1-001
+    outcomes:
+    - Zuverlässigkeitskenngrößen technischer Systeme berechnen
+    - Gefährdungsanalysen und Risikobeurteilungen durchführen
+    - Sicherheitsanforderungsstufen zuordnen und begründen
+    content:
+    - Zuverlässigkeitskenngrößen, Ausfallverteilungen
+    - Blockdiagramme, Fehlerbaumanalyse, Markovmodelle
+    - FMEA und FMEDA
+    - 'Funktionale Sicherheit nach IEC 61508: Sicherheitslebenszyklus'
+    - Sicherheitsanforderungsstufen und Nachweisführung
+    - Diagnosedeckungsgrad und sichere Ausfälle
+    methods: Vorlesung (3 SWS), Übung mit Fallstudien (1 SWS)
+    credit_requirements: Bestehen der Klausur (Kl-120).
+    literature:
+    - 'Birolini: Reliability Engineering, Springer'
+    - 'Börcsök: Funktionale Sicherheit, VDE Verlag'
+    usability: Pflichtmodul im Masterstudiengang Systems Engineering. Grundlage für SE-3-012.
+  - code: SE-2-008
+    name: Regelung vernetzter Systeme
+    semester: 2
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Sommersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr. Wiebke Ostermann
+    department: Fachbereich Ingenieurwissenschaften
+    exam: Kl-90
+    exam_note: Klausur, 90 Minuten
+    prerequisites_formal: Bestandenes Modul SE-1-001
+    prerequisites_recommended: SE-1-002
+    outcomes:
+    - Mehrgrößenregelungen entwerfen und bewerten
+    - den Einfluss von Totzeiten und Paketverlusten auf die Regelgüte abschätzen
+    - verteilte Regelungsstrukturen auslegen
+    content:
+    - Mehrgrößensysteme, Entkopplung
+    - Zustandsregelung und Beobachterentwurf
+    - 'Netzwerkinduzierte Effekte: Totzeit, Jitter, Paketverlust'
+    - Ereignisbasierte Regelung
+    - Verteilte und hierarchische Regelungsstrukturen
+    methods: Vorlesung (3 SWS), Rechnerübung (1 SWS)
+    credit_requirements: Bestehen der Klausur (Kl-90).
+    literature:
+    - 'Lunze: Regelungstechnik 2, Springer Vieweg'
+    - 'Bemporad, Heemels, Johansson: Networked Control Systems, Springer'
+    usability: Pflichtmodul im Masterstudiengang Systems Engineering.
+  - code: SE-2-009
+    name: Projektstudium Systems Engineering
+    semester: 2–3
+    semester_span:
+    - 2
+    - 3
+    ects: 12
+    ects_per_semester:
+      2: 6
+      3: 6
+    sws: 4
+    sws_per_semester:
+      2: 2
+      3: 2
+    language: Deutsch
+    frequency: Jährlich, beginnend im Sommersemester
+    duration: 2 Semester
+    type: Pflichtmodul
+    responsible: Studiengangsleitung, Prof. Dr.-Ing. Falk Brandhuber
+    department: Fachbereich Ingenieurwissenschaften
+    exam: PA
+    exam_note: Projektarbeit; Bewertung am Ende des zweiten Modulsemesters
+    special_note: Zweisemestriges Modul. Die Leistungspunkte werden erst nach Abschluss des zweiten Modulsemesters
+      vergeben. Im Studien- und Prüfungsplan ist das Modul mit je 6 LP in den Semestern 2 und 3 ausgewiesen.
+    prerequisites_formal: Keine
+    prerequisites_recommended: SE-1-003
+    outcomes:
+    - ein umfangreiches Entwicklungsvorhaben über zwei Semester planen und durchführen
+    - Systementwurf, Realisierung und Nachweis in einem durchgängigen Prozess verbinden
+    - Projektfortschritt gegenüber Auftraggebern darstellen
+    content:
+    - 'Erstes Modulsemester: Anforderungsklärung, Systementwurf, Projektplanung'
+    - 'Zweites Modulsemester: Realisierung, Integration, Verifikation, Abnahme'
+    - Meilensteinreviews zum Ende jedes Modulsemesters
+    - Technische Dokumentation und Übergabe
+    methods: Betreutes Projekt in Gruppen von vier bis sechs Studierenden (je 2 SWS Betreuung pro Semester)
+    credit_requirements: Abnahme der Projektdokumentation und der Abschlusspräsentation am Ende des zweiten
+      Modulsemesters. Das Meilensteinreview am Ende des ersten Modulsemesters ist Voraussetzung für die
+      Fortsetzung.
+    literature:
+    - Projektspezifisch
+    usability: Pflichtmodul im Masterstudiengang Systems Engineering.
+  - code: SE-2-010
+    name: Optimierung technischer Systeme
+    semester: 2
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Sommersemester
+    duration: 1 Semester
+    type: Wahlpflichtmodul
+    responsible: Prof. Dr. Wiebke Ostermann
+    department: Fachbereich Ingenieurwissenschaften
+    exam: Kl-90
+    exam_note: Klausur, 90 Minuten
+    prerequisites_formal: Keine
+    prerequisites_recommended: SE-1-001
+    outcomes:
+    - technische Entwurfsaufgaben als Optimierungsprobleme formulieren
+    - Verfahren der kontinuierlichen und diskreten Optimierung anwenden
+    - Mehrzieloptimierung interpretieren und Kompromisslösungen begründen
+    content:
+    - Lineare und nichtlineare Programmierung
+    - Ganzzahlige Optimierung
+    - Heuristische Verfahren
+    - Mehrzieloptimierung, Pareto-Fronten
+    - Robuste Optimierung unter Unsicherheit
+    methods: Vorlesung (3 SWS), Rechnerübung (1 SWS)
+    credit_requirements: Bestehen der Klausur (Kl-90).
+    literature:
+    - 'Papageorgiou, Leibold, Buss: Optimierung, Springer Vieweg'
+    usability: Wahlpflichtmodul im Masterstudiengang Systems Engineering, Wahlpflichtkatalog nach Anlage
+      2 der Fachspezifischen Bestimmungen.
+  - code: SE-3-011
+    name: Systemarchitektur und Integration
+    semester: 3
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr.-Ing. Falk Brandhuber
+    department: Fachbereich Ingenieurwissenschaften
+    exam: mP-30
+    exam_note: Mündliche Prüfung, 30 Minuten
+    prerequisites_formal: Bestandene Module SE-1-003 und SE-2-006
+    prerequisites_recommended: Keine
+    outcomes:
+    - Systemarchitekturen entwerfen und gegen Qualitätsziele bewerten
+    - Schnittstellen zwischen Teilsystemen spezifizieren
+    - Integrationsstrategien planen und Integrationsrisiken beherrschen
+    content:
+    - Architektursichten und Architekturmuster
+    - Funktionale und physische Architektur, Allokation
+    - Schnittstellenspezifikation und Schnittstellenkontrolle
+    - 'Integrationsstrategien: bottom-up, top-down, inkrementell'
+    - Architekturbewertung
+    - Konfigurationsmanagement
+    methods: Vorlesung (2 SWS), Seminar mit Architekturreviews (2 SWS)
+    credit_requirements: Bestehen der mündlichen Prüfung (mP-30).
+    literature:
+    - 'Walden et al.: INCOSE Systems Engineering Handbook, Wiley'
+    - 'Starke: Effektive Softwarearchitekturen, Hanser'
+    usability: Pflichtmodul im Masterstudiengang Systems Engineering.
+  - code: SE-3-012
+    name: Verifikation und Validierung
+    semester: 3
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr.-Ing. Konrad Vielhaber
+    department: Fachbereich Ingenieurwissenschaften
+    exam: Kl-120
+    exam_note: Klausur, 120 Minuten
+    prerequisites_formal: Bestandene Module SE-1-003 und SE-2-007
+    prerequisites_recommended: Keine
+    outcomes:
+    - Verifikations- und Validierungsstrategien für komplexe Systeme planen
+    - Testabdeckung gegen Anforderungen nachweisen
+    - formale Methoden für kritische Teilfunktionen einsetzen
+    content:
+    - Abgrenzung Verifikation und Validierung
+    - Testentwurfsverfahren und Abdeckungsmaße
+    - Hardware-in-the-Loop und Model-in-the-Loop
+    - Statische Analyse und formale Verifikation
+    - Nachweisführung gegenüber Zulassungsstellen
+    - Fehlermanagement und Regressionsstrategien
+    methods: Vorlesung (3 SWS), Laborübung am HiL-Prüfstand (1 SWS)
+    credit_requirements: Bestehen der Klausur (Kl-120). Voraussetzung für die Zulassung ist die Laborarbeit
+      (LA).
+    literature:
+    - 'Spillner, Linz: Basiswissen Softwaretest, dpunkt'
+    - 'Baier, Katoen: Principles of Model Checking, MIT Press'
+    usability: Pflichtmodul im Masterstudiengang Systems Engineering.
+  - code: SE-3-013
+    name: Simulation und numerische Verfahren
+    semester: 3
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Wahlpflichtmodul
+    responsible: Prof. Dr. Wiebke Ostermann
+    department: Fachbereich Ingenieurwissenschaften
+    exam: PA
+    exam_note: Projektarbeit
+    prerequisites_formal: Bestandenes Modul SE-1-001
+    prerequisites_recommended: SE-1-002
+    outcomes:
+    - Simulationsmodelle numerisch stabil implementieren
+    - Diskretisierungsfehler abschätzen
+    - Simulationsergebnisse gegen Messdaten validieren
+    content:
+    - Numerische Integration steifer Systeme
+    - Finite-Differenzen- und Finite-Elemente-Verfahren
+    - Ereignisdiskrete Simulation
+    - Co-Simulation und Kopplungsverfahren
+    - Verifikation und Validierung von Simulationsmodellen
+    methods: Vorlesung (2 SWS), Rechnerübung (2 SWS)
+    credit_requirements: Abnahme der Projektarbeit einschließlich Konvergenzuntersuchung.
+    literature:
+    - 'Deuflhard, Bornemann: Numerische Mathematik 2, De Gruyter'
+    usability: Wahlpflichtmodul im Masterstudiengang Systems Engineering.
+  - code: SE-3-014
+    name: Mensch-Maschine-Interaktion in technischen Systemen
+    semester: 3
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Wahlpflichtmodul
+    responsible: Prof. Dr. Hedwig Marnach
+    department: Fachbereich Ingenieurwissenschaften
+    exam: Pr
+    exam_note: Präsentation
+    prerequisites_formal: Keine
+    prerequisites_recommended: Keine
+    outcomes:
+    - Bedienschnittstellen nach ergonomischen Kriterien gestalten
+    - Automatisierungsgrade hinsichtlich Bedienerbelastung bewerten
+    - Nutzungstests planen und auswerten
+    content:
+    - Wahrnehmung, Aufmerksamkeit, mentale Modelle
+    - Gestaltungsgrundsätze der Dialoggestaltung
+    - Automatisierungsgrade und Übergabeproblematik
+    - Alarmmanagement in Leitwarten
+    - Nutzungstests und Evaluationsverfahren
+    methods: Seminar (2 SWS), Übung im Usability-Labor (2 SWS)
+    credit_requirements: Präsentation von etwa 30 Minuten mit anschließender Diskussion.
+    literature:
+    - 'Wickens et al.: Engineering Psychology and Human Performance, Routledge'
+    usability: Wahlpflichtmodul im Masterstudiengang Systems Engineering.
+  - code: SE-3-018
+    name: Digitale Zwillinge im Systems Engineering
+    semester: 3
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Prof. Dr.-Ing. Falk Brandhuber
+    department: Fachbereich Ingenieurwissenschaften
+    exam: PA
+    exam_note: Projektarbeit
+    plan_exam: Kl-120
+    plan_exam_note: Abweichende Angabe im Studien- und Prüfungsplan (Anlage 1 FSB).
+    data_note: 'INTENTIONAL CONFLICT K-03: Anlage 1 der Fachspezifischen Bestimmungen (Studien- und Prüfungsplan,
+      R5) weist für dieses Modul die Prüfungsform Kl-120 aus. Das Modulhandbuch ist nach § 9 Abs. 3 APO
+      hinsichtlich des Feldes ''Prüfungsform'' bindend. Beide Quellen sind bindend und ranggleich; eine
+      Vorrangregel besteht nicht.'
+    prerequisites_formal: Bestandenes Modul SE-2-006
+    prerequisites_recommended: SE-1-002
+    outcomes:
+    - digitale Zwillinge entlang des Systemlebenszyklus konzipieren
+    - Datenflüsse zwischen physischem Asset und Zwilling spezifizieren
+    - den Nutzen eines digitalen Zwillings gegen den Aufwand abwägen
+    content:
+    - 'Begriffsabgrenzung: digitales Modell, digitaler Schatten, digitaler Zwilling'
+    - Verwaltungsschale und Informationsmodelle
+    - Synchronisation und Datenqualität
+    - Einsatz in Inbetriebnahme, Betrieb und Instandhaltung
+    - Wirtschaftlichkeitsbetrachtung
+    methods: Vorlesung (2 SWS), Projektarbeit am Systemprüfstand (2 SWS)
+    credit_requirements: Abnahme der Projektarbeit einschließlich Dokumentation der Schnittstellenspezifikation.
+    literature:
+    - 'Stark: Virtuelle Produktentstehung, Springer Vieweg'
+    usability: Pflichtmodul im Masterstudiengang Systems Engineering.
+  - code: SE-3-017
+    name: Sicherheit vernetzter technischer Systeme
+    semester: 3
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Wintersemester
+    duration: 1 Semester
+    type: Wahlpflichtmodul
+    responsible: Prof. Dr.-Ing. Konrad Vielhaber
+    department: Fachbereich Ingenieurwissenschaften
+    exam: mP-20
+    exam_note: Mündliche Prüfung, 20 Minuten
+    prerequisites_formal: Keine
+    prerequisites_recommended: SE-1-004
+    outcomes:
+    - Bedrohungsmodelle für vernetzte technische Systeme erstellen
+    - Schutzmaßnahmen gegen Angriffsklassen zuordnen
+    - das Zusammenspiel von Safety und Security beurteilen
+    content:
+    - Schutzziele und Bedrohungsmodellierung
+    - Kryptographische Grundverfahren
+    - Netzsegmentierung und Zonenkonzepte nach IEC 62443
+    - Sichere Systemupdates
+    - Wechselwirkung von funktionaler Sicherheit und Informationssicherheit
+    methods: Vorlesung (3 SWS), Laborübung (1 SWS)
+    credit_requirements: Bestehen der mündlichen Prüfung (mP-20).
+    literature:
+    - 'Eckert: IT-Sicherheit, De Gruyter'
+    usability: Wahlpflichtmodul im Masterstudiengang Systems Engineering.
+  - code: SE-2-019
+    name: Produktdatenmanagement und Lebenszyklusmanagement
+    semester: 2
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Jährlich, Sommersemester
+    duration: 1 Semester
+    type: Wahlpflichtmodul
+    responsible: Prof. Dr. Hedwig Marnach
+    department: Fachbereich Ingenieurwissenschaften
+    exam: HA
+    exam_note: Hausarbeit
+    prerequisites_formal: Keine
+    prerequisites_recommended: Keine
+    outcomes:
+    - Produktdatenstrukturen über den Lebenszyklus entwerfen
+    - Änderungsprozesse gestalten und deren Wirksamkeit bewerten
+    content:
+    - Produktstrukturen und Stücklisten
+    - Konfigurations- und Variantenmanagement
+    - Änderungsmanagement
+    - Datenaustauschformate und Schnittstellen
+    - Rechtliche Anforderungen an die Dokumentenaufbewahrung
+    methods: Seminaristischer Unterricht (2 SWS), Werkzeugübung (2 SWS)
+    credit_requirements: Hausarbeit im Umfang von 20 bis 25 Seiten.
+    literature:
+    - 'Eigner, Stelzer: Product Lifecycle Management, Springer'
+    usability: Wahlpflichtmodul im Masterstudiengang Systems Engineering.
+  - code: SE-3-020
+    name: Modellprädiktive Regelung
+    semester: 3
+    ects: 6
+    sws: 4
+    language: Deutsch
+    frequency: Alle zwei Jahre, Wintersemester
+    duration: 1 Semester
+    type: Wahlpflichtmodul
+    responsible: Prof. Dr. Wiebke Ostermann
+    department: Fachbereich Ingenieurwissenschaften
+    exam: PA
+    exam_note: Projektarbeit
+    special_note: Das Modul wird im zweijährigen Rhythmus angeboten. Nächstes Angebot im Wintersemester
+      2026/27.
+    prerequisites_formal: Bestandene Module SE-1-001 und SE-2-008
+    prerequisites_recommended: SE-2-010
+    outcomes:
+    - modellprädiktive Regler für beschränkte Systeme entwerfen
+    - Stabilität und Zulässigkeit prädiktiver Regelungen beurteilen
+    - Rechenaufwand gegen Regelgüte abwägen
+    content:
+    - Prädiktionsmodelle und Kostenfunktionen
+    - Beschränkungen und Zulässigkeit
+    - Stabilitätsnachweis mit Endkostenterm
+    - Echtzeitimplementierung
+    - Robuste prädiktive Regelung
+    methods: Vorlesung (2 SWS), Rechnerübung (2 SWS)
+    credit_requirements: Abnahme der Projektarbeit.
+    literature:
+    - 'Rawlings, Mayne, Diehl: Model Predictive Control, Nob Hill'
+    usability: Wahlpflichtmodul im Masterstudiengang Systems Engineering.
+  - code: SE-4-015
+    name: Masterarbeit
+    semester: 4
+    ects: 27
+    sws: 0
+    language: Deutsch
+    frequency: Jedes Semester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Vorsitzende oder Vorsitzender des Prüfungsausschusses
+    department: Fachbereich Ingenieurwissenschaften
+    exam: MA
+    exam_note: Masterarbeit; Bearbeitungszeit sechs Monate nach § 12 Abs. 1 FSB
+    special_note: Die Bearbeitungszeit weicht von § 19 Abs. 2 APO ab. Die Abweichung ist nach § 8 Abs.
+      1 APO zulässig, ist jedoch in Anlage 3 der Fachspezifischen Bestimmungen nicht aufgeführt. Siehe
+      Override O-05.
+    prerequisites_formal: Nachweis von mindestens 75 Leistungspunkten (§ 19 Abs. 1 APO in der Fassung
+      der Ersten Änderungsordnung) bzw. 60 Leistungspunkten (APO in der Fassung 1.0)
+    prerequisites_recommended: SE-1-005
+    outcomes:
+    - eine anspruchsvolle Aufgabe des Systems Engineering selbständig nach wissenschaftlichen Methoden
+      bearbeiten
+    - den Stand der Forschung und Technik kritisch einordnen
+    - die eigenen Ergebnisse gegen alternative Ansätze abgrenzen
+    content:
+    - Selbständige Bearbeitung einer Aufgabenstellung aus dem Systems Engineering
+    - Themenausgabe durch eine Prüferin oder einen Prüfer nach § 20 APO
+    methods: Selbständige Arbeit unter Betreuung
+    credit_requirements: Fristgerechte Abgabe und Bewertung mit mindestens ausreichend (4,0).
+    literature:
+    - Themenspezifisch
+    usability: Pflichtmodul im Masterstudiengang Systems Engineering.
+  - code: SE-4-016
+    name: Kolloquium
+    semester: 4
+    ects: 3
+    sws: 0
+    language: Deutsch
+    frequency: Jedes Semester
+    duration: 1 Semester
+    type: Pflichtmodul
+    responsible: Vorsitzende oder Vorsitzender des Prüfungsausschusses
+    department: Fachbereich Ingenieurwissenschaften
+    exam: Ko
+    exam_note: Kolloquium, 45 Minuten
+    prerequisites_formal: Mit mindestens ausreichend bewertete Masterarbeit (SE-4-015)
+    prerequisites_recommended: Keine
+    outcomes:
+    - die Masterarbeit im fachlichen Kontext darstellen und verteidigen
+    - die methodische Vorgehensweise begründen
+    content:
+    - Vortrag über die Masterarbeit von etwa 20 Minuten
+    - Fachgespräch von etwa 25 Minuten
+    methods: Mündliche Prüfung vor zwei Prüfenden nach § 22 APO
+    credit_requirements: Bestehen des Kolloquiums.
+    literature:
+    - Keine
+    usability: Pflichtmodul im Masterstudiengang Systems Engineering. Schließt das Studium ab.
+IB:
+  programme: IB
+  workload_per_credit: 25
+  semester_plan:
+    1:
+      compulsory:
+      - IB-1-001
+      - IB-1-002
+      - IB-1-003
+      - IB-1-004
+      - IB-1-005
+      elective_credits: 0
+      total: 30
+    2:
+      compulsory:
+      - IB-2-006
+      - IB-2-007
+      - IB-2-008
+      - IB-2-009
+      - IB-2-010
+      elective_credits: 0
+      total: 30
+    3:
+      compulsory:
+      - IB-3-011
+      - IB-3-012
+      - IB-3-013
+      - IB-3-014
+      - IB-3-015
+      elective_credits: 0
+      total: 30
+    4:
+      compulsory:
+      - IB-4-016
+      - IB-4-017
+      - IB-4-018
+      - IB-4-019
+      elective_credits: 6
+      total: 30
+    5:
+      compulsory:
+      - IB-5-020
+      - IB-5-021
+      elective_credits: 0
+      total: 30
+    6:
+      compulsory:
+      - IB-6-022
+      - IB-6-023
+      - IB-6-024
+      elective_credits: 6
+      total: 30
+  elective_catalogue:
+    required_credits: 12
+    note: Students select two modules from the elective catalogue, one in the fourth and one in the sixth
+      semester, totalling 12 credit points.
+    members:
+    - IB-4-025
+    - IB-4-026
+    - IB-6-027
+    - IB-6-028
+    semester_4_members:
+    - IB-4-025
+    - IB-4-026
+    semester_6_members:
+    - IB-6-027
+    - IB-6-028
+    excluded_note: IB-5-029 International Taxation is expressly not a member of this catalogue.
+  variant_groups: null
+  modules:
+  - code: IB-1-001
+    name: Principles of Business Administration
+    semester: 1
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, winter semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr. Ruth Aschenbrenner
+    department: Department of Business Studies
+    exam: Kl-120
+    exam_note: Written examination, 120 minutes
+    prerequisites_formal: None
+    prerequisites_recommended: None
+    outcomes:
+    - describe the principal functions of a commercial enterprise and their interdependence
+    - distinguish legal forms of enterprise and their consequences for liability and finance
+    - apply basic decision models to operational business problems
+    content:
+    - The enterprise as an economic and legal unit
+    - Legal forms and governance structures
+    - 'Functional areas: procurement, production, marketing, finance'
+    - Organisational structures and coordination mechanisms
+    - 'Decision theory: objectives, alternatives, criteria'
+    - Introduction to corporate governance and stakeholder analysis
+    methods: Lecture (3 SWS) with case-based tutorial (1 SWS)
+    credit_requirements: Passing the written examination (Kl-120).
+    literature:
+    - 'Wöhe, Döring: Einführung in die Allgemeine Betriebswirtschaftslehre, Vahlen'
+    - 'Schierenbeck, Wöhle: Grundzüge der Betriebswirtschaftslehre, De Gruyter'
+    usability: Compulsory module of the B.A. International Business. Foundation for IB-4-016.
+  - code: IB-1-002
+    name: Financial Accounting
+    semester: 1
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, winter semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr. Ruth Aschenbrenner
+    department: Department of Business Studies
+    exam: Kl-120
+    exam_note: Written examination, 120 minutes
+    prerequisites_formal: None
+    prerequisites_recommended: None
+    outcomes:
+    - record business transactions in double-entry form
+    - prepare and read a balance sheet and income statement
+    - explain the differences between German commercial law accounting and international standards
+    content:
+    - Inventory, balance sheet, double-entry bookkeeping
+    - Recording of purchases, sales, payroll and taxes
+    - Depreciation and valuation principles
+    - Year-end closing entries
+    - Structure of financial statements
+    - Comparison of HGB and IFRS principles
+    methods: Lecture (3 SWS) with exercise (1 SWS)
+    credit_requirements: Passing the written examination (Kl-120).
+    literature:
+    - 'Coenenberg, Haller, Schultze: Jahresabschluss und Jahresabschlussanalyse, Schäffer-Poeschel'
+    usability: Compulsory module of the B.A. International Business. Foundation for IB-2-006 and IB-3-014.
+  - code: IB-1-003
+    name: Business Mathematics and Statistics
+    semester: 1
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, winter semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr. Emmerich Kaltenbrunner
+    department: Department of Business Studies
+    exam: Kl-90
+    exam_note: Written examination, 90 minutes
+    prerequisites_formal: None
+    prerequisites_recommended: Secondary school mathematics
+    outcomes:
+    - apply financial mathematics to interest, annuity and amortisation problems
+    - summarise and present empirical business data
+    - conduct and interpret elementary statistical tests
+    content:
+    - Sequences, series, interest and annuity calculations
+    - Functions and marginal analysis in economic applications
+    - 'Descriptive statistics: location, dispersion, concentration'
+    - Probability and common distributions
+    - Estimation and hypothesis testing
+    - Correlation and simple regression
+    methods: Lecture (3 SWS) with tutorial (1 SWS)
+    credit_requirements: Passing the written examination (Kl-90).
+    literature:
+    - 'Tietze: Einführung in die Finanzmathematik, Springer Spektrum'
+    - 'Newbold, Carlson, Thorne: Statistics for Business and Economics, Pearson'
+    usability: Compulsory module of the B.A. International Business. Foundation for IB-2-009.
+  - code: IB-1-004
+    name: Introduction to Economics
+    semester: 1
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, winter semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr. Emmerich Kaltenbrunner
+    department: Department of Business Studies
+    exam: Kl-90
+    exam_note: Written examination, 90 minutes
+    prerequisites_formal: None
+    prerequisites_recommended: None
+    outcomes:
+    - analyse market outcomes using supply and demand models
+    - explain the effects of market failure and public intervention
+    - interpret macroeconomic indicators and policy measures
+    content:
+    - Scarcity, opportunity cost, comparative advantage
+    - Market equilibrium, elasticity, welfare analysis
+    - 'Market structures: competition, monopoly, oligopoly'
+    - Market failure, externalities, public goods
+    - National accounts, growth, unemployment, inflation
+    - Monetary and fiscal policy instruments
+    methods: Lecture (3 SWS) with tutorial (1 SWS)
+    credit_requirements: Passing the written examination (Kl-90).
+    literature:
+    - 'Mankiw, Taylor: Economics, Cengage'
+    usability: Compulsory module of the B.A. International Business. Foundation for IB-3-011.
+  - code: IB-1-005
+    name: Academic and Business English
+    semester: 1
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, winter semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Language Centre, Dr. Coralie Bendtsen
+    department: Language Centre
+    exam: PO
+    exam_note: Portfolio
+    exam_components:
+    - name: Analytical essay (1,500 words)
+      weight: 40
+    - name: Business correspondence file
+      weight: 25
+    - name: Individual presentation (15 min)
+      weight: 35
+    prerequisites_formal: None
+    prerequisites_recommended: English at level B2 of the Common European Framework
+    data_note: Uses examination form PO, which was introduced into Annex 2 of the General Examination
+      Regulations only by the First Amendment Ordinance (in force 1 October 2023). For cohorts under APO
+      version 1.0 the form is not listed in Annex 2; Annex 2 is expressly non-exhaustive, so use of the
+      form is nonetheless permissible. See near-duplicate note N-09.
+    outcomes:
+    - write structured analytical texts appropriate to an academic business context
+    - conduct professional correspondence and meetings in English
+    - deliver and defend a structured business presentation
+    content:
+    - Academic writing conventions and argument structure
+    - Business correspondence registers
+    - Meeting and negotiation language
+    - Presentation structure and delivery
+    - Referencing and source integration
+    methods: Seminar-style language instruction (4 SWS) in groups of no more than 20
+    credit_requirements: Portfolio comprising the three components listed above. All components must be
+      submitted; the aggregate must be passed.
+    literature:
+    - Course materials provided by the Language Centre
+    usability: Compulsory module of the B.A. International Business.
+  - code: IB-2-006
+    name: Management Accounting
+    semester: 2
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr. Ruth Aschenbrenner
+    department: Department of Business Studies
+    exam: Kl-120
+    exam_note: Written examination, 120 minutes
+    prerequisites_formal: Successful completion of IB-1-002
+    prerequisites_recommended: None
+    outcomes:
+    - allocate costs to cost centres and cost objects
+    - prepare contribution margin analyses for operational decisions
+    - design budgets and variance analyses
+    content:
+    - Cost types, cost centres, cost objects
+    - Full costing and direct costing
+    - Contribution margin analysis and break-even
+    - Budgeting and variance analysis
+    - Transfer pricing in multinational groups
+    - Cost information for make-or-buy decisions
+    methods: Lecture (3 SWS) with exercise (1 SWS)
+    credit_requirements: Passing the written examination (Kl-120).
+    literature:
+    - 'Drury: Management and Cost Accounting, Cengage'
+    usability: Compulsory module of the B.A. International Business.
+  - code: IB-2-007
+    name: Marketing
+    semester: 2
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr. Nadja Lippert
+    department: Department of Business Studies
+    exam: PA
+    exam_note: Project work
+    prerequisites_formal: None
+    prerequisites_recommended: IB-1-001
+    outcomes:
+    - analyse markets and derive segmentation and positioning decisions
+    - design a coherent marketing mix for a defined target group
+    - evaluate marketing measures against defined objectives
+    content:
+    - Consumer behaviour and buying decision processes
+    - 'Market research: design, sampling, analysis'
+    - Segmentation, targeting, positioning
+    - Product, price, distribution and communication policy
+    - Digital marketing channels and measurement
+    - Marketing controlling
+    methods: Lecture (2 SWS) and project work in teams (2 SWS)
+    credit_requirements: Acceptance of the team marketing plan and its presentation. Individual contributions
+      are separately assessed.
+    literature:
+    - 'Kotler, Keller, Chernev: Marketing Management, Pearson'
+    usability: Compulsory module of the B.A. International Business. Foundation for IB-4-017.
+  - code: IB-2-008
+    name: Business Law
+    semester: 2
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr. iur. Bastian Kirchgässner
+    department: Department of Business Studies
+    exam: Kl-120
+    exam_note: Written examination, 120 minutes
+    prerequisites_formal: None
+    prerequisites_recommended: None
+    special_note: Taught in English with reference to German legal sources. Statutory texts are used in
+      the German original with English working translations.
+    outcomes:
+    - identify the legal framework applicable to a commercial transaction
+    - assess the formation and performance of contracts under German civil law
+    - recognise the limits of their own legal assessment and the need for professional advice
+    content:
+    - Sources of German private law; civil code structure
+    - Formation of contracts, defects of intent
+    - Sales law and warranty
+    - 'Commercial law: merchant status, commercial transactions'
+    - 'Company law: partnerships and corporations'
+    - Introduction to international sales law (CISG)
+    methods: Lecture (3 SWS) with case analysis (1 SWS)
+    credit_requirements: Passing the written examination (Kl-120).
+    literature:
+    - 'Führich: Wirtschaftsprivatrecht, Vahlen'
+    - Consolidated texts of the German Civil Code and Commercial Code
+    usability: Compulsory module of the B.A. International Business.
+  - code: IB-2-009
+    name: Data Analysis for Business
+    semester: 2
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr. Emmerich Kaltenbrunner
+    department: Department of Business Studies
+    exam: PA
+    exam_note: Project work
+    prerequisites_formal: Successful completion of IB-1-003
+    prerequisites_recommended: None
+    outcomes:
+    - prepare and clean business data sets for analysis
+    - select and apply appropriate analytical methods to a business question
+    - communicate analytical findings to a non-technical audience
+    content:
+    - Data sources and data quality in business contexts
+    - Spreadsheet and statistical software workflows
+    - Multiple regression and interpretation
+    - Time series and forecasting basics
+    - Classification methods for customer analytics
+    - Reporting and visualisation principles
+    methods: Lecture (2 SWS) and computer laboratory (2 SWS)
+    credit_requirements: Acceptance of the analytical project report of 15 to 20 pages including reproducible
+      analysis files.
+    literature:
+    - 'Field: Discovering Statistics, Sage'
+    usability: Compulsory module of the B.A. International Business. Foundation for IB-6-027.
+  - code: IB-2-010
+    name: Business German A1
+    semester: 2
+    ects: 6
+    sws: 6
+    language: German
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Language Centre, Dr. Coralie Bendtsen
+    department: Language Centre
+    exam: PO
+    exam_note: Portfolio
+    special_note: Taught entirely in German. Higher contact time than other 6-credit modules (6 SWS) reflecting
+      the requirements of beginner language instruction. Students with certified German at level A2 or
+      above may apply to the examination board for recognition under § 18 APO.
+    prerequisites_formal: None
+    prerequisites_recommended: No prior knowledge of German required
+    outcomes:
+    - manage basic everyday and workplace exchanges in German
+    - read simple business correspondence with dictionary support
+    - describe their own professional background in simple terms
+    content:
+    - Greetings, introductions, workplace roles
+    - Present tense; nominative and accusative
+    - Numbers, dates, appointments
+    - Simple business correspondence
+    - Telephone and reception situations
+    methods: Language course (6 SWS)
+    credit_requirements: Portfolio comprising a written test, an oral interaction task and a learning
+      diary.
+    literature:
+    - Course materials provided by the Language Centre
+    usability: Compulsory module of the B.A. International Business. Prerequisite for IB-3-015.
+  - code: IB-3-011
+    name: International Trade and Finance
+    semester: 3
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, winter semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr. Emmerich Kaltenbrunner
+    department: Department of Business Studies
+    exam: Kl-120
+    exam_note: Written examination, 120 minutes
+    prerequisites_formal: Successful completion of IB-1-004
+    prerequisites_recommended: None
+    outcomes:
+    - explain patterns of international trade using standard trade models
+    - assess the effect of trade policy instruments on firms and consumers
+    - manage foreign exchange exposure in a commercial setting
+    content:
+    - Comparative advantage and factor endowment models
+    - 'Trade policy: tariffs, quotas, non-tariff barriers'
+    - Regional integration and the internal market
+    - Balance of payments
+    - Exchange rate regimes and determination
+    - Instruments for hedging currency exposure
+    methods: Lecture (3 SWS) with tutorial (1 SWS)
+    credit_requirements: Passing the written examination (Kl-120).
+    literature:
+    - 'Krugman, Obstfeld, Melitz: International Economics, Pearson'
+    usability: Compulsory module of the B.A. International Business.
+  - code: IB-3-012
+    name: Human Resource Management
+    semester: 3
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, winter semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr. Nadja Lippert
+    department: Department of Business Studies
+    exam: Pr
+    exam_note: Presentation
+    prerequisites_formal: None
+    prerequisites_recommended: IB-1-001
+    outcomes:
+    - design recruitment and selection processes that meet legal requirements
+    - evaluate development and remuneration instruments
+    - assess the role of employee representation in German enterprises
+    content:
+    - Personnel planning and recruitment
+    - Selection instruments and their validity
+    - Performance management and development
+    - Remuneration systems
+    - Employment law essentials and co-determination
+    - Diversity and inclusion in the workplace
+    methods: Seminar (2 SWS) with case work (2 SWS)
+    credit_requirements: Presentation of approximately 30 minutes with written handout.
+    literature:
+    - 'Armstrong, Taylor: Armstrong''s Handbook of Human Resource Management Practice, Kogan Page'
+    usability: Compulsory module of the B.A. International Business.
+  - code: IB-3-013
+    name: Operations and Supply Chain Management
+    semester: 3
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, winter semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr. Ruth Aschenbrenner
+    department: Department of Business Studies
+    exam: Kl-90
+    exam_note: Written examination, 90 minutes
+    prerequisites_formal: None
+    prerequisites_recommended: IB-1-003
+    outcomes:
+    - design production and distribution processes against cost and service targets
+    - apply inventory models to procurement decisions
+    - assess supply chain risk and resilience measures
+    content:
+    - Process types and capacity planning
+    - Inventory models and replenishment policies
+    - Production planning and control
+    - Supplier selection and evaluation
+    - Logistics networks and distribution
+    - Supply chain risk and sustainability
+    methods: Lecture (3 SWS) with exercise (1 SWS)
+    credit_requirements: Passing the written examination (Kl-90).
+    literature:
+    - 'Slack, Brandon-Jones: Operations Management, Pearson'
+    usability: Compulsory module of the B.A. International Business.
+  - code: IB-3-014
+    name: Corporate Finance
+    semester: 3
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, winter semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr. Ruth Aschenbrenner
+    department: Department of Business Studies
+    exam: Kl-120
+    exam_note: Written examination, 120 minutes
+    prerequisites_formal: Successful completion of IB-1-002
+    prerequisites_recommended: IB-1-003
+    outcomes:
+    - appraise investment projects using discounted cash flow methods
+    - assess financing alternatives and their cost
+    - analyse financial statements for credit and investment decisions
+    content:
+    - Time value of money, net present value, internal rate of return
+    - Cost of capital and capital structure
+    - Equity and debt financing instruments
+    - Working capital management
+    - Financial statement analysis and ratios
+    - Introduction to company valuation
+    methods: Lecture (3 SWS) with exercise (1 SWS)
+    credit_requirements: Passing the written examination (Kl-120).
+    literature:
+    - 'Brealey, Myers, Allen: Principles of Corporate Finance, McGraw-Hill'
+    usability: Compulsory module of the B.A. International Business.
+  - code: IB-3-015
+    name: Business German A2
+    semester: 3
+    ects: 6
+    sws: 6
+    language: German
+    frequency: Annually, winter semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Language Centre, Dr. Coralie Bendtsen
+    department: Language Centre
+    exam: PO
+    exam_note: Portfolio
+    special_note: Taught entirely in German. Higher contact time (6 SWS) than other 6-credit modules.
+    prerequisites_formal: Successful completion of IB-2-010 or certified German at level A1
+    prerequisites_recommended: None
+    outcomes:
+    - handle routine workplace communication in German
+    - write short business letters and e-mails
+    - understand the main points of simple German business texts
+    content:
+    - Perfect and preterite tenses; dative case
+    - Subordinate clauses and connectors
+    - 'Business correspondence: enquiry, offer, order, complaint'
+    - Workplace vocabulary across business functions
+    - Short presentations in German
+    methods: Language course (6 SWS)
+    credit_requirements: Portfolio comprising a written test, an oral interaction task and a written correspondence
+      file.
+    literature:
+    - Course materials provided by the Language Centre
+    usability: Compulsory module of the B.A. International Business. Recommended preparation for a German-speaking
+      placement in IB-5-020.
+  - code: IB-4-016
+    name: Strategic Management
+    semester: 4
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr. Nadja Lippert
+    department: Department of Business Studies
+    exam: HA
+    exam_note: Term paper
+    prerequisites_formal: Successful completion of IB-1-001
+    prerequisites_recommended: IB-3-014
+    outcomes:
+    - conduct structured industry and resource analyses
+    - formulate and justify competitive strategies
+    - assess the feasibility of strategic options against organisational capabilities
+    content:
+    - 'Strategic analysis: industry structure, resources, capabilities'
+    - Generic and hybrid competitive strategies
+    - 'Corporate strategy: diversification, vertical integration'
+    - Internationalisation strategies and entry modes
+    - Strategy implementation and control
+    - Strategic change management
+    methods: Seminar (2 SWS) with case study work (2 SWS)
+    credit_requirements: Term paper of 20 to 25 pages analysing an assigned company case.
+    literature:
+    - 'Grant: Contemporary Strategy Analysis, Wiley'
+    usability: Compulsory module of the B.A. International Business.
+  - code: IB-4-017
+    name: International Marketing
+    semester: 4
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr. Nadja Lippert
+    department: Department of Business Studies
+    exam: PA
+    exam_note: Project work
+    prerequisites_formal: Successful completion of IB-2-007
+    prerequisites_recommended: None
+    outcomes:
+    - evaluate the standardisation-adaptation trade-off across markets
+    - design market entry strategies for a defined product
+    - assess cultural influences on marketing communication
+    content:
+    - International market selection and screening
+    - 'Entry modes: export, licensing, joint venture, subsidiary'
+    - Standardisation versus adaptation of the marketing mix
+    - International pricing and grey markets
+    - Cross-cultural communication in advertising
+    - International brand management
+    methods: Lecture (2 SWS) and project work (2 SWS)
+    credit_requirements: Acceptance of the market entry plan and its presentation.
+    literature:
+    - 'Hollensen: Global Marketing, Pearson'
+    usability: Compulsory module of the B.A. International Business.
+  - code: IB-4-018
+    name: Cross-Cultural Management
+    semester: 4
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr. Ruth Aschenbrenner
+    department: Department of Business Studies
+    exam: Pr
+    exam_note: Presentation
+    prerequisites_formal: None
+    prerequisites_recommended: None
+    outcomes:
+    - apply cultural dimension frameworks critically to management situations
+    - anticipate sources of misunderstanding in international teams
+    - design integration measures for cross-border cooperation
+    content:
+    - Concepts of culture and cultural dimension models
+    - Critique of dimension-based approaches
+    - Communication styles and negotiation across cultures
+    - Leadership expectations in different contexts
+    - Expatriate assignment and repatriation
+    - Preparation for the semester abroad
+    methods: Seminar (2 SWS) with simulation exercises (2 SWS)
+    credit_requirements: Presentation of approximately 25 minutes with written handout of 5 to 8 pages.
+    literature:
+    - 'Thomas, Peterson: Cross-Cultural Management, Sage'
+    usability: Compulsory module of the B.A. International Business. Prepares the semester abroad (IB-5-020).
+  - code: IB-4-019
+    name: Business Ethics and Sustainability
+    semester: 4
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr. iur. Bastian Kirchgässner
+    department: Department of Business Studies
+    exam: HA
+    exam_note: Term paper
+    prerequisites_formal: None
+    prerequisites_recommended: None
+    outcomes:
+    - analyse business decisions using established ethical frameworks
+    - assess corporate sustainability reporting against regulatory requirements
+    - evaluate supply chain due diligence obligations
+    content:
+    - Normative ethical frameworks applied to business
+    - Corporate social responsibility concepts
+    - Sustainability reporting standards and assurance
+    - Supply chain due diligence obligations
+    - Whistleblowing and compliance systems
+    - Case analysis of corporate misconduct
+    methods: Seminar (3 SWS) with case discussion (1 SWS)
+    credit_requirements: Term paper of 15 to 20 pages.
+    literature:
+    - 'Crane, Matten: Business Ethics, Oxford University Press'
+    usability: Compulsory module of the B.A. International Business.
+  - code: IB-5-020
+    name: Study Abroad Semester
+    semester: 5
+    ects: 24
+    sws: 0
+    language: Depends on host institution
+    frequency: Every semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: International Office, Prof. Dr. Nadja Lippert
+    department: Department of Business Studies
+    exam: LN
+    exam_note: Ungraded; pass/fail
+    ungraded: true
+    special_note: 'Assessed as pass/fail and excluded from the overall grade under § 9 of the Programme-Specific
+      Provisions, deviating from § 13 APO. Unusual workload structure: 600 hours with no contact time
+      at Rheinmark.'
+    prerequisites_formal: Evidence of at least 100 credit points and a learning agreement approved before
+      departure
+    prerequisites_recommended: IB-4-018
+    outcomes:
+    - study successfully within a different academic system
+    - reflect on their own cultural assumptions in an unfamiliar environment
+    - operate independently in an international academic and social context
+    content:
+    - Study at a partner institution abroad for one semester
+    - Modules agreed in advance in a learning agreement
+    - Minimum of 24 credit points or the equivalent workload at the host institution
+    methods: Study at a partner institution with supervision by the International Office
+    credit_requirements: Transcript of records from the host institution evidencing the agreed workload,
+      and recognition by the examination board under the Ordinance on the Recognition of Achievements
+      Obtained Abroad. Assessed as passed or not passed.
+    literature:
+    - Determined by the host institution
+    usability: Compulsory module of the B.A. International Business.
+  - code: IB-5-021
+    name: Intercultural Preparation and Reflection
+    semester: 5
+    ects: 6
+    sws: 2
+    language: English
+    frequency: Every semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr. Ruth Aschenbrenner
+    department: Department of Business Studies
+    exam: PO
+    exam_note: Portfolio
+    exam_components:
+    - name: Pre-departure preparation dossier
+      weight: 30
+    - name: Reflective journal during the stay abroad
+      weight: 40
+    - name: Return presentation
+      weight: 30
+    special_note: 'Delivered in block format before departure and after return. Unusual workload structure:
+      150 hours against only 2 SWS of contact time.'
+    prerequisites_formal: Concurrent or prior completion of IB-5-020
+    prerequisites_recommended: IB-4-018
+    outcomes:
+    - prepare systematically for study in an unfamiliar academic culture
+    - document and analyse intercultural critical incidents
+    - articulate the professional value of the experience abroad
+    content:
+    - 'Pre-departure briefing: academic system, administration, safety'
+    - Critical incident technique
+    - Structured reflection methods
+    - Return workshop and peer exchange
+    methods: Block seminars before departure and after return (2 SWS in total)
+    credit_requirements: Portfolio comprising the three components listed above.
+    literature:
+    - Course materials provided by the International Office
+    usability: Compulsory module of the B.A. International Business.
+  - code: IB-6-022
+    name: International Business Project
+    semester: 6
+    ects: 9
+    sws: 4
+    language: English
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Prof. Dr. Nadja Lippert
+    department: Department of Business Studies
+    exam: PA
+    exam_note: Project work
+    exam_components:
+    - name: Written project report
+      weight: 60
+    - name: Client presentation
+      weight: 25
+    - name: Individual reflection paper
+      weight: 15
+    prerequisites_formal: Successful completion of IB-5-020
+    prerequisites_recommended: IB-4-016, IB-4-017
+    outcomes:
+    - deliver a consulting-style analysis for an external client
+    - manage a project team under time and information constraints
+    - present recommendations to a client audience
+    content:
+    - Project definition with an external partner organisation
+    - Structured problem solving and hypothesis-driven analysis
+    - Data collection and stakeholder interviews
+    - Recommendation development and cost assessment
+    - Client presentation and handover
+    methods: Supervised project work in teams of four to six (4 SWS)
+    credit_requirements: Acceptance of all three components. The individual reflection paper must be passed
+      independently.
+    literature:
+    - 'Minto: The Pyramid Principle, Pearson'
+    usability: Compulsory module of the B.A. International Business.
+  - code: IB-6-023
+    name: Bachelor's Thesis
+    semester: 6
+    ects: 12
+    sws: 0
+    language: English
+    frequency: Every semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Chair of the examination board
+    department: Department of Business Studies
+    exam: BA
+    exam_note: Bachelor's thesis; processing time three months
+    special_note: 'Registration threshold: § 14 Abs. 2 of the Programme-Specific Provisions states 120
+      credit points; footnote 4 to Annex 1 states 150 credit points. Documented conflict K-01.'
+    prerequisites_formal: See special note; the two binding sources disagree
+    prerequisites_recommended: IB-6-022
+    outcomes:
+    - treat a business question independently using scientific methods
+    - situate the analysis within the relevant literature
+    - present findings in a structured written form
+    content:
+    - Independent treatment of a topic from international business
+    - Topic agreed with a supervising examiner and registered with the examination board
+    methods: Independent work under supervision
+    credit_requirements: Submission within the processing period and assessment as at least sufficient
+      (4.0).
+    literature:
+    - Topic-specific
+    usability: Compulsory module of the B.A. International Business.
+  - code: IB-6-024
+    name: Colloquium
+    semester: 6
+    ects: 3
+    sws: 0
+    language: English
+    frequency: Every semester
+    duration: 1 semester
+    type: Compulsory
+    responsible: Chair of the examination board
+    department: Department of Business Studies
+    exam: Ko
+    exam_note: Colloquium, 30 minutes
+    prerequisites_formal: Bachelor's thesis (IB-6-023) assessed as at least sufficient
+    prerequisites_recommended: None
+    outcomes:
+    - present and defend the findings of the bachelor's thesis
+    - justify methodological choices in discussion
+    content:
+    - Presentation of approximately 15 minutes
+    - Academic discussion of approximately 15 minutes
+    methods: Oral examination before two examiners under § 22 APO
+    credit_requirements: Passing the colloquium.
+    literature:
+    - None
+    usability: Compulsory module of the B.A. International Business. Concludes the programme.
+  - code: IB-4-025
+    name: Digital Business Models
+    semester: 4
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Elective
+    responsible: Prof. Dr. Nadja Lippert
+    department: Department of Business Studies
+    exam: PA
+    exam_note: Project work
+    prerequisites_formal: None
+    prerequisites_recommended: IB-1-001
+    outcomes:
+    - analyse platform and subscription business models
+    - assess network effects and their strategic consequences
+    content:
+    - Business model frameworks
+    - Platform economics and network effects
+    - Subscription and usage-based pricing
+    - Digital transformation of incumbents
+    - Data as a strategic resource
+    methods: Seminar (2 SWS) with project work (2 SWS)
+    credit_requirements: Acceptance of the business model analysis and its presentation.
+    literature:
+    - 'Osterwalder, Pigneur: Business Model Generation, Wiley'
+    usability: Elective module of the B.A. International Business, elective catalogue under Annex 2 of
+      the Programme-Specific Provisions.
+  - code: IB-4-026
+    name: Entrepreneurship and Start-up Management
+    semester: 4
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Elective
+    responsible: Prof. Dr. Emmerich Kaltenbrunner
+    department: Department of Business Studies
+    exam: Pr
+    exam_note: Presentation
+    prerequisites_formal: None
+    prerequisites_recommended: IB-3-014
+    outcomes:
+    - develop and test a venture concept
+    - prepare a financing plan for an early-stage venture
+    content:
+    - Opportunity recognition and validation
+    - Lean start-up methods
+    - Financial planning for new ventures
+    - Financing sources and investor expectations
+    - Legal form and founding formalities in Germany
+    methods: Seminar (2 SWS) with venture project (2 SWS)
+    credit_requirements: Pitch presentation of approximately 20 minutes with written venture concept.
+    literature:
+    - 'Blank, Dorf: The Startup Owner''s Manual, Wiley'
+    usability: Elective module of the B.A. International Business.
+  - code: IB-6-027
+    name: Business Analytics and Visualisation
+    semester: 6
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Elective
+    responsible: Prof. Dr. Emmerich Kaltenbrunner
+    department: Department of Business Studies
+    exam: PA
+    exam_note: Project work
+    prerequisites_formal: Successful completion of IB-2-009
+    prerequisites_recommended: None
+    outcomes:
+    - build analytical dashboards for management reporting
+    - select visual encodings appropriate to the analytical question
+    content:
+    - Analytical workflow from question to decision
+    - Dashboard design principles
+    - Predictive models in a reporting context
+    - Data governance and reporting integrity
+    methods: Lecture (2 SWS) and computer laboratory (2 SWS)
+    credit_requirements: Acceptance of the dashboard project and accompanying documentation.
+    literature:
+    - 'Few: Information Dashboard Design, Analytics Press'
+    usability: Elective module of the B.A. International Business.
+  - code: IB-6-028
+    name: Negotiation and Conflict Management
+    semester: 6
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, summer semester
+    duration: 1 semester
+    type: Elective
+    responsible: Prof. Dr. Ruth Aschenbrenner
+    department: Department of Business Studies
+    exam: PO
+    exam_note: Portfolio
+    prerequisites_formal: None
+    prerequisites_recommended: IB-4-018
+    outcomes:
+    - prepare and conduct integrative negotiations
+    - analyse conflict dynamics in organisational settings
+    content:
+    - Distributive and integrative negotiation
+    - Preparation frameworks and BATNA analysis
+    - Negotiation across cultures
+    - Conflict diagnosis and intervention
+    - Mediation basics
+    methods: Seminar with negotiation simulations (4 SWS)
+    credit_requirements: Portfolio comprising negotiation preparation documents, a recorded simulation
+      and a reflection paper.
+    literature:
+    - 'Fisher, Ury, Patton: Getting to Yes, Penguin'
+    usability: Elective module of the B.A. International Business.
+  - code: IB-5-029
+    name: International Taxation
+    semester: 5
+    ects: 6
+    sws: 4
+    language: English
+    frequency: Annually, winter semester
+    duration: 1 semester
+    type: Additional module (Zusatzmodul)
+    responsible: Prof. Dr. iur. Bastian Kirchgässner
+    department: Department of Business Studies
+    exam: Kl-90
+    exam_note: Written examination, 90 minutes
+    data_note: 'INTENTIONAL: this module is offered as an additional module under § 12 of the Programme-Specific
+      Provisions and is NOT contained in the elective catalogue in Annex 2. Credits obtained do not count
+      towards the 12 elective credit points. Absence case A-03.'
+    prerequisites_formal: None
+    prerequisites_recommended: IB-2-008
+    outcomes:
+    - identify the tax consequences of cross-border business activity
+    - apply double taxation agreements to simple fact patterns
+    content:
+    - Principles of international tax law
+    - Residence and source taxation
+    - Double taxation agreements and relief methods
+    - Transfer pricing fundamentals
+    - Permanent establishment concepts
+    methods: Lecture (3 SWS) with case exercises (1 SWS)
+    credit_requirements: Passing the written examination (Kl-90). Credits are recorded as additional credits
+      under § 12 of the Programme-Specific Provisions and do not enter the overall grade.
+    literature:
+    - 'Brähler: Internationales Steuerrecht, Springer Gabler'
+    usability: Additional module of the B.A. International Business. Not part of the elective catalogue
+      in Annex 2.

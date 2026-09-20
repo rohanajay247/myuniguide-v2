@@ -1,0 +1,375 @@
+classification_scheme:
+  CONFLICT: Zwei ranggleiche, gleichzeitig geltende, bindende Quellen widersprechen sich; keine Vorrangregel
+    löst den Widerspruch auf.
+  OVERRIDE: Eine speziellere Norm weicht von einer allgemeinen ab; die Abweichung ist ausdrücklich gestattet.
+    Kein Konflikt.
+  VERSION_DEPENDENT: Dieselbe Zitierung bezeichnet je nach maßgeblicher Fassung unterschiedliche Inhalte.
+    Kein Konflikt.
+  AUTHORITY: Zwei Quellen weichen ab, aber eine ist nicht bindend oder nachrangig. Kein Konflikt.
+  NEAR_DUPLICATE: Ähnlich formulierte Vorschriften mit unterschiedlichem Anwendungsbereich. Kein Widerspruch.
+  ABSENCE: Die Dokumente stellen positiv fest, dass etwas nicht gilt bzw. nicht vorgesehen ist.
+  NOT_COVERED: Die Dokumente enthalten keine Aussage; die Frage ist nicht beantwortbar.
+conflicts:
+- id: K-01
+  university: HRM
+  programme: IB
+  type: binding body vs its own binding annex
+  source_a:
+    doc: R7
+    locus: § 14 Abs. 2
+    claim: Zulassung zur Bachelorarbeit ab 120 Leistungspunkten
+  source_b:
+    doc: R8
+    locus: Anlage 1, Fußnote 4
+    claim: Zulassung zur Bachelorarbeit ab 150 Leistungspunkten
+  authority_a: BINDING_PROGRAMME
+  authority_b: BINDING_ANNEX
+  rationale: Anlage 1 ist nach § 6 Abs. 1 dieser Bestimmungen Bestandteil der Fachspezifischen Bestimmungen
+    und damit ranggleich mit deren Wortlaut. Beide Fassungen wurden am selben Tag beschlossen und genehmigt.
+    Weder die APO noch die FSB enthalten eine Regel, wonach der Wortlaut der Bestimmungen ihren Anlagen
+    vorgeht oder umgekehrt. Eine Auflösung nach lex posterior scheidet aus, weil beide gleichzeitig in
+    Kraft traten; lex specialis führt nicht weiter, weil beide Vorschriften denselben Gegenstand mit gleicher
+    Regelungsdichte behandeln.
+  affects: alle Studierenden des Studiengangs IB, in allen APO-Zuständen
+  expected_response: CONFLICT
+  not_resolvable_by:
+  - lex posterior
+  - lex specialis
+  - Rangfolge
+- id: K-02
+  university: HVM
+  programme: ET
+  type: express non-deviation clause vs lex specialis
+  source_a:
+    doc: V1
+    via: V2
+    locus: § 31 Abs. 1 in der Fassung der Ersten Änderungssatzung
+    claim: Bearbeitungszeit der Bachelorarbeit vier Monate; Abweichungen sind nicht zulässig
+  source_b:
+    doc: V8
+    locus: § 12 Abs. 2
+    claim: Bearbeitungszeit der Bachelorarbeit drei Monate
+  authority_a: BINDING_GENERAL
+  authority_b: BINDING_PROGRAMME
+  rationale: § 31 Abs. 1 Satz 2 ASPO in der Fassung der Ersten Änderungssatzung schließt Abweichungen
+    ausdrücklich aus und verdrängt damit die allgemeine Abweichungsbefugnis des § 3 Abs. 3 ASPO. § 12
+    Abs. 2 BSPO Elektrotechnik stammt aus dem Jahr 2019, ist speziell und wurde nicht aufgehoben. Lex
+    superior mit ausdrücklicher Abweichungssperre und lex specialis stehen sich gegenüber; keine der beiden
+    Regeln setzt sich nach dem Text der Ordnungen durch.
+  affects: ET-Studierende in den ASPO-Zuständen B und B0 (Erste Änderungssatzung anwendbar). In den Zuständen
+    A und A0 besteht kein Widerspruch, weil § 31 Abs. 1 ASPO dort drei Monate vorsieht.
+  expected_response: CONFLICT
+  version_gated: true
+  not_resolvable_by:
+  - lex specialis
+  - lex superior
+- id: K-03
+  university: HRM
+  programme: SE
+  type: two binding sources, no precedence rule
+  source_a:
+    doc: R5
+    locus: Anlage 1, Zeile SE-3-018
+    claim: Prüfungsform Kl-120
+  source_b:
+    doc: R6
+    locus: Modulbeschreibung SE-3-018, Feld Prüfungsform
+    claim: Prüfungsform PA
+  authority_a: BINDING_ANNEX
+  authority_b: PARTIALLY_BINDING
+  rationale: § 9 Abs. 3 APO erklärt das Modulhandbuch hinsichtlich des Feldes „Prüfungsform“ ausdrücklich
+    für verbindlich. Der Studien- und Prüfungsplan ist als Anlage 1 der Fachspezifischen Bestimmungen
+    ebenfalls bindend. Beide Quellen sind damit für denselben Gegenstand bindend. Die APO enthält keine
+    Vorrangregel zwischen dem Studien- und Prüfungsplan und dem Modulhandbuch für die Felder, in denen
+    beide binden. § 9 Abs. 4 APO regelt nur den zeitlichen Wirksamwerdenszeitpunkt von Änderungen, nicht
+    den Rang.
+  affects: alle Studierenden des Studiengangs SE, in allen APO-Zuständen
+  expected_response: CONFLICT
+  not_resolvable_by:
+  - Rangfolge
+  - lex specialis
+- id: K-04
+  university: HVM
+  programme: IAI
+  type: prohibitive general rule created by amendment vs mandatory programme rule
+  source_a:
+    doc: V1
+    via: V3
+    locus: § 33 Abs. 3 Satz 2 in der Fassung der Zweiten Änderungssatzung
+    claim: In Masterstudiengängen mit weniger als 120 ECTS-Punkten findet ein Kolloquium nicht statt
+  source_b:
+    doc: V5
+    locus: § 13 Abs. 4
+    claim: Die Masterarbeit wird durch ein Kolloquium von etwa 30 Minuten abgeschlossen
+  authority_a: BINDING_GENERAL
+  authority_b: BINDING_PROGRAMME
+  rationale: Die durch die Zweite Änderungssatzung eingefügte Vorschrift ist prohibitiv formuliert („findet
+    nicht statt“) und nicht lediglich freistellend. § 33 ASPO enthält keine Befugnis zur Abweichung durch
+    Besondere Studien- und Prüfungsordnungen, so dass § 3 Abs. 3 ASPO nicht greift. § 13 Abs. 4 BSPO IAI
+    stammt aus dem Jahr 2022 und ordnet das Kolloquium zwingend an. Der Studiengang umfasst 90 ECTS-Punkte
+    und fällt damit in den Anwendungsbereich der Verbotsnorm.
+  affects: IAI-Studierende im ASPO-Zustand B. In den Zuständen A0 und B0 (Zweite Änderungssatzung nicht
+    anwendbar) besteht kein Widerspruch.
+  expected_response: CONFLICT
+  version_gated: true
+  not_resolvable_by:
+  - lex specialis
+  - lex posterior
+authority_cases:
+- id: T-01
+  type: AUTHORITY
+  university: HVM
+  programme: IAI
+  description: Abweichung zwischen der deutschen und der englischen Fassung des § 9 Abs. 2 BSPO IAI. Die
+    deutsche Fassung macht die zweite Wiederholung von einem stattgegebenen Antrag abhängig; die englische
+    Fassung legt einen Anspruch nahe.
+  resolution: § 1 Abs. 4 BSPO IAI bestimmt, dass ausschließlich die deutsche Fassung maßgeblich ist. Die
+    englische Fassung ist eine nichtamtliche Übersetzung und begründet keine Rechte.
+  expected_response: ANSWER
+  correct_answer: Die zweite Wiederholung setzt einen Antrag voraus, dem der Prüfungsausschuss stattgegeben
+    hat.
+  not_a_conflict_because: Die beiden Fassungen sind nicht ranggleich.
+- id: T-02
+  type: AUTHORITY
+  university: HVM
+  programme: ET
+  description: Das Modulhandbuch Elektrotechnik nennt für ET-M-20 abweichend vom Studien- und Prüfungsplan
+    als Literaturangabe zusätzliche Werke und beschreibt die Zulassungsvoraussetzung ungenauer als § 9
+    Abs. 1 BSPO ET.
+  resolution: '§ 9 Abs. 4 ASPO: das Modulhandbuch begründet keine Rechte und Pflichten; maßgeblich sind
+    ASPO, BSPO und Studien- und Prüfungsplan.'
+  expected_response: ANSWER
+  not_a_conflict_because: Das Velmora-Modulhandbuch ist rein beschreibend.
+- id: T-03
+  type: AUTHORITY
+  university: HRM
+  programme: SE
+  description: Das Modulhandbuch Systems Engineering nennt für SE-2-006 Literaturangaben und Lehrende,
+    die von anderen Quellen abweichen.
+  resolution: § 9 Abs. 3 APO erklärt nur die Felder Modulinhalte, Prüfungsform und Voraussetzungen für
+    die Vergabe von Leistungspunkten für verbindlich. Literatur und Lehrende sind beschreibend.
+  expected_response: ANSWER
+  not_a_conflict_because: Die abweichenden Felder gehören nicht zum bindenden Teil des Modulhandbuchs.
+overrides:
+- id: O-01
+  university: HVM
+  programme: IAI
+  general:
+    doc: V1
+    locus: § 20 Abs. 1
+    rule: zwei Wiederholungen
+  specific:
+    doc: V5
+    locus: § 9 Abs. 1
+    rule: nur eine Wiederholung im Modul IAI-M-10
+  permission:
+    doc: V1
+    locus: § 20 Abs. 4
+  expected_response: ANSWER
+  correct_answer: Eine Wiederholung.
+- id: O-02
+  university: HVM
+  programme: ET
+  general:
+    doc: V1
+    locus: § 5 Abs. 1
+    rule: sechs Semester Regelstudienzeit im Bachelor
+  specific:
+    doc: V8
+    locus: § 4 Abs. 1
+    rule: sieben Semester
+  permission:
+    doc: V1
+    locus: § 5 Abs. 2
+  expected_response: ANSWER
+  correct_answer: Sieben Semester.
+- id: O-03
+  university: HVM
+  programme: IAI
+  general:
+    doc: V1
+    locus: § 14 Abs. 1
+    rule: Prüfungen in deutscher Sprache
+  specific:
+    doc: V5
+    locus: § 5 Abs. 1
+    rule: Prüfungen in englischer Sprache
+  permission:
+    doc: V1
+    locus: § 14 Abs. 3
+  expected_response: ANSWER
+- id: O-04
+  university: HRM
+  programme: SE
+  general:
+    doc: R1
+    locus: § 16 Abs. 3
+    rule: zwei Wiederholungen
+  specific:
+    doc: R4
+    locus: § 8 Abs. 1
+    rule: eine Wiederholung im Modul SE-2-009
+  permission:
+    doc: R1
+    locus: § 16 Abs. 4
+  listed_in_deviation_annex: true
+  expected_response: ANSWER
+- id: O-05
+  university: HRM
+  programme: SE
+  general:
+    doc: R1
+    locus: § 19 Abs. 2
+    rule: Bearbeitungszeit der Masterarbeit fünf Monate
+  specific:
+    doc: R4
+    locus: § 12 Abs. 1
+    rule: sechs Monate
+  permission:
+    doc: R1
+    locus: § 8 Abs. 1
+  listed_in_deviation_annex: false
+  trap: Die Abweichung fehlt in Anlage 3 der FSB. § 8 Abs. 4 APO stellt klar, dass die Übersicht nur nachrichtlich
+    ist; die Abweichung bleibt wirksam. Ein System, das die Übersicht für konstitutiv hält, antwortet
+    fälschlich mit fünf Monaten oder meldet einen Konflikt.
+  expected_response: ANSWER
+  correct_answer: Sechs Monate.
+- id: O-06
+  university: HRM
+  programme: IB
+  general:
+    doc: R1
+    locus: § 5 Abs. 2
+    rule: 25 bis 30 Zeitstunden je Leistungspunkt
+  specific:
+    doc: R7
+    locus: § 4 Abs. 1
+    rule: 25 Zeitstunden je Leistungspunkt
+  permission:
+    doc: R1
+    locus: § 5 Abs. 3
+  expected_response: ANSWER
+- id: O-07
+  university: HRM
+  programme: IB
+  general:
+    doc: R1
+    locus: § 13 Abs. 3
+    rule: alle Module werden benotet
+  specific:
+    doc: R7
+    locus: § 9 Abs. 1
+    rule: IB-5-020 unbenotet
+  permission:
+    doc: R1
+    locus: § 13 Abs. 4
+  expected_response: ANSWER
+- id: O-08
+  university: HVM
+  programme: ET
+  general:
+    doc: V1
+    locus: § 12 Abs. 2
+    rule: Katalog der Prüfungsformen
+  specific:
+    doc: V8
+    locus: § 8 Abs. 3
+    rule: Beschränkung auf eine Teilmenge
+  permission:
+    doc: V1
+    locus: § 12 Abs. 4
+  expected_response: ANSWER
+version_dependent_cases:
+- id: VD-01
+  description: § 12 Abs. 2 Nr. 3 ASPO bezeichnet in der Fassung 1.0 die mündliche Prüfung, ab der Ersten
+    Änderungssatzung die Projektarbeit. § 8 Abs. 1 BSPO Elektrotechnik verweist auf diese Nummer für das
+    Modul ET-M-24.
+  affected_module: ET-M-24
+  answer_by_state:
+    A: mündliche Prüfung
+    A0: mündliche Prüfung
+    B: Projektarbeit
+    B0: Projektarbeit
+  expected_response: ANSWER
+  not_a_conflict_because: Es widersprechen sich keine gleichzeitig geltenden Normen; die Verweisung löst
+    sich je nach maßgeblicher Fassung unterschiedlich auf.
+- id: VD-02
+  description: § 27 Abs. 3 ASPO betrifft in der Fassung 1.0 die Anwesenheitspflicht in Laborübungen; nach
+    der Ersten Änderungssatzung bezeichnet dieselbe Zitierung die Teilnahme an Exkursionen (bisheriger
+    Absatz 4).
+  expected_response: ANSWER
+- id: VD-03
+  description: § 18 Abs. 3 ASPO betrifft bis zur Zweiten Änderungssatzung die zweiwöchige Einsichtnahmefrist,
+    danach die fünfjährige Aufbewahrungsfrist (bisheriger Absatz 4).
+  expected_response: ANSWER
+- id: VD-04
+  description: § 22 Abs. 4 APO betrifft in der Fassung 1.0 die Hochschulöffentlichkeit des Kolloquiums,
+    nach der Ersten Änderungsordnung die Wiederholbarkeit (bisheriger Absatz 5).
+  expected_response: ANSWER
+absence_cases:
+- id: A-01
+  question_topic: Zulässigkeit der Prüfungsform Hausarbeit an der Hochschule Velmora im WS 2025/26
+  expected_response: ANSWER
+  correct_answer: Nein. Die Hausarbeit ist seit der Zweiten Änderungssatzung nicht mehr im Katalog der
+    Anlage 1 enthalten, und der Katalog ist abschließend.
+  basis:
+    doc: V1
+    via: V3
+    locus: Anlage 1 in der Fassung der Zweiten Änderungssatzung
+  type: closed_enumeration
+  note: Das Modulhandbuch IAI nennt für IAI-M-20 gleichwohl HA. Das Modulhandbuch ist nach § 9 Abs. 4
+    ASPO nicht maßgeblich.
+- id: A-02
+  question_topic: Mündliche Gesamtprüfung im Masterstudiengang Industrial Artificial Intelligence
+  expected_response: ANSWER
+  correct_answer: Nein, eine mündliche Gesamtprüfung ist nicht vorgesehen. Die Masterprüfung besteht aus
+    den Modulprüfungen und der Masterarbeit.
+  basis:
+    doc: V5
+    locus: § 6 Abs. 1, § 13
+  type: closed_enumeration
+- id: A-03
+  question_topic: Anrechnung des Moduls IB-5-029 auf den Wahlpflichtbereich
+  expected_response: ANSWER
+  correct_answer: Nein. IB-5-029 ist Zusatzmodul und ausdrücklich nicht Bestandteil des Wahlpflichtkatalogs
+    nach Anlage 2.
+  basis:
+    doc: R7
+    locus: § 12 Abs. 2, § 13 Abs. 2
+  type: closed_enumeration
+- id: A-04
+  question_topic: Zulässigkeit der Prüfungsform Hausarbeit an der Hochschule Rheinmark
+  expected_response: ANSWER
+  correct_answer: Ja. HA ist in Anlage 2 APO aufgeführt; die Aufzählung ist zudem ausdrücklich nicht abschließend.
+  basis:
+    doc: R1
+    locus: Anlage 2
+  type: open_enumeration
+  note: Existiert, um die Übergeneralisierung der abschließenden Velmora-Regel auf Rheinmark zu bestrafen.
+- id: A-05
+  question_topic: Nachträgliche Unterstellungserklärung eines SE-Studierenden der Kohorte WS 2022/23 im
+    Jahr 2025
+  expected_response: ANSWER
+  correct_answer: Nein. Die Frist des § 2 Abs. 3 der Ersten Änderungsordnung endete am 30. September 2024;
+    eine spätere Erklärung ist unwirksam.
+  basis:
+    doc: R2
+    locus: § 2 Abs. 3 Satz 3
+  type: expired_window
+- id: A-06
+  question_topic: Höchstzahl anrechenbarer Auslandssemester im Masterstudiengang Systems Engineering
+  expected_response: DECLINE
+  correct_answer: Die vorliegenden Dokumente enthalten hierzu keine Regelung.
+  type: not_covered
+- id: A-07
+  question_topic: Prädikat „mit Auszeichnung“ im Masterstudiengang Industrial Artificial Intelligence
+  expected_response: DECLINE
+  correct_answer: Ein solches Prädikat ist in den Velmora-Ordnungen nicht vorgesehen; die Dokumente treffen
+    hierzu keine Aussage.
+  type: not_covered
+- id: A-08
+  question_topic: Höhe der Studiengebühren im Studiengang International Business
+  expected_response: DECLINE
+  correct_answer: Gebühren sind nicht Gegenstand der Prüfungsordnungen; die Dokumente enthalten keine
+    Angaben.
+  type: not_covered

@@ -1,0 +1,750 @@
+meta:
+  as_of_date: '2025-10-01'
+  as_of_semester: WS 2025/26
+  count: 72
+  response_types:
+  - ANSWER
+  - DECLINE
+  - CONFLICT
+  note: Jede Frage ist ohne die angegebenen Annahmen nicht eindeutig beantwortbar, soweit das Feld 'assumptions'
+    gefüllt ist.
+answers:
+- id: Q001
+  response_type: ANSWER
+  answer: 210 ECTS-Punkte.
+  support:
+  - doc: V8
+    locus: § 4 Abs. 2
+  reasoning: Direkte Angabe in der Besonderen Studien- und Prüfungsordnung.
+- id: Q002
+  response_type: ANSWER
+  answer: Master of Science (M.Sc.).
+  support:
+  - doc: R4
+    locus: § 2 Abs. 1
+  reasoning: Direkte Angabe.
+- id: Q003
+  response_type: ANSWER
+  answer: Sechs Monate.
+  support:
+  - doc: V5
+    locus: § 13 Abs. 2
+  - doc: V1
+    locus: § 31 Abs. 1
+  reasoning: BSPO und ASPO stimmen für Masterstudiengänge überein (sechs Monate in allen ASPO-Zuständen);
+    kein Widerspruch.
+- id: Q004
+  response_type: ANSWER
+  answer: 30 Minuten.
+  support:
+  - doc: R7
+    locus: § 15 Abs. 2
+  reasoning: Direkte Angabe; liegt innerhalb der Spanne des § 22 Abs. 3 APO (30 bis 60 Minuten).
+- id: Q005
+  response_type: ANSWER
+  answer: Automatisierungstechnik und Energietechnik.
+  support:
+  - doc: V8
+    locus: § 6 Abs. 1
+  reasoning: Direkte Angabe.
+- id: Q006
+  response_type: ANSWER
+  answer: Klausurarbeit von 120 Minuten Dauer.
+  support:
+  - doc: V9
+    locus: Kopfzeile Prüfungsform
+  - doc: V1
+    locus: Anlage 1
+  reasoning: Der Studien- und Prüfungsplan definiert die Abkürzung nicht selbst; § 7 Abs. 3 ASPO verweist
+    auf Anlage 1 ASPO.
+- id: Q007
+  response_type: ANSWER
+  answer: Mündliche Prüfung von 30 Minuten Dauer.
+  support:
+  - doc: R5
+    locus: Zeile SE-3-011
+  - doc: R1
+    locus: Anlage 2
+  reasoning: § 11 Abs. 2 FSB SE verweist auf Anlage 2 APO.
+- id: Q008
+  response_type: ANSWER
+  answer: Klausur von 90 Minuten Dauer. Die Abkürzung ist ausschließlich in Anlage 2 der deutschsprachigen
+    Allgemeinen Prüfungsordnung definiert.
+  support:
+  - doc: R8
+    locus: Annex 1, row IB-1-003
+  - doc: R7
+    locus: § 6 Abs. 2
+  - doc: R1
+    locus: Anlage 2
+  reasoning: 'Cross-language: englisches bindendes Dokument nutzt eine nur im deutschen bindenden Dokument
+    definierte Abkürzung.'
+  chain: D-04
+- id: Q009
+  response_type: ANSWER
+  answer: Nein. Die Hausarbeit wurde durch die Zweite Änderungssatzung aus Anlage 1 ASPO entfernt; der
+    Katalog ist seither abschließend. § 8 Abs. 1 BSPO IAI führt HA ebenfalls nicht auf.
+  support:
+  - doc: V3
+    locus: Artikel I Nr. 1
+  - doc: V1
+    locus: Anlage 1 in der Fassung ab 01.03.2024
+  - doc: V5
+    locus: § 8 Abs. 1
+  reasoning: Geschlossene Aufzählung; das Modulhandbuch nennt HA für IAI-M-20, ist aber nach § 9 Abs.
+    4 ASPO nicht maßgeblich.
+  case: A-01
+  decoy_warning: Das Modulhandbuch IAI enthält den Begriff Hausarbeit und ist die semantisch ähnlichste
+    Fundstelle.
+- id: Q010
+  response_type: ANSWER
+  answer: 180 Zeitstunden (6 ECTS-Punkte × 30 Stunden).
+  support:
+  - doc: V1
+    locus: § 6 Abs. 2
+  - doc: V6
+    locus: Zeile IAI-M-01
+  reasoning: Umrechnungsregel der ASPO auf den im Studien- und Prüfungsplan ausgewiesenen ECTS-Wert angewandt.
+  chain: D-01
+- id: Q011
+  response_type: ANSWER
+  answer: 150 Stunden (6 Leistungspunkte × 25 Stunden).
+  support:
+  - doc: R7
+    locus: § 4 Abs. 1
+  - doc: R8
+    locus: Annex 1, row IB-1-002
+  reasoning: Die FSB legen den Wert innerhalb der Spanne des § 5 Abs. 2 APO auf 25 Stunden fest.
+  chain: D-09
+  decoy_warning: § 5 Abs. 2 APO nennt eine Spanne von 25 bis 30 Stunden; die Antwort 180 Stunden wäre
+    falsch.
+- id: Q012
+  response_type: ANSWER
+  answer: 810 Stunden (27 Leistungspunkte × 30 Stunden).
+  support:
+  - doc: R4
+    locus: § 5 Abs. 1
+  - doc: R4
+    locus: § 12 Abs. 2
+  reasoning: SE legt 30 Stunden je Leistungspunkt fest, abweichend vom IB-Wert.
+- id: Q013
+  response_type: ANSWER
+  answer: 30 Stunden. Gesamtaufwand 90 Stunden (3 ECTS × 30 h) abzüglich 60 Stunden Präsenzzeit (4 SWS
+    × 15 Wochen).
+  support:
+  - doc: V1
+    locus: § 6 Abs. 2
+  - doc: V1
+    locus: § 8 Abs. 2
+  - doc: V6
+    locus: Zeile IAI-M-06
+  reasoning: Dreistufige Rechnung; das Modul hat eine ungewöhnliche Relation von Präsenzzeit zu ECTS-Punkten.
+  chain: D-01
+- id: Q014
+  response_type: ANSWER
+  answer: 60 Stunden. Gesamtaufwand 150 Stunden (6 LP × 25 h) abzüglich 90 Stunden Präsenzzeit (6 SWS
+    × 15 Wochen).
+  support:
+  - doc: R7
+    locus: § 4 Abs. 1
+  - doc: R8
+    locus: Annex 1, row IB-2-010
+  reasoning: Sprachmodul mit erhöhter Präsenzzeit.
+- id: Q015
+  response_type: ANSWER
+  answer: 24 SWS (6+6+4+4+4).
+  support:
+  - doc: V9
+    locus: Anlage 1, Semester 1
+  reasoning: Summation über alle Module des ersten Fachsemesters.
+- id: Q016
+  response_type: ANSWER
+  answer: 22 SWS (4+4+4+4+2+4).
+  support:
+  - doc: V6
+    locus: Anlage 1, Semester 1
+  reasoning: Summation; IAI-M-05 hat 2 SWS, IAI-M-06 abweichend 4 SWS bei nur 3 ECTS.
+- id: Q017
+  response_type: ANSWER
+  answer: 78 Leistungspunkte.
+  support:
+  - doc: R4
+    locus: § 6 Abs. 1
+  reasoning: Direkte Angabe; gegenzuprüfen gegen Anlage 1 (120 − 12 Wahlpflicht − 30 Abschluss = 78).
+- id: Q018
+  response_type: ANSWER
+  answer: 24 Leistungspunkte, nämlich das Modul IB-5-020.
+  support:
+  - doc: R7
+    locus: § 9 Abs. 1
+  - doc: R8
+    locus: Annex 1, semester 5
+  reasoning: Nur IB-5-020 ist unbenotet; IB-5-021 wird benotet.
+- id: Q019
+  response_type: ANSWER
+  answer: '27 ECTS-Punkte: ET-M-21 (24, unbenotet) und ET-M-37 (3, unbenotet).'
+  support:
+  - doc: V8
+    locus: § 14 Abs. 3
+  - doc: V8
+    locus: § 11 Abs. 3
+  - doc: V8
+    locus: § 10 Abs. 4
+  reasoning: Ohne die Annahme zur Wahlpflichtwahl ist die Frage nicht eindeutig beantwortbar.
+- id: Q020
+  response_type: ANSWER
+  answer: Neun.
+  support:
+  - doc: V5
+    locus: Anlage 2
+  reasoning: Zählung der abschließend bestimmten Katalogeinträge.
+- id: Q021
+  response_type: ANSWER
+  answer: Fünf (ET-M-16 bis ET-M-20).
+  support:
+  - doc: V9
+    locus: Anlage 1, Semester 4
+  reasoning: Tabellenauswertung.
+- id: Q022
+  response_type: ANSWER
+  answer: Vier (SE-3-013, SE-3-014, SE-3-017, SE-3-020).
+  support:
+  - doc: R4
+    locus: Anlage 2
+  reasoning: Der Katalog weist die Semesterzuordnung getrennt aus.
+- id: Q023
+  response_type: ANSWER
+  answer: '41: die 40 Paragraphen der Fassung 1.0 zuzüglich des durch die Erste Änderungssatzung eingefügten
+    § 15a.'
+  support:
+  - doc: V1
+    locus: §§ 1 bis 40
+  - doc: V2
+    locus: Artikel I Nr. 2
+  - doc: V2
+    locus: Artikel II
+  reasoning: 'Zustand B: Ä1 und Ä2 anwendbar. Ä2 fügt keinen neuen Paragraphen ein.'
+- id: Q024
+  response_type: ANSWER
+  answer: 40. Die Erste Änderungssatzung gilt für diese Kohorte nicht, § 15a wurde daher nicht eingefügt.
+  support:
+  - doc: V2
+    locus: Artikel II Abs. 1
+  - doc: V3
+    locus: Artikel II Abs. 1
+  reasoning: Zustand A. Zeigt, dass die Lesefassung für diese Kohorte nicht maßgeblich ist.
+  decoy_warning: Die Lesefassung V4 enthält § 15a und ist die semantisch nächstliegende Quelle.
+- id: Q025
+  response_type: ANSWER
+  answer: 'Kohortenabhängig: für Studierende ab WS 2021/22 Projektarbeit, für frühere Kohorten mündliche
+    Prüfung.'
+  support:
+  - doc: V8
+    locus: § 8 Abs. 1
+  - doc: V1
+    locus: § 12 Abs. 2 Nr. 3
+  - doc: V2
+    locus: Artikel I Nr. 1
+  reasoning: Verweisauflösung über die maßgebliche ASPO-Fassung.
+  chain: D-02
+  case: VD-01
+- id: Q026
+  response_type: ANSWER
+  answer: Mündliche Prüfung. Für diese Kohorte gilt die Erste Änderungssatzung nicht, so dass § 12 Abs.
+    2 Nr. 3 ASPO die mündliche Prüfung bezeichnet.
+  support:
+  - doc: V2
+    locus: Artikel II Abs. 1
+  - doc: V1
+    locus: § 12 Abs. 2 Nr. 3
+  - doc: V8
+    locus: § 8 Abs. 1
+  reasoning: Zustand A.
+  chain: D-02
+- id: Q027
+  response_type: ANSWER
+  answer: Projektarbeit.
+  support:
+  - doc: V2
+    locus: Artikel I Nr. 1, Artikel II Abs. 1
+  - doc: V8
+    locus: § 8 Abs. 1
+  reasoning: Zustand B.
+- id: Q028
+  response_type: ANSWER
+  answer: 'Sieben Änderungen: Neufassung der Anlage 1, Neufassung des § 24 Abs. 2 (Freiversuch), Einfügung
+    des § 33 Abs. 3 (Kolloquium), Änderung der Verweisung in § 5 Abs. 2, Aufhebung der Anlage 2, Aufhebung
+    des § 18 Abs. 3 und Umnummerierung des § 18 Abs. 4 zu Abs. 3.'
+  support:
+  - doc: V3
+    locus: Artikel I Nr. 1 bis 7
+  reasoning: Vollständige Auswertung des Änderungsartikels.
+- id: Q029
+  response_type: ANSWER
+  answer: Neu aufgenommen wurde das Portfolio (PF); entfallen ist die Hausarbeit (HA).
+  support:
+  - doc: V3
+    locus: Artikel I Nr. 1
+  reasoning: Vergleich der Anlagenfassungen.
+- id: Q030
+  response_type: ANSWER
+  answer: Ab dem 1. Oktober 2023, jedoch nur für Studierende ab der Kohorte WS 2023/24 sowie für frühere
+    Kohorten, die bis zum 30. September 2024 eine Unterstellungserklärung abgegeben haben.
+  support:
+  - doc: R2
+    locus: § 1 Nr. 6, § 2
+  reasoning: Inkrafttreten und Übergangsregelung sind zu trennen.
+- id: Q031
+  response_type: ANSWER
+  answer: Nein. Die Lesefassung gibt die Fassung 1.0 einschließlich beider Änderungssatzungen wieder und
+    trifft damit nur auf Studierende zu, für die beide Änderungssatzungen anwendbar sind. Sie ist zudem
+    nicht verbindlich.
+  support:
+  - doc: V4
+    locus: Titelblatt und Hinweis
+  - doc: V2
+    locus: Artikel II
+  - doc: V3
+    locus: Artikel II
+  reasoning: Vier mögliche Zustände, nur einer entspricht der Lesefassung.
+- id: Q032
+  response_type: ANSWER
+  answer: 'Fassungsabhängig: in der Fassung 1.0 die Anwesenheitspflicht in Laborübungen und Praktika;
+    ab der Ersten Änderungssatzung die Teilnahme an Exkursionen und Lehrveranstaltungen mit externen Partnern,
+    weil der bisherige Absatz 4 zu Absatz 3 wurde.'
+  support:
+  - doc: V1
+    locus: § 27
+  - doc: V2
+    locus: Artikel I Nr. 4 und 5
+  reasoning: Umnummerierung verändert die Bedeutung der Zitierung.
+  case: VD-02
+- id: Q033
+  response_type: ANSWER
+  answer: Die fünfjährige Aufbewahrungsfrist für Prüfungsunterlagen. Die zweiwöchige Einsichtnahmefrist
+    wurde durch die Zweite Änderungssatzung aufgehoben, der bisherige Absatz 4 wurde Absatz 3.
+  support:
+  - doc: V3
+    locus: Artikel I Nr. 6 und 7
+  - doc: V1
+    locus: § 18
+  reasoning: Zustand B.
+  case: VD-03
+- id: Q034
+  response_type: ANSWER
+  answer: 60 Leistungspunkte.
+  support:
+  - doc: R1
+    locus: § 19 Abs. 1 Fassung 1.0
+  - doc: R2
+    locus: § 2 Abs. 2 und 3
+  - doc: R4
+    locus: § 12 Abs. 3
+  reasoning: Zustand P; die Erste Änderungsordnung ist mangels Erklärung nicht anwendbar.
+  decoy_warning: Die konsolidierte Fassung R3 nennt 75 Leistungspunkte.
+- id: Q035
+  response_type: ANSWER
+  answer: 75 Leistungspunkte.
+  support:
+  - doc: R2
+    locus: § 1 Nr. 6, § 2 Abs. 3
+  reasoning: Zustand Q; die Erklärung erfolgte fristgerecht vor dem 30. September 2024.
+- id: Q036
+  response_type: ANSWER
+  answer: Ja. Wer bis zum 30. September 2024 eine Unterstellungserklärung abgegeben hat, unterliegt §
+    16 Abs. 3 APO in der Fassung der Ersten Änderungsordnung (eine Wiederholung, Zweitwiederholung nur
+    auf Antrag); ohne Erklärung gilt die Fassung 1.0 (zwei Wiederholungen).
+  support:
+  - doc: R2
+    locus: § 1 Nr. 2, § 2 Abs. 3
+  - doc: R1
+    locus: § 16 Abs. 3
+  reasoning: Wahlrechtsbasierte Übergangsregelung.
+- id: Q037
+  response_type: ANSWER
+  answer: Drei Monate. Für diese Kohorte gilt weder die Erste noch die Zweite Änderungssatzung; § 31 Abs.
+    1 ASPO in der Fassung 1.0 und § 12 Abs. 2 BSPO ET stimmen überein.
+  support:
+  - doc: V1
+    locus: § 31 Abs. 1 Fassung 1.0
+  - doc: V8
+    locus: § 12 Abs. 2
+  - doc: V2
+    locus: Artikel II
+  - doc: V3
+    locus: Artikel II Abs. 2
+  reasoning: 'Zustand A0. Bemerkenswert: derselbe Sachverhalt ist in Zustand B konfliktbehaftet.'
+- id: Q038
+  response_type: CONFLICT
+  answer: Die Dokumente widersprechen sich. § 13 Abs. 4 BSPO IAI ordnet ein Kolloquium von etwa 30 Minuten
+    zwingend an. § 33 Abs. 3 Satz 2 ASPO in der Fassung der Zweiten Änderungssatzung bestimmt, dass in
+    Masterstudiengängen mit weniger als 120 ECTS-Punkten ein Kolloquium nicht stattfindet. Der Studiengang
+    umfasst 90 ECTS-Punkte. § 33 ASPO enthält keine Abweichungsbefugnis, so dass § 3 Abs. 3 ASPO nicht
+    eingreift.
+  support:
+  - doc: V5
+    locus: § 13 Abs. 4
+  - doc: V3
+    locus: Artikel I Nr. 3
+  - doc: V1
+    locus: § 33 Abs. 3 Satz 2
+  reasoning: Zustand B; zeitgesteuerter Konflikt.
+  case: K-04
+  chain: D-10
+- id: Q039
+  response_type: CONFLICT
+  answer: Die Dokumente widersprechen sich. § 14 Abs. 2 der Fachspezifischen Bestimmungen nennt 120 Leistungspunkte,
+    Fußnote 4 zu Anlage 1 nennt 150 Leistungspunkte. Beide Quellen sind bindend und ranggleich; eine Vorrangregel
+    besteht nicht.
+  support:
+  - doc: R7
+    locus: § 14 Abs. 2
+  - doc: R8
+    locus: Annex 1, Fußnote 4
+  reasoning: Wortlaut gegen eigene bindende Anlage.
+  case: K-01
+  chain: D-06
+- id: Q040
+  response_type: CONFLICT
+  answer: Die Dokumente widersprechen sich. § 31 Abs. 1 ASPO in der Fassung der Ersten Änderungssatzung
+    bestimmt vier Monate und schließt Abweichungen ausdrücklich aus. § 12 Abs. 2 BSPO Elektrotechnik bestimmt
+    drei Monate und wurde nicht geändert.
+  support:
+  - doc: V1
+    locus: § 31 Abs. 1 Fassung ab Ä1
+  - doc: V2
+    locus: Artikel I Nr. 6
+  - doc: V8
+    locus: § 12 Abs. 2
+  reasoning: Zustand B; ausdrückliche Abweichungssperre gegen lex specialis.
+  case: K-02
+- id: Q041
+  response_type: CONFLICT
+  answer: Die Dokumente widersprechen sich. Anlage 1 der Fachspezifischen Bestimmungen weist Kl-120 aus,
+    das Modulhandbuch weist PA aus. Das Modulhandbuch ist nach § 9 Abs. 3 APO hinsichtlich des Feldes
+    Prüfungsform bindend; beide Quellen sind damit bindend und ranggleich.
+  support:
+  - doc: R5
+    locus: Anlage 1, Zeile SE-3-018
+  - doc: R6
+    locus: Modulbeschreibung SE-3-018
+  - doc: R1
+    locus: § 9 Abs. 3
+  reasoning: Zwei bindende Quellen ohne Vorrangregel.
+  case: K-03
+- id: Q042
+  response_type: ANSWER
+  answer: Nein. Weder die APO noch die Fachspezifischen Bestimmungen enthalten eine solche Rangregel.
+    § 9 Abs. 4 APO betrifft nur den Zeitpunkt des Wirksamwerdens von Änderungen des Modulhandbuchs, nicht
+    dessen Rang.
+  support:
+  - doc: R1
+    locus: § 9 Abs. 3 und 4
+  - doc: R4
+    locus: § 1 Abs. 3
+  reasoning: Prüfung der Auflösungsmöglichkeiten; bestätigt K-03.
+- id: Q043
+  response_type: ANSWER
+  answer: Ja. Für diesen Studierenden gilt die Zweite Änderungssatzung nach Artikel II Abs. 2 nicht; §
+    33 Abs. 3 ASPO existiert in der maßgeblichen Fassung nicht. § 13 Abs. 4 BSPO IAI ist ohne Widerspruch
+    anwendbar.
+  support:
+  - doc: V3
+    locus: Artikel II Abs. 2
+  - doc: V5
+    locus: § 13 Abs. 4
+  reasoning: Zustand B0; zeigt, dass K-04 zeitgesteuert ist.
+  case: K-04
+- id: Q044
+  response_type: ANSWER
+  answer: Einmal. § 9 Abs. 1 BSPO IAI weicht zulässig von § 20 Abs. 1 ASPO ab.
+  support:
+  - doc: V5
+    locus: § 9 Abs. 1
+  - doc: V1
+    locus: § 20 Abs. 1 und 4
+  reasoning: Zulässige Abweichung, kein Konflikt.
+  case: O-01
+- id: Q045
+  response_type: ANSWER
+  answer: Sechs Monate. § 12 Abs. 1 der Fachspezifischen Bestimmungen weicht nach § 8 Abs. 1 APO zulässig
+    von § 19 Abs. 2 APO ab.
+  support:
+  - doc: R4
+    locus: § 12 Abs. 1
+  - doc: R1
+    locus: § 8 Abs. 1
+  - doc: R1
+    locus: § 19 Abs. 2
+  reasoning: Zulässige Abweichung, obwohl sie in Anlage 3 nicht aufgeführt ist.
+  case: O-05
+- id: Q046
+  response_type: ANSWER
+  answer: Nein. § 8 Abs. 4 APO bestimmt ausdrücklich, dass die Übersicht nachrichtlichen Charakter hat
+    und die Wirksamkeit einer zulässigen Abweichung nicht von ihrer Aufnahme in die Übersicht abhängt.
+  support:
+  - doc: R1
+    locus: § 8 Abs. 3 und 4
+  - doc: R4
+    locus: Anlage 3
+  reasoning: 'Falle: die Übersicht wirkt konstitutiv, ist es aber nicht.'
+  case: O-05
+- id: Q047
+  response_type: ANSWER
+  answer: Sieben Semester.
+  support:
+  - doc: V8
+    locus: § 4 Abs. 1
+  - doc: V1
+    locus: § 5 Abs. 1 und 2
+  reasoning: Zulässige Abweichung von der Grundregel sechs Semester.
+  case: O-02
+  decoy_warning: § 5 Abs. 1 ASPO nennt sechs Semester als Regelfall.
+- id: Q048
+  response_type: ANSWER
+  answer: Nein. IB-5-020 wird nach § 9 Abs. 1 der Fachspezifischen Bestimmungen unbenotet bewertet; die
+    Abweichung von § 13 Abs. 3 APO ist nach § 13 Abs. 4 APO zulässig.
+  support:
+  - doc: R7
+    locus: § 9 Abs. 1
+  - doc: R1
+    locus: § 13 Abs. 3 und 4
+  - doc: R1
+    locus: § 23 Abs. 2
+  reasoning: Zulässige Abweichung.
+  case: O-07
+- id: Q049
+  response_type: ANSWER
+  answer: Unmittelbar SE-1-003 und SE-2-006; mittelbar zusätzlich SE-1-002, weil SE-2-006 dieses Modul
+    voraussetzt.
+  support:
+  - doc: R5
+    locus: Anlage 1, Spalte Voraussetzung
+  - doc: R6
+    locus: SE-3-011, SE-2-006
+  - doc: R4
+    locus: § 7 Abs. 1
+  reasoning: Vierstufige Kette über Studien- und Prüfungsplan und Modulhandbuch.
+  chain: D-05
+- id: Q050
+  response_type: ANSWER
+  answer: Die mit mindestens ausreichend bewertete Bachelorarbeit ET-M-30; diese setzt 180 ECTS-Punkte
+    und den erfolgreichen Abschluss des praktischen Studiensemesters ET-M-21 voraus; ET-M-21 setzt seinerseits
+    90 ECTS-Punkte aus den ersten vier Fachsemestern voraus.
+  support:
+  - doc: V8
+    locus: § 13 Abs. 3
+  - doc: V8
+    locus: § 12 Abs. 1
+  - doc: V8
+    locus: § 10 Abs. 2
+  reasoning: Dreistufige Kette innerhalb eines Dokuments.
+- id: Q051
+  response_type: ANSWER
+  answer: IAI-M-07 als formale Voraussetzung; IAI-M-07 setzt seinerseits IAI-M-03 voraus.
+  support:
+  - doc: V7
+    locus: IAI-M-18, IAI-M-07
+  - doc: V6
+    locus: Anlage 1
+  reasoning: Zweistufige Kette.
+- id: Q052
+  response_type: ANSWER
+  answer: Nachweis von mindestens 100 Leistungspunkten sowie ein vor der Abreise vom Prüfungsausschuss
+    genehmigtes Learning Agreement.
+  support:
+  - doc: R7
+    locus: § 8 Abs. 2
+  reasoning: Direkte Angabe im bindenden englischen Text.
+- id: Q053
+  response_type: ANSWER
+  answer: Ja. Der Bachelorstudiengang Elektrotechnik umfasst 210 ECTS-Punkte; § 3 Abs. 1 BSPO IAI verlangt
+    mindestens 210 ECTS-Punkte.
+  support:
+  - doc: V8
+    locus: § 4 Abs. 2
+  - doc: V5
+    locus: § 3 Abs. 1
+  reasoning: Studiengangsübergreifende Verknüpfung.
+  chain: D-07
+- id: Q054
+  response_type: ANSWER
+  answer: § 18 APO in Verbindung mit § 8 Abs. 3 der Fachspezifischen Bestimmungen; § 18 Abs. 2 APO verweist
+    zusätzlich auf die Ordnung über die Anerkennung von im Ausland erworbenen Leistungen.
+  support:
+  - doc: R7
+    locus: § 8 Abs. 3
+  - doc: R1
+    locus: § 18 Abs. 1 und 2
+  reasoning: 'Cross-language: englische FSB verweisen auf deutsche APO.'
+  chain: D-08
+- id: Q055
+  response_type: ANSWER
+  answer: Klausurarbeit, mündliche Prüfung, Projektarbeit, Referat mit schriftlicher Ausarbeitung, Portfolio,
+    Laborarbeit mit Testat, Masterarbeit und Kolloquium. § 8 Abs. 1 BSPO IAI beschränkt den Katalog der
+    Anlage 1 ASPO nach § 12 Abs. 4 ASPO.
+  support:
+  - doc: V5
+    locus: § 8 Abs. 1
+  - doc: V1
+    locus: § 12 Abs. 4
+  - doc: V1
+    locus: Anlage 1
+  reasoning: Zweistufige Beschränkung.
+- id: Q056
+  response_type: ANSWER
+  answer: Der Fachbereichsrat des Fachbereichs Ingenieurwissenschaften beschließt; der Präsident der Hochschule
+    Rheinmark genehmigt.
+  support:
+  - doc: R1
+    locus: § 2 Abs. 1
+  - doc: R4
+    locus: Präambel
+  reasoning: Institutionelle Zuständigkeit; unterscheidet sich von der Hochschule Velmora.
+- id: Q057
+  response_type: ANSWER
+  answer: Der Senat der Hochschule Velmora beschließt auf Vorschlag des Fakultätsrats; das Rektorat stimmt
+    zu.
+  support:
+  - doc: V5
+    locus: Präambel
+  reasoning: Gegenstück zu Q056; die beiden Hochschulen unterscheiden sich strukturell.
+- id: Q058
+  response_type: ANSWER
+  answer: Sechs. Das Modul umfasst insgesamt 12 Leistungspunkte über zwei Semester; der Studien- und Prüfungsplan
+    weist je 6 Leistungspunkte für das zweite und das dritte Fachsemester aus.
+  support:
+  - doc: R5
+    locus: Anlage 1, Zeile SE-2-009 und Fußnote
+  - doc: R4
+    locus: § 9 Abs. 2
+  reasoning: Mehrsemestriges Modul mit gesplitteter Ausweisung.
+- id: Q059
+  response_type: ANSWER
+  answer: Erst nach Abschluss des zweiten Modulsemesters, also frühestens am Ende des dritten Fachsemesters.
+  support:
+  - doc: R4
+    locus: § 9 Abs. 2
+  - doc: R1
+    locus: § 5 Abs. 5
+  reasoning: Die Semesterzuordnung in der Tabelle ist nicht mit dem Vergabezeitpunkt gleichzusetzen.
+- id: Q060
+  response_type: ANSWER
+  answer: ET-M-02, ET-M-07, ET-M-10 und ET-M-14.
+  support:
+  - doc: V8
+    locus: § 9 Abs. 1
+  - doc: V9
+    locus: Anlage 1, Spalte Voraussetzung
+  reasoning: Tabellenspalte gegen Normtext geprüft.
+- id: Q061
+  response_type: ANSWER
+  answer: IAI-M-15 (Edge AI and Embedded Inference).
+  support:
+  - doc: V5
+    locus: § 11 Abs. 3
+  - doc: V6
+    locus: Anlage 1, Kennzeichnung
+  reasoning: Kennzeichnung im Plan und Normtext.
+- id: Q062
+  response_type: ANSWER
+  answer: Nein. § 12 Abs. 2 der Fachspezifischen Bestimmungen schließt dies ausdrücklich aus; der Wahlpflichtkatalog
+    in Anlage 2 ist abschließend.
+  support:
+  - doc: R7
+    locus: § 12 Abs. 2
+  - doc: R7
+    locus: § 13 Abs. 2, Anlage 2
+  reasoning: Geschlossene Aufzählung mit ausdrücklichem Ausschluss.
+  case: A-03
+- id: Q063
+  response_type: ANSWER
+  answer: Ja. HA ist in Anlage 2 APO aufgeführt; die Aufzählung ist zudem ausdrücklich nicht abschließend.
+  support:
+  - doc: R1
+    locus: Anlage 2
+  reasoning: Gegenstück zu Q009; die Rheinmark-Liste ist offen, die Velmora-Liste seit Ä2 abschließend.
+  case: A-04
+- id: Q064
+  response_type: ANSWER
+  answer: Nein. Die Masterprüfung besteht aus den Modulprüfungen und der Masterarbeit; eine mündliche
+    Gesamtprüfung ist nicht vorgesehen.
+  support:
+  - doc: V5
+    locus: § 6 Abs. 1
+  - doc: V5
+    locus: § 13
+  reasoning: Abschließende Aufzählung der Studienbestandteile.
+  case: A-02
+- id: Q065
+  response_type: ANSWER
+  answer: Nein. Die Frist endete am 30. September 2024; eine später abgegebene Erklärung ist nach § 2
+    Abs. 3 Satz 3 der Ersten Änderungsordnung unwirksam.
+  support:
+  - doc: R2
+    locus: § 2 Abs. 3
+  reasoning: Abgelaufenes Zeitfenster; positive Feststellung, kein DECLINE.
+  case: A-05
+- id: Q066
+  response_type: DECLINE
+  answer: Die vorliegenden Dokumente enthalten hierzu keine Regelung.
+  support: []
+  reasoning: Weder APO noch FSB SE treffen eine Aussage zu einer Höchstzahl.
+  case: A-06
+- id: Q067
+  response_type: DECLINE
+  answer: Ein solches Prädikat ist in den Velmora-Ordnungen nicht vorgesehen; die Dokumente treffen hierzu
+    keine Aussage.
+  support: []
+  reasoning: Begriff existiert im Korpus nicht.
+  case: A-07
+- id: Q068
+  response_type: DECLINE
+  answer: Gebühren sind nicht Gegenstand der Prüfungsordnungen; die Dokumente enthalten hierzu keine Angaben.
+  support: []
+  reasoning: Außerhalb des Regelungsgegenstands.
+  case: A-08
+- id: Q069
+  response_type: ANSWER
+  answer: 25 Stunden.
+  support:
+  - doc: R7
+    locus: § 4 Abs. 1
+  reasoning: Vier ähnlich formulierte Vorschriften mit drei verschiedenen Werten; nur § 4 Abs. 1 FSB IB
+    ist einschlägig.
+  case: N-04
+  decoy_warning: § 6 Abs. 2 ASPO (30 h) und § 5 Abs. 2 APO (25–30 h) sind semantisch sehr ähnlich und
+    beide falsch.
+- id: Q070
+  response_type: ANSWER
+  answer: Einmal. Eine zweite Wiederholung ist ausgeschlossen.
+  support:
+  - doc: V1
+    locus: § 32 Abs. 5
+  reasoning: § 20 ASPO (Wiederholung von Prüfungsleistungen) ist die semantisch ähnlichste, aber falsche
+    Fundstelle; für die Abschlussarbeit gilt die Sonderregel des § 32 Abs. 5.
+  case: N-01
+- id: Q071
+  response_type: ANSWER
+  answer: Maßgeblich ist die deutsche Fassung. Danach setzt die zweite Wiederholung einen Antrag voraus,
+    dem der Prüfungsausschuss stattgegeben hat. Die englische Übersetzung gibt dies unvollständig wieder
+    und ist nach § 1 Abs. 4 BSPO IAI nicht maßgeblich.
+  support:
+  - doc: V5
+    locus: § 9 Abs. 2 (deutsche Fassung)
+  - doc: V5
+    locus: § 1 Abs. 4
+  reasoning: 'Autoritätsfall, kein Konflikt: die Fassungen sind nicht ranggleich.'
+  case: T-01
+- id: Q072
+  response_type: ANSWER
+  answer: Die englische Fassung. Der Fachbereichsrat hat die Bestimmungen nach § 2 Abs. 4 APO in englischer
+    Sprache beschlossen; eine deutsche Fassung wird nicht veröffentlicht. Für die in Bezug genommene Allgemeine
+    Prüfungsordnung bleibt der deutsche Text maßgeblich.
+  support:
+  - doc: R7
+    locus: § 1 Abs. 3
+  - doc: R1
+    locus: § 2 Abs. 4
+  reasoning: 'Gegenstück zu Q071: an der Hochschule Rheinmark bindet die englische Fassung, an der Hochschule
+    Velmora nicht.'

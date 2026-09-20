@@ -1,0 +1,10 @@
+.venv/
+.git/
+.cache/
+qdrant_storage/
+eval/results/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+corpus/**/*.pdf

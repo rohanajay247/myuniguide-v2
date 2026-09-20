@@ -1,0 +1,101 @@
+
+### 1 Vollständigkeit
+  [PASS] Alle 19 Dokumente erzeugt.
+  [PASS] Gesamtumfang 296 Seiten liegt im Zielkorridor 290–320.
+  [PASS] Kein Dokument unterschreitet die Mindesttextmenge (Platzhalterprüfung).
+
+### 2 Hochschulkonventionen
+  [PASS] ECTS-Punkte nur bei HVM
+  [PASS] Leistungspunkte bei HRM
+  [PASS] Studienleistung nur bei HVM
+  [PASS] Leistungsnachweis nur bei HRM
+  [PASS] Rektorat nur bei HVM
+  [PASS] Fachbereichsrat nur bei HRM
+  [PASS] Artikel-Struktur der HVM-Änderungssatzungen
+  [PASS] Paragraphenstruktur der HRM-Änderungsordnung
+
+### 3 Versionsmodell
+  [PASS] Absatznummerierung in allen sechs aufgelösten Zuständen lückenlos.
+  [PASS] Vier ASPO-Zustände sind inhaltlich paarweise verschieden: A=89ddb739a597 B=1ea6bf000beb A0=45777ad55ed0 B0=820abe7e8011
+  [PASS] APO-Zustände P und Q inhaltlich verschieden (P=7fc6f0d711b4, Q=2e9844e1e491).
+  [PASS] ASPO-Zustände A und A0 haben identische Paragraphen- und Absatzzahlen bei abweichendem Inhalt — reine Strukturzählung genügt zur Unterscheidung nicht.
+  [PASS] V4 konsolidiert Zustand B (41 Paragraphen laut Engine).
+  [PASS] R3 konsolidiert Zustand Q (30 Paragraphen laut Engine).
+  [PASS] V4 trägt den Nichtamtlichkeitshinweis.
+  [PASS] R3 trägt den Nichtamtlichkeitshinweis.
+  [PASS] V2: alle 6 Änderungsanweisungen im PDF vorhanden.
+  [PASS] V3: alle 7 Änderungsanweisungen im PDF vorhanden.
+  [PASS] R2: alle 6 Änderungsanweisungen im PDF vorhanden.
+  [PASS] V2: Übergangsbestimmung enthält 'Wintersemester 2021/2022'.
+  [PASS] V3: Übergangsbestimmung enthält '1. März 2024'.
+  [PASS] R2: Übergangsbestimmung enthält '30. September 2024'.
+
+### 4 Zahlenkonsistenz
+  [PASS] IAI: 90 ECTS über 3 Semester, alle Semestersummen stimmen.
+  [PASS] ET: 210 ECTS über 7 Semester, alle Semestersummen stimmen.
+  [PASS] SE: 120 LP über 4 Semester, alle Semestersummen stimmen.
+  [PASS] IB: 180 LP über 6 Semester, alle Semestersummen stimmen.
+  [PASS] V6: Gesamtumfang 90 im Plan ausgewiesen.
+  [PASS] V9: Gesamtumfang 210 im Plan ausgewiesen.
+  [PASS] R5: Gesamtumfang 120 im Plan ausgewiesen.
+  [PASS] R8: Gesamtumfang 180 im Plan ausgewiesen.
+
+### 5 Querverweise
+  [PASS] Alle internen Paragraphen- und Absatzverweise lösen sich in mindestens einer geltenden Fassung auf; externe Gesetzeszitate sind ausgenommen.
+  [PASS] Alle Modulverweise lösen sich auf.
+  [PASS] IAI: Voraussetzungsgraph zyklenfrei.
+  [PASS] ET: Voraussetzungsgraph zyklenfrei.
+  [PASS] SE: Voraussetzungsgraph zyklenfrei.
+  [PASS] IB: Voraussetzungsgraph zyklenfrei.
+
+### 6 Abkürzungen
+  [PASS] Alle verwendeten Prüfungsformabkürzungen sind im Katalog der jeweiligen Hochschule definiert.
+  [PASS] V6: verweist für Abkürzungen auf das zentrale Verzeichnis.
+  [PASS] V9: verweist für Abkürzungen auf das zentrale Verzeichnis.
+  [PASS] R5: verweist für Abkürzungen auf das zentrale Verzeichnis.
+  [PASS] R8: verweist für Abkürzungen auf das zentrale Verzeichnis.
+  [PASS] HVM-Katalog ab Ä2 abschliessend, HRM-Katalog offen — Unterschied besteht.
+  [PASS] HA an der HVM ab Ä2 entfallen, an der HRM weiterhin vorhanden (Absenzfall A-01/A-04).
+
+### 7 Konflikte und Overrides
+  [PASS] Genau vier echte Konflikte im Ground Truth.
+  [PASS] Jeder Konflikt trägt eine dokumentierte Begründung und zwei existierende Quellen.
+  [PASS] Konflikt-IDs überschneiden sich nicht mit Overrides, Autoritäts-, Versions-, Near-Duplicate- und Absenzfällen.
+  [PASS] Alle 8 Overrides führen eine ausdrückliche Ermächtigungsgrundlage.
+  [PASS] K-03: Plan (R5) weist Kl-120 aus, Modulhandbuch (R6) weist PA aus.
+  [PASS] K-01: FSB (R7) nennt 120, Anlage 1 (R8) nennt 150 Leistungspunkte.
+  [PASS] K-02: BSPO ET nennt drei Monate, Änderungssatzung nennt vier Monate.
+  [PASS] K-04: Verbotsnorm in V3 und Kolloquiumspflicht in V5 beide vorhanden.
+  [PASS] O-05: abweichende Bearbeitungszeit steht im Text, fehlt aber in der Abweichungsübersicht.
+
+### 8 Autoritätsebenen
+  [PASS] V7: Modulhandbuch als nicht bindend gekennzeichnet.
+  [PASS] R6: bindende Felder gekennzeichnet.
+  [PASS] R9: bindende Felder gekennzeichnet.
+  [PASS] V5: deutsche Fassung als maßgeblich, englische als nicht bindend gekennzeichnet.
+  [PASS] R7: englische Fassung ausdrücklich als maßgeblich gekennzeichnet.
+
+### 9 Benchmark
+  [PASS] 72 Fragen, im geforderten Bereich 60–80.
+  [PASS] Fragen-IDs eindeutig.
+  [PASS] Alle Fragen vollständig belegt.
+  [PASS] Antworttypverteilung: {'ANSWER': 65, 'CONFLICT': 4, 'DECLINE': 3}
+  [PASS] 19 Fragenklassen abgedeckt: ['abbreviation_resolution', 'absence', 'aggregation', 'amendment', 'cohort', 'conflict', 'counting', 'cross_document', 'de_to_en', 'en_to_de', 'lookup', 'near_duplicate', 'not_covered', 'override', 'prerequisite_chain', 'semantic_decoy', 'table_interpretation', 'version', 'workload_calculation']
+  [PASS] Alle vier Konflikte werden durch mindestens eine Benchmarkfrage geprüft.
+  [PASS] Alle referenzierten Personas sind definiert.
+
+### 10 Kohortendifferenzierung
+  [PASS] ET: 4 unterschiedliche Zustände unter den Personas (['A', 'A0', 'B', 'B0']).
+  [PASS] IAI: 2 unterschiedliche Zustände unter den Personas (['B', 'B0']).
+  [PASS] SE: 2 unterschiedliche Zustände unter den Personas (['P', 'Q']).
+  [PASS] IB: 2 unterschiedliche Zustände unter den Personas (['P', 'Q']).
+  [PASS] Personas mit identischer Kohorte, aber abweichendem Zustand: [('S7', 'S8'), ('S12', 'S5')]
+
+### 11 Fiktionalität
+  [PASS] Keine realen Hochschul- oder Standortnamen im Korpus.
+  [PASS] 'Hochschule Velmora' im Korpus vorhanden.
+  [PASS] 'Hochschule Rheinmark' im Korpus vorhanden.
+  [PASS] Landesrechtliche Ermächtigungsgrundlagen beider Länder zitiert.
+
+===== 76 Prüfungen, 0 FAIL, 0 WARN, 76 PASS =====
+Gesamtumfang: 296 Seiten, 19 Dokumente
