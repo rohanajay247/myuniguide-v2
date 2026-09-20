@@ -8,8 +8,7 @@ real documents. V2 takes the same problem in a different direction: production
 frameworks instead of hand-rolled code, and a purpose-built corpus designed so
 that conflict detection and refusal behaviour can actually be measured.
 
-🔗 **[Live demo](https://myuniguide-v2-703440239913.europe-west1.run.app)** ·
-[Build log](docs/PROGRESS.md)
+🔗 **[Live demo](https://myuniguide-v2-703440239913.europe-west1.run.app)**
 
 ---
 
